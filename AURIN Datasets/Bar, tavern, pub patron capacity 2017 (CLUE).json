@@ -1,0 +1,1170 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "9hjf-8i2d",
+      "name" : "Bar, tavern, pub patron capacity 2017",
+      "attribution" : "City of Melbourne",
+      "attributionLink" : "http://www.melbourne.vic.gov.au/clue",
+      "averageRating" : 0,
+      "category" : "Economy",
+      "createdAt" : 1489725835,
+      "description" : "Data collected as part of the City of Melbourne's Census of Land Use and Employment (CLUE). It show business establishments with their trading name, bar/tavern/pub patron capacity, location and CLUE block and small area designation.\r\n\r\nFor more information about CLUE see http://www.melbourne.vic.gov.au/clue",
+      "displayType" : "table",
+      "downloadCount" : 114,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1555695463,
+      "licenseId" : "CC_40_BY",
+      "moderationStatus" : true,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 29634126,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1493705732,
+      "publicationGroup" : 7224998,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1536040730,
+      "rowsUpdatedBy" : "v26v-b7pq",
+      "tableId" : 15491029,
+      "totalTimesRated" : 0,
+      "viewCount" : 404,
+      "viewLastModified" : 1539879988,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 373750536,
+        "name" : "Census year",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "census_year",
+        "position" : 1,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33910025,
+        "width" : 232,
+        "cachedContents" : {
+          "largest" : "2017",
+          "non_null" : 263,
+          "average" : "2017",
+          "null" : 0,
+          "top" : [ {
+            "item" : "2017",
+            "count" : 20
+          } ],
+          "smallest" : "2017",
+          "sum" : "530471"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 373750537,
+        "name" : "Block ID",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "block_id",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33910026,
+        "width" : 196,
+        "cachedContents" : {
+          "largest" : "97",
+          "non_null" : 263,
+          "null" : 0,
+          "top" : [ {
+            "item" : "14",
+            "count" : 20
+          }, {
+            "item" : "17",
+            "count" : 19
+          }, {
+            "item" : "66",
+            "count" : 18
+          }, {
+            "item" : "85",
+            "count" : 17
+          }, {
+            "item" : "67",
+            "count" : 16
+          }, {
+            "item" : "46",
+            "count" : 15
+          }, {
+            "item" : "57",
+            "count" : 14
+          }, {
+            "item" : "48",
+            "count" : 13
+          }, {
+            "item" : "12",
+            "count" : 12
+          }, {
+            "item" : "43",
+            "count" : 11
+          }, {
+            "item" : "33",
+            "count" : 10
+          }, {
+            "item" : "1103",
+            "count" : 9
+          }, {
+            "item" : "270",
+            "count" : 8
+          }, {
+            "item" : "730",
+            "count" : 7
+          }, {
+            "item" : "804",
+            "count" : 6
+          }, {
+            "item" : "801",
+            "count" : 5
+          }, {
+            "item" : "803",
+            "count" : 4
+          }, {
+            "item" : "441",
+            "count" : 3
+          }, {
+            "item" : "419",
+            "count" : 2
+          } ],
+          "smallest" : "103"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750538,
+        "name" : "Property ID",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "property_id",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33910027,
+        "width" : 232,
+        "cachedContents" : {
+          "largest" : "664626",
+          "non_null" : 263,
+          "average" : "174585.2015209125",
+          "null" : 0,
+          "top" : [ {
+            "item" : "105746",
+            "count" : 20
+          }, {
+            "item" : "108068",
+            "count" : 19
+          }, {
+            "item" : "558180",
+            "count" : 18
+          }, {
+            "item" : "110542",
+            "count" : 17
+          }, {
+            "item" : "110988",
+            "count" : 16
+          }, {
+            "item" : "111175",
+            "count" : 15
+          } ],
+          "smallest" : "100160",
+          "sum" : "45915908"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 373750539,
+        "name" : "Base property ID",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "base_property_id",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33910028,
+        "width" : 292,
+        "cachedContents" : {
+          "largest" : "640947",
+          "non_null" : 263,
+          "average" : "158035.6235741445",
+          "null" : 0,
+          "top" : [ {
+            "item" : "109392",
+            "count" : 20
+          }, {
+            "item" : "573333",
+            "count" : 19
+          }, {
+            "item" : "105749",
+            "count" : 18
+          }, {
+            "item" : "105746",
+            "count" : 17
+          }, {
+            "item" : "108068",
+            "count" : 16
+          }, {
+            "item" : "558180",
+            "count" : 15
+          }, {
+            "item" : "103393",
+            "count" : 14
+          }, {
+            "item" : "103402",
+            "count" : 13
+          }, {
+            "item" : "103809",
+            "count" : 12
+          }, {
+            "item" : "105636",
+            "count" : 11
+          }, {
+            "item" : "107887",
+            "count" : 10
+          }, {
+            "item" : "109829",
+            "count" : 9
+          }, {
+            "item" : "109842",
+            "count" : 8
+          }, {
+            "item" : "109843",
+            "count" : 7
+          }, {
+            "item" : "110862",
+            "count" : 6
+          }, {
+            "item" : "110920",
+            "count" : 5
+          }, {
+            "item" : "103507",
+            "count" : 4
+          }, {
+            "item" : "103810",
+            "count" : 3
+          }, {
+            "item" : "102352",
+            "count" : 2
+          }, {
+            "item" : "104468",
+            "count" : 1
+          } ],
+          "smallest" : "100160",
+          "sum" : "41563369"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "true",
+          "align" : "right"
+        }
+      }, {
+        "id" : 373750540,
+        "name" : "Street address",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "street_address",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33910029,
+        "width" : 268,
+        "cachedContents" : {
+          "largest" : "99-127 Pearl River Road",
+          "non_null" : 263,
+          "null" : 0,
+          "top" : [ {
+            "item" : "248-258 Swanston Street",
+            "count" : 20
+          }, {
+            "item" : "2 Swanston Street",
+            "count" : 19
+          }, {
+            "item" : "221 Little Lonsdale Street",
+            "count" : 18
+          }, {
+            "item" : "183-265 La Trobe Street",
+            "count" : 17
+          }, {
+            "item" : "111-129 Queen Street",
+            "count" : 16
+          }, {
+            "item" : "122-148 Harbour Esplanade",
+            "count" : 15
+          }, {
+            "item" : "7 Errol Street",
+            "count" : 14
+          }, {
+            "item" : "33 Errol Street",
+            "count" : 13
+          }, {
+            "item" : "1-3 Flemington Road",
+            "count" : 12
+          }, {
+            "item" : "46-50 Leveson Street",
+            "count" : 11
+          }, {
+            "item" : "351-359 Queensberry Street",
+            "count" : 10
+          }, {
+            "item" : "312-316 Victoria Street",
+            "count" : 9
+          }, {
+            "item" : "240-248 Victoria Street",
+            "count" : 8
+          }, {
+            "item" : "232-238 Victoria Street",
+            "count" : 7
+          }, {
+            "item" : "42 Courtney Street",
+            "count" : 6
+          }, {
+            "item" : "161-163 Errol Street",
+            "count" : 5
+          }, {
+            "item" : "86-90 Errol Street",
+            "count" : 4
+          }, {
+            "item" : "5-17 Flemington Road",
+            "count" : 3
+          }, {
+            "item" : "171-173 Curzon Street",
+            "count" : 2
+          }, {
+            "item" : "230 Grattan Street",
+            "count" : 1
+          } ],
+          "smallest" : "100 Little Lonsdale Street"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750541,
+        "name" : "CLUE small area",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "clue_small_area",
+        "position" : 6,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33910030,
+        "width" : 280,
+        "cachedContents" : {
+          "largest" : "West Melbourne (Residential)",
+          "non_null" : 263,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Melbourne (CBD)",
+            "count" : 20
+          }, {
+            "item" : "Carlton",
+            "count" : 19
+          }, {
+            "item" : "Docklands",
+            "count" : 18
+          }, {
+            "item" : "East Melbourne",
+            "count" : 17
+          }, {
+            "item" : "Kensington",
+            "count" : 16
+          }, {
+            "item" : "North Melbourne",
+            "count" : 15
+          }, {
+            "item" : "Parkville",
+            "count" : 14
+          }, {
+            "item" : "Southbank",
+            "count" : 13
+          }, {
+            "item" : "South Yarra",
+            "count" : 12
+          }, {
+            "item" : "Melbourne (Remainder)",
+            "count" : 11
+          }, {
+            "item" : "West Melbourne (Residential)",
+            "count" : 10
+          } ],
+          "smallest" : "Carlton"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750542,
+        "name" : "Trading name",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "trading_name",
+        "position" : 7,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33910031,
+        "width" : 244,
+        "cachedContents" : {
+          "largest" : "Zinc at Federation Square",
+          "non_null" : 263,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Co",
+            "count" : 20
+          }, {
+            "item" : "Left Bank Melbourne",
+            "count" : 19
+          }, {
+            "item" : "Jackpot Bar",
+            "count" : 18
+          }, {
+            "item" : "Atrium Bar",
+            "count" : 17
+          }, {
+            "item" : "Velvet Bar",
+            "count" : 16
+          }, {
+            "item" : "Kingpin Bowling Crown / Playtime",
+            "count" : 15
+          }, {
+            "item" : "Therapy",
+            "count" : 14
+          }, {
+            "item" : "The Waiting Room",
+            "count" : 13
+          }, {
+            "item" : "The Atlantic/The Den /The Oyster Bar & Grill/ Fish & Chippery by The Atlantic",
+            "count" : 12
+          }, {
+            "item" : "Lagerfield Bar & Beer Garden",
+            "count" : 11
+          }, {
+            "item" : "Crown Entertainment Complex",
+            "count" : 10
+          }, {
+            "item" : "West Village NYC",
+            "count" : 9
+          }, {
+            "item" : "Botanical Hotel",
+            "count" : 8
+          }, {
+            "item" : "Royce Hotel",
+            "count" : 7
+          }, {
+            "item" : "The Drunken Poet Pty Ltd",
+            "count" : 6
+          }, {
+            "item" : "Hotel Spencer Bar & Dining Room",
+            "count" : 5
+          }, {
+            "item" : "McMahons",
+            "count" : 4
+          } ],
+          "smallest" : "Aerial Events"
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750543,
+        "name" : "Number of patrons",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "number_of_patrons",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33910032,
+        "width" : 304,
+        "cachedContents" : {
+          "largest" : "5000",
+          "non_null" : 263,
+          "average" : "312.5665399239544",
+          "null" : 0,
+          "top" : [ {
+            "item" : "300",
+            "count" : 20
+          }, {
+            "item" : "250",
+            "count" : 19
+          }, {
+            "item" : "50",
+            "count" : 18
+          }, {
+            "item" : "100",
+            "count" : 17
+          }, {
+            "item" : "80",
+            "count" : 16
+          }, {
+            "item" : "150",
+            "count" : 15
+          }, {
+            "item" : "60",
+            "count" : 14
+          }, {
+            "item" : "200",
+            "count" : 13
+          }, {
+            "item" : "400",
+            "count" : 12
+          }, {
+            "item" : "90",
+            "count" : 11
+          }, {
+            "item" : "500",
+            "count" : 10
+          }, {
+            "item" : "370",
+            "count" : 9
+          }, {
+            "item" : "75",
+            "count" : 8
+          }, {
+            "item" : "356",
+            "count" : 7
+          }, {
+            "item" : "611",
+            "count" : 6
+          }, {
+            "item" : "69",
+            "count" : 5
+          }, {
+            "item" : "78",
+            "count" : 4
+          }, {
+            "item" : "549",
+            "count" : 3
+          }, {
+            "item" : "900",
+            "count" : 2
+          }, {
+            "item" : "1100",
+            "count" : 1
+          } ],
+          "smallest" : "10",
+          "sum" : "82205"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750544,
+        "name" : "x coordinate",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "x_coordinate",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 44894496,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "144.9856254",
+          "non_null" : 263,
+          "average" : "144.9623100745247",
+          "null" : 0,
+          "top" : [ {
+            "item" : "144.9652504",
+            "count" : 20
+          }, {
+            "item" : "144.9699175",
+            "count" : 19
+          }, {
+            "item" : "144.9657034",
+            "count" : 18
+          }, {
+            "item" : "144.9630189",
+            "count" : 17
+          }, {
+            "item" : "144.9606367",
+            "count" : 16
+          }, {
+            "item" : "144.9475776",
+            "count" : 15
+          }, {
+            "item" : "144.9490127",
+            "count" : 14
+          }, {
+            "item" : "144.9489068",
+            "count" : 13
+          }, {
+            "item" : "144.9563792",
+            "count" : 12
+          }, {
+            "item" : "144.9514591",
+            "count" : 11
+          }, {
+            "item" : "144.9559672",
+            "count" : 10
+          }, {
+            "item" : "144.9557051",
+            "count" : 9
+          }, {
+            "item" : "144.9581264",
+            "count" : 8
+          }, {
+            "item" : "144.9585875",
+            "count" : 7
+          }, {
+            "item" : "144.9540178",
+            "count" : 6
+          }, {
+            "item" : "144.9496139",
+            "count" : 5
+          }, {
+            "item" : "144.9499557",
+            "count" : 4
+          }, {
+            "item" : "144.9558713",
+            "count" : 3
+          }, {
+            "item" : "144.9485505",
+            "count" : 2
+          }, {
+            "item" : "144.9612468",
+            "count" : 1
+          } ],
+          "smallest" : "144.9321953",
+          "sum" : "38125.0875496"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750545,
+        "name" : "y coordinate",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "y_coordinate",
+        "position" : 10,
+        "renderTypeName" : "number",
+        "tableColumnId" : 44894497,
+        "width" : 100,
+        "cachedContents" : {
+          "largest" : "-37.78289944",
+          "non_null" : 263,
+          "average" : "-37.81316478072243",
+          "null" : 0,
+          "top" : [ {
+            "item" : "-37.81199559",
+            "count" : 20
+          }, {
+            "item" : "-37.81784465",
+            "count" : 19
+          }, {
+            "item" : "-37.810658",
+            "count" : 18
+          }, {
+            "item" : "-37.81073331",
+            "count" : 17
+          }, {
+            "item" : "-37.81581152",
+            "count" : 16
+          }, {
+            "item" : "-37.81656591",
+            "count" : 15
+          }, {
+            "item" : "-37.80479755",
+            "count" : 14
+          }, {
+            "item" : "-37.80414139",
+            "count" : 13
+          }, {
+            "item" : "-37.80130394",
+            "count" : 12
+          }, {
+            "item" : "-37.80370014",
+            "count" : 11
+          }, {
+            "item" : "-37.80395618",
+            "count" : 10
+          }, {
+            "item" : "-37.80563237",
+            "count" : 9
+          }, {
+            "item" : "-37.80591439",
+            "count" : 8
+          }, {
+            "item" : "-37.80593327",
+            "count" : 7
+          }, {
+            "item" : "-37.80139544",
+            "count" : 6
+          }, {
+            "item" : "-37.80114341",
+            "count" : 5
+          }, {
+            "item" : "-37.80287733",
+            "count" : 4
+          }, {
+            "item" : "-37.80140031",
+            "count" : 3
+          }, {
+            "item" : "-37.79889904",
+            "count" : 2
+          }, {
+            "item" : "-37.79739836",
+            "count" : 1
+          } ],
+          "smallest" : "-37.83506751",
+          "sum" : "-9944.86233733"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "left"
+        }
+      }, {
+        "id" : 373750546,
+        "name" : "Location",
+        "dataTypeName" : "location",
+        "description" : "",
+        "fieldName" : "location",
+        "position" : 11,
+        "renderTypeName" : "location",
+        "tableColumnId" : 33910033,
+        "width" : 196,
+        "format" : {
+          "align" : "left"
+        },
+        "subColumnTypes" : [ "human_address", "latitude", "longitude", "machine_address", "needs_recoding" ]
+      } ],
+      "grants" : [ {
+        "inherited" : true,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution 4.0 International",
+        "logoUrl" : "images/licenses/cc30by.png",
+        "termsLink" : "http://creativecommons.org/licenses/by/4.0/legalcode"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "attachments" : [ {
+          "filename" : "CLUE Definitions.pdf",
+          "assetId" : "63706644-144b-41a8-8cee-cef466df175e",
+          "blobId" : "",
+          "name" : "CLUE Definitions.pdf"
+        } ],
+        "custom_fields" : {
+          "Data management" : {
+            "Source data update frequency" : "Every two years"
+          },
+          "Quality" : {
+            "Update frequency" : "Every two years",
+            "Data quality statement" : " team of up to 6 surveyors conducts a field survey which involves visiting every establishment in every building in the Census area (City of Melbourne municipality). Every commercial property is surveyed at least once every two years.",
+            "Reliability level" : "Reliable and timely",
+            "Known Issues" : "None",
+            "What's included" : "Full dataset has been included."
+          },
+          "How to use" : {
+            "Further information" : "http://www.melbourne.vic.gov.au/clue"
+          }
+        },
+        "rowIdentifier" : "0",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "rowLabel" : "bar, tavern, pub",
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "by7m-q3n8",
+        "displayName" : "City of Melbourne Open Data Team",
+        "profileImageUrlLarge" : "/api/users/by7m-q3n8/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/by7m-q3n8/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/by7m-q3n8/profile_images/TINY",
+        "screenName" : "City of Melbourne Open Data Team",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "query" : {
+        "filterCondition" : {
+          "type" : "operator",
+          "value" : "AND",
+          "children" : [ {
+            "type" : "operator",
+            "value" : "OR",
+            "children" : [ {
+              "type" : "operator",
+              "value" : "EQUALS",
+              "children" : [ {
+                "columnId" : 373750536,
+                "type" : "column"
+              }, {
+                "type" : "literal",
+                "value" : "2017"
+              } ],
+              "metadata" : {
+                "freeform" : true
+              }
+            } ],
+            "metadata" : {
+              "tableColumnId" : {
+                "7224998" : 33910025
+              },
+              "operator" : "EQUALS"
+            }
+          } ],
+          "metadata" : {
+            "unifiedVersion" : 2
+          }
+        }
+      },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "by7m-q3n8",
+        "displayName" : "City of Melbourne Open Data Team",
+        "profileImageUrlLarge" : "/api/users/by7m-q3n8/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/by7m-q3n8/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/by7m-q3n8/profile_images/TINY",
+        "screenName" : "City of Melbourne Open Data Team",
+        "type" : "interactive",
+        "flags" : [ "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "census of land use and employment", "clue", "industry", "business", "food", "beverage", "clue2017" ],
+      "flags" : [ "unsaved" ]
+    }
+  },
+  "data" : [ [ "row-fqya.t35x-6xmy", "00000000-0000-0000-0391-F528F9B84213", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "54", "109954", "109954", "15-19 Warburton Lane", "Melbourne (CBD)", "Murmur", "50", "144.9618462", "-37.81381239", [ null, "-37.81381239", "144.9618462", null, false, null ] ]
+, [ "row-v4m9.ejjr_p7gm", "00000000-0000-0000-C213-FB916923D5AB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "801", "559161", "559161", "3-7 Riverside Quay", "Southbank", "Belgian Beer Cafe Melbourne", "638", "144.9645668", "-37.82166549", [ null, "-37.82166549", "144.9645668", null, false, null ] ]
+, [ "row-cht4.bj2i~b5qc", "00000000-0000-0000-B1C4-65AAF88FA72A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109392", "109392", "248-258 Swanston Street", "Melbourne (CBD)", "Rooftop Cinema & Bar", "200", "144.9652504", "-37.81199559", [ null, "-37.81199559", "144.9652504", null, false, null ] ]
+, [ "row-id6v_7ez9_y3j5", "00000000-0000-0000-8891-500AF2EC7288", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "105936", "105936", "433 Little Collins Street", "Melbourne (CBD)", "Dikstein's Corner Bar", "145", "144.9603413", "-37.81631094", [ null, "-37.81631094", "144.9603413", null, false, null ] ]
+, [ "row-wi5n-y5sx~hp5n", "00000000-0000-0000-18F3-0A77FD025BDB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "804", "110988", "110988", "29-65 South Wharf Promenade", "Southbank", "Munich Brau Haus", "1100", "144.9503336", "-37.82409303", [ null, "-37.82409303", "144.9503336", null, false, null ] ]
+, [ "row-c4jj_zjxh~2z6c", "00000000-0000-0000-6275-242E25D9498F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "753", "110606", "110380", "3 Southgate Avenue", "Southbank", "P J O'Briens Irish Pub & Side Bar", "549", "144.9662623", "-37.82066923", [ null, "-37.82066923", "144.9662623", null, false, null ] ]
+, [ "row-ddus~cbie_fufg", "00000000-0000-0000-6837-A282F4E5535D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "635138", "635138", "13 Heffernan Lane", "Melbourne (CBD)", "Union Electric", "72", "144.9665913", "-37.81180178", [ null, "-37.81180178", "144.9665913", null, false, null ] ]
+, [ "row-ucm3-m6rr-dmee", "00000000-0000-0000-1EDE-5B5F9E185410", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1103", "558180", "558180", "122-148 Harbour Esplanade", "Docklands", "The Medallion Club", "5000", "144.9475776", "-37.81656591", [ null, "-37.81656591", "144.9475776", null, false, null ] ]
+, [ "row-fa6c.3sdv.2q76", "00000000-0000-0000-6981-ECA7ACD658E1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1101", "108973", "108973", "85-161 Spencer Street", "Docklands", "Network Public Bar & Pizzeria", "325", "144.9523393", "-37.81815358", [ null, "-37.81815358", "144.9523393", null, false, null ] ]
+, [ "row-ek99~tnkn-kuap", "00000000-0000-0000-937A-DC4223144489", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Hush Bar @ Melbourne Central", "200", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-hnxe-casw~zrzj", "00000000-0000-0000-AEC3-898450E5E3FF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "904", "556742", "556742", "419-443 Royal Parade", "Parkville", "Vibe Hotel", "69", "144.958804", "-37.78289944", [ null, "-37.78289944", "144.958804", null, false, null ] ]
+, [ "row-xz29.fsm5-yrrc", "00000000-0000-0000-F11C-370B093A5005", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Strike Melbourne Central", "760", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-jifs~7jqb_vz63", "00000000-0000-0000-5CDF-68926B7F05A0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "108068", "108068", "111-129 Queen Street", "Melbourne (CBD)", "CQ Bar", "100", "144.9606367", "-37.81581152", [ null, "-37.81581152", "144.9606367", null, false, null ] ]
+, [ "row-umzg.tme9~sh8x", "00000000-0000-0000-FC63-3FD858802E0B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "56", "101202", "101202", "206-218 Bourke Street", "Melbourne (CBD)", "Xiang Club", "150", "144.9668768", "-37.81259409", [ null, "-37.81259409", "144.9668768", null, false, null ] ]
+, [ "row-fn6p-pjzn_riwt", "00000000-0000-0000-6C00-81D94285AED6", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "27", "597183", "102071", "121-131 Collins Street", "Melbourne (CBD)", "Spice Market", "800", "144.9698467", "-37.81516811", [ null, "-37.81516811", "144.9698467", null, false, null ] ]
+, [ "row-bfmj.8mkf_27g6", "00000000-0000-0000-B435-105BFDC2808D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1109", "560004", "560004", "24-42 Newquay Promenade", "Docklands", "Vacant", "321", "144.942139", "-37.81434525", [ null, "-37.81434525", "144.942139", null, false, null ] ]
+, [ "row-8cxi-fvvq-qu82", "00000000-0000-0000-CE76-E653BDB14755", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "369", "103507", "103507", "86-90 Errol Street", "North Melbourne", "The Courthouse Hotel", "50", "144.9499557", "-37.80287733", [ null, "-37.80287733", "144.9499557", null, false, null ] ]
+, [ "row-cimf.rzwq.nvp2", "00000000-0000-0000-0DCD-E7C65C0426CC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101216", "101216", "21-25 Croft Alley", "Melbourne (CBD)", "The Croft Institute", "250", "144.9690881", "-37.81206249", [ null, "-37.81206249", "144.9690881", null, false, null ] ]
+, [ "row-7vtv.ajua.vzvb", "00000000-0000-0000-0B08-858C0059A461", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103946", "103946", "313-315 Flinders Lane", "Melbourne (CBD)", "Randy Dragon", "100", "144.9638507", "-37.81763918", [ null, "-37.81763918", "144.9638507", null, false, null ] ]
+, [ "row-we2i.776k_nqy5", "00000000-0000-0000-D9E1-48FDC5610DAD", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "105968", "105968", "62-66 Little Collins Street", "Melbourne (CBD)", "Magic Mountain Saloon", "285", "144.971442", "-37.81280958", [ null, "-37.81280958", "144.971442", null, false, null ] ]
+, [ "row-diq6.dkxn-qqsj", "00000000-0000-0000-89D0-8E1BDF8032A7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1110", "593739", "593739", "99-127 Pearl River Road", "Docklands", "Igloo Cafe & St Moritz Bar", "100", "144.9356321", "-37.81223232", [ null, "-37.81223232", "144.9356321", null, false, null ] ]
+, [ "row-d7xx-vvce-id7q", "00000000-0000-0000-E2F4-94C50A91C941", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "64", "105704", "105704", "377-381 Lonsdale Street", "Melbourne (CBD)", "Trapt Bar & Escape Rooms", "331", "144.9614648", "-37.81291055", [ null, "-37.81291055", "144.9614648", null, false, null ] ]
+, [ "row-bgp8.rsgy.4e7j", "00000000-0000-0000-CA79-CAC50B31BF27", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "71", "105318", "105318", "277-287 King Street", "Melbourne (CBD)", "Hotel Sophia", "116", "144.9541999", "-37.81367535", [ null, "-37.81367535", "144.9541999", null, false, null ] ]
+, [ "row-gmqq-hpf7_x8mk", "00000000-0000-0000-74EA-FEE7D79225C8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "355", "105636", "105636", "46-50 Leveson Street", "North Melbourne", "The Leveson", "400", "144.9514591", "-37.80370014", [ null, "-37.80370014", "144.9514591", null, false, null ] ]
+, [ "row-sf8v-bqan_mgdy", "00000000-0000-0000-9DFE-7FA9AC37C421", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Jackpot Bar", "80", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-ndr6_iin8.3rjh", "00000000-0000-0000-7EB3-333DF312B35D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "260", "103276", "103276", "614-616 Elizabeth Street", "Carlton", "The Last Jar", "250", "144.9589387", "-37.80389369", [ null, "-37.80389369", "144.9589387", null, false, null ] ]
+, [ "row-aab9.87ad-pbk8", "00000000-0000-0000-A7C5-E8ED5AA8D211", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "56", "101207", "101207", "184-186 Bourke Street", "Melbourne (CBD)", "Stars KTV and Lounge", "204", "144.9676888", "-37.81267583", [ null, "-37.81267583", "144.9676888", null, false, null ] ]
+, [ "row-gbjp~jeq2_ckzq", "00000000-0000-0000-AC9E-0B6BB40A7A22", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1103", "558180", "558180", "122-148 Harbour Esplanade", "Docklands", "Captains Bar ", "80", "144.9475776", "-37.81656591", [ null, "-37.81656591", "144.9475776", null, false, null ] ]
+, [ "row-vmq4_rfdc-ta2n", "00000000-0000-0000-95B6-D2F5A2519336", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "55", "109284", "109284", "191-205 Swanston Street", "Melbourne (CBD)", "Black Opal", "200", "144.9649993", "-37.81309229", [ null, "-37.81309229", "144.9649993", null, false, null ] ]
+, [ "row-ya74-ttc6_qdns", "00000000-0000-0000-8E37-F5E295577698", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "804", "110988", "110988", "29-65 South Wharf Promenade", "Southbank", "Plus 5", "90", "144.9503336", "-37.82409303", [ null, "-37.82409303", "144.9503336", null, false, null ] ]
+, [ "row-de87.ag5n~qt78", "00000000-0000-0000-9A23-9EB1934E818D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "801", "110326", "110326", "4 Riverside Quay", "Southbank", "Soho Restaurant & Bar", "200", "144.9633758", "-37.82092509", [ null, "-37.82092509", "144.9633758", null, false, null ] ]
+, [ "row-wg4h-aa24_vix8", "00000000-0000-0000-DA73-9116836A94AF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "109413", "109413", "146 Swanston Street", "Melbourne (CBD)", "Cabinet Bar ", "90", "144.9662039", "-37.81417648", [ null, "-37.81417648", "144.9662039", null, false, null ] ]
+, [ "row-n373-fhea.7rwh", "00000000-0000-0000-99CB-A2E3A0BA390E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "710", "108617", "108617", "375-385 St Kilda Road", "Melbourne (Remainder)", "Royce Hotel", "120", "144.9755139", "-37.83506751", [ null, "-37.83506751", "144.9755139", null, false, null ] ]
+, [ "row-39iv.5mhi~qvri", "00000000-0000-0000-3DC3-97C607C01D74", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "84", "103207", "103207", "315-321 Elizabeth Street", "Melbourne (CBD)", "The Meeting Place", "250", "144.9614724", "-37.81124935", [ null, "-37.81124935", "144.9614724", null, false, null ] ]
+, [ "row-uxrb.jm7j~f6ci", "00000000-0000-0000-BE36-F5CB29AF74FA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "54", "104653", "104653", "21-25 Hardware Lane", "Melbourne (CBD)", "Campari House", "326", "144.9613142", "-37.81409153", [ null, "-37.81409153", "144.9613142", null, false, null ] ]
+, [ "row-2iwk_xtqi~d23p", "00000000-0000-0000-9F0D-DE4DBC641FCD", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "105933", "105933", "425-427 Little Collins Street", "Melbourne (CBD)", "The Irish Times", "170", "144.9605354", "-37.8162542", [ null, "-37.8162542", "144.9605354", null, false, null ] ]
+, [ "row-kwy6~9x4n.kiq6", "00000000-0000-0000-B339-104CDA56FB9B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "503031", "503031", "19-23 Meyers Place", "Melbourne (CBD)", "Loop Project Space & Bar", "152", "144.9721078", "-37.8121518", [ null, "-37.8121518", "144.9721078", null, false, null ] ]
+, [ "row-kg4w~rxz6_vijj", "00000000-0000-0000-F4E7-F435AA9068DB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "21", "606461", "606461", "607-623 Collins Street", "Melbourne (CBD)", "Batman's Hill On Collins Hotel", "1500", "144.95469", "-37.81929312", [ null, "-37.81929312", "144.95469", null, false, null ] ]
+, [ "row-xja7-nzga_k92h", "00000000-0000-0000-882B-AC4FB3629F69", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "376", "508976", "110862", "42 Courtney Street", "North Melbourne", "Metropolitan Hotel", "100", "144.9540178", "-37.80139544", [ null, "-37.80139544", "144.9540178", null, false, null ] ]
+, [ "row-54b8~dx4y~h4a5", "00000000-0000-0000-14FD-14DBEE924A00", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "16", "108532", "108532", "27-37 Russell Street", "Melbourne (CBD)", "Whiskey Den ", "40", "144.9692478", "-37.81598754", [ null, "-37.81598754", "144.9692478", null, false, null ] ]
+, [ "row-uqg3~wwgz_xngf", "00000000-0000-0000-E4F8-C8E14B58907F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "105675", "105675", "113 Lonsdale Street", "Melbourne (CBD)", "Seamstress", "160", "144.9690111", "-37.81056538", [ null, "-37.81056538", "144.9690111", null, false, null ] ]
+, [ "row-nw88-cypc~b25p", "00000000-0000-0000-BF8C-764EDAD265F8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "78", "110721", "580091", "33-39 Little Lonsdale Street", "Melbourne (CBD)", "The Fringe", "400", "144.9707325", "-37.8091842", [ null, "-37.8091842", "144.9707325", null, false, null ] ]
+, [ "row-s5qf.fk6w-2rbn", "00000000-0000-0000-F29E-590D10C46AB7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "6", "578321", "573333", "2 Swanston Street", "Melbourne (CBD)", "Beer De Luxe", "1000", "144.9699175", "-37.81784465", [ null, "-37.81784465", "144.9699175", null, false, null ] ]
+, [ "row-jhmk-sh6x.3aj5", "00000000-0000-0000-2F47-4F02258BC602", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "101130", "101130", "193-199 Bourke Street", "Melbourne (CBD)", "The Carlton Hotel", "366", "144.9676452", "-37.81320485", [ null, "-37.81320485", "144.9676452", null, false, null ] ]
+, [ "row-f7uq.ib4k-hjqt", "00000000-0000-0000-33DD-EC8929FC4032", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "58", "101230", "101230", "54-62 Bourke Street", "Melbourne (CBD)", "Romeo Lane", "25", "144.9713808", "-37.81156933", [ null, "-37.81156933", "144.9713808", null, false, null ] ]
+, [ "row-a9p9_uxuh~qutb", "00000000-0000-0000-6AB1-07FE45D9F670", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "214", "106186", "106186", "414-422 Lygon Street", "Carlton", "Astor Hotel", "120", "144.9678126", "-37.79694555", [ null, "-37.79694555", "144.9678126", null, false, null ] ]
+, [ "row-wagu.99z8-aerj", "00000000-0000-0000-5BAA-DCCE8F59CDDF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "76", "589841", "105749", "221 Little Lonsdale Street", "Melbourne (CBD)", "Father's Office", "370", "144.9657034", "-37.810658", [ null, "-37.810658", "144.9657034", null, false, null ] ]
+, [ "row-gj62_i4mr.83b5", "00000000-0000-0000-7268-E22D71B1A524", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "12", "105401", "105401", "14-20 King Street", "Melbourne (CBD)", "Tramp Bar", "200", "144.9577148", "-37.81977635", [ null, "-37.81977635", "144.9577148", null, false, null ] ]
+, [ "row-pcfp-8r4q.n4u9", "00000000-0000-0000-EB0F-193C6ECAE521", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101221", "101221", "94-96 Bourke Street", "Melbourne (CBD)", "The Elephant and Wheelbarrow", "450", "144.9702485", "-37.81191058", [ null, "-37.81191058", "144.9702485", null, false, null ] ]
+, [ "row-6bhb~gyki~ausw", "00000000-0000-0000-9532-D086112DADC7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "108536", "108536", "115-127 Russell Street", "Melbourne (CBD)", "Portland Hotel", "414", "144.9681892", "-37.81367486", [ null, "-37.81367486", "144.9681892", null, false, null ] ]
+, [ "row-gshr_zk3p~hegx", "00000000-0000-0000-A7E7-B8FBC3BFC2F2", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "18", "108977", "108977", "25-31 Spring Street", "Melbourne (CBD)", "HiHou", "80", "144.9741019", "-37.81454561", [ null, "-37.81454561", "144.9741019", null, false, null ] ]
+, [ "row-7syu~5b53.j26n", "00000000-0000-0000-B10D-456A9B4BA9A7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "574438", "574438", "84-94 Flinders Street", "Melbourne (CBD)", "Eau-De-Vie ", "150", "144.9716757", "-37.81587662", [ null, "-37.81587662", "144.9716757", null, false, null ] ]
+, [ "row-qk92-x4a6.he2f", "00000000-0000-0000-6709-B69A43704F3A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "65", "109292", "109292", "243-249 Swanston Street", "Melbourne (CBD)", "The Lounge", "212", "144.9647365", "-37.81230108", [ null, "-37.81230108", "144.9647365", null, false, null ] ]
+, [ "row-d26h-mxyp_jyfx", "00000000-0000-0000-8087-59021D98F5B7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "35", "109271", "109271", "125-133 Swanston Street", "Melbourne (CBD)", "Max Watt's", "800", "144.9658102", "-37.81472467", [ null, "-37.81472467", "144.9658102", null, false, null ] ]
+, [ "row-vscr.avt6.rma9", "00000000-0000-0000-AC47-10628084EF08", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "58", "105828", "105828", "19-25 Little Bourke Street", "Melbourne (CBD)", "Mrs Parma's ", "300", "144.9719903", "-37.81074304", [ null, "-37.81074304", "144.9719903", null, false, null ] ]
+, [ "row-6qgx_avpp_w3in", "00000000-0000-0000-57C6-E5AE737F77E2", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "12", "105399", "105399", "26-32 King Street", "Melbourne (CBD)", "Clique Bar", "222", "144.957466", "-37.81952934", [ null, "-37.81952934", "144.957466", null, false, null ] ]
+, [ "row-sz4z~ybqs_5tpa", "00000000-0000-0000-18D1-6361D0FEE3DA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "441", "108856", "108856", "475-477 Spencer Street", "West Melbourne (Residential)", "Hotel Spencer Bar & Dining Room", "150", "144.9492503", "-37.80956913", [ null, "-37.80956913", "144.9492503", null, false, null ] ]
+, [ "row-czr7-s74c-5utz", "00000000-0000-0000-CA09-8BE353A4FD2D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "270", "579293", "104468", "230 Grattan Street", "Parkville", "University House Club", "611", "144.9612468", "-37.79739836", [ null, "-37.79739836", "144.9612468", null, false, null ] ]
+, [ "row-ujif~if79-t4u3", "00000000-0000-0000-E5D9-2E011E465C73", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Lagerfield Bar & Beer Garden", "650", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-k97a~92mt~tep6", "00000000-0000-0000-5ECB-403DC98A82E7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "101116", "101116", "79-85 Bourke Street", "Melbourne (CBD)", "Good Heavens", "400", "144.9710404", "-37.81217956", [ null, "-37.81217956", "144.9710404", null, false, null ] ]
+, [ "row-dsjy~embu-ca26", "00000000-0000-0000-4CF6-BE119A6F3B1A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "45", "105960", "105960", "318-322 Little Collins Street", "Melbourne (CBD)", "New Guernica", "380", "144.9640121", "-37.81488174", [ null, "-37.81488174", "144.9640121", null, false, null ] ]
+, [ "row-kmjw~pca5_zqpv", "00000000-0000-0000-CB1F-6DE2CC1EDD9C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "15", "103944", "103944", "277-279 Flinders Lane", "Melbourne (CBD)", "The Mill House Bar", "400", "144.9652979", "-37.81724201", [ null, "-37.81724201", "144.9652979", null, false, null ] ]
+, [ "row-9zve-cf3c.axm6", "00000000-0000-0000-5AB6-EF5DB7D0416A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "730", "110401", "110401", "334-342 City Road", "Southbank", "Urban Central Accomodation / bar334", "334", "144.9573539", "-37.82783816", [ null, "-37.82783816", "144.9573539", null, false, null ] ]
+, [ "row-dxr5~bgkw_c5cm", "00000000-0000-0000-07A7-BD72B23775D4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "103", "100160", "100160", "196-200 A'Beckett Street", "Melbourne (CBD)", "Nomads Industry Backpackers", "200", "144.9574447", "-37.80998494", [ null, "-37.80998494", "144.9574447", null, false, null ] ]
+, [ "row-w4mz_iu8q-2bas", "00000000-0000-0000-498E-4E9AC5F98FB3", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "42", "105392", "105392", "120-138 King Street", "Melbourne (CBD)", "El Coco", "500", "144.9564078", "-37.81703156", [ null, "-37.81703156", "144.9564078", null, false, null ] ]
+, [ "row-bc8q.rvnm~khn7", "00000000-0000-0000-D767-C16EEF947297", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "78", "103618", "103618", "242-284 Exhibition Street", "Melbourne (CBD)", "Coopers Inn", "400", "144.9699756", "-37.80941489", [ null, "-37.80941489", "144.9699756", null, false, null ] ]
+, [ "row-b9fe-vs3m-47fx", "00000000-0000-0000-21BA-CC98EE777578", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "2530", "616160", "616160", "265-271 Racecourse Road", "Kensington", "The Quiet Man Irishman  Pub", "400", "144.9323559", "-37.78860982", [ null, "-37.78860982", "144.9323559", null, false, null ] ]
+, [ "row-qy4i.zdey~vwgh", "00000000-0000-0000-4234-838E94BC145D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "101113", "101113", "59-63 Bourke Street", "Melbourne (CBD)", "Club Asuka", "150", "144.9715659", "-37.81212537", [ null, "-37.81212537", "144.9715659", null, false, null ] ]
+, [ "row-vzcg_m2q7~awda", "00000000-0000-0000-CF10-EB838372DEB0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "12", "104824", "104824", "11A Highlander Lane", "Melbourne (CBD)", "Highlander Bar", "202", "144.9579702", "-37.81970334", [ null, "-37.81970334", "144.9579702", null, false, null ] ]
+, [ "row-rim4.6i7i-exdd", "00000000-0000-0000-EFA9-C268AE582271", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "109302", "109302", "281-287 Swanston Street", "Melbourne (CBD)", "Mui Karaoke", "243", "144.9643593", "-37.81143223", [ null, "-37.81143223", "144.9643593", null, false, null ] ]
+, [ "row-h255_qrqg.ty45", "00000000-0000-0000-6F10-2B7401B9AAC4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "102199", "102199", "16-20 Corrs Lane", "Melbourne (CBD)", "House of Maximon / Berlin Bar", "300", "144.9683854", "-37.81112914", [ null, "-37.81112914", "144.9683854", null, false, null ] ]
+, [ "row-9kwb_wt59.f87d", "00000000-0000-0000-293A-C57EB561CE9C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "327", "102352", "102352", "171-173 Curzon Street", "North Melbourne", "Albion Hotel", "100", "144.9485505", "-37.79889904", [ null, "-37.79889904", "144.9485505", null, false, null ] ]
+, [ "row-bxgx_ci3u-8zxx", "00000000-0000-0000-C93D-78920E00C012", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "The Atlantic/The Den /The Oyster Bar & Grill/ Fish & Chippery by The Atlantic", "508", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-avhh~mbue-bwsf", "00000000-0000-0000-E61B-569E18B83A4A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "51", "108963", "108963", "672-696 Bourke Street", "Melbourne (CBD)", "Mail Exchange Hotel", "600", "144.9535902", "-37.81663038", [ null, "-37.81663038", "144.9535902", null, false, null ] ]
+, [ "row-wwfn_migr.ginr", "00000000-0000-0000-F002-A0051174B4EC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "218", "106215", "106215", "298 Lygon Street", "Carlton", "Carlton Yacht Club Bar", "46", "144.9673764", "-37.79998572", [ null, "-37.79998572", "144.9673764", null, false, null ] ]
+, [ "row-ukha~8mjz_jxgv", "00000000-0000-0000-F55A-3C75D1048A5E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "106433", "106433", "18-24 Market Lane", "Melbourne (CBD)", "Ding Dong Lounge", "300", "144.9694031", "-37.81175137", [ null, "-37.81175137", "144.9694031", null, false, null ] ]
+, [ "row-xyim_rqhb-aied", "00000000-0000-0000-8399-8DE6C5189A29", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "23", "106436", "106436", "54-60 Market Street", "Melbourne (CBD)", "Oak & Vine Bar", "370", "144.9608283", "-37.81778076", [ null, "-37.81778076", "144.9608283", null, false, null ] ]
+, [ "row-454j.59fp.qhaj", "00000000-0000-0000-CF26-599AF55AE0DC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "64", "104659", "104659", "67-73 Hardware Lane", "Melbourne (CBD)", "The Mill", "119", "144.960908", "-37.81323451", [ null, "-37.81323451", "144.960908", null, false, null ] ]
+, [ "row-m5ck-wvjh_xmwd", "00000000-0000-0000-C8F8-F3CBAFC77923", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "76", "589841", "105749", "221 Little Lonsdale Street", "Melbourne (CBD)", "Idarts Hive", "100", "144.9657034", "-37.810658", [ null, "-37.810658", "144.9657034", null, false, null ] ]
+, [ "row-b2jt~ed5i-2vce", "00000000-0000-0000-C218-C8401A310B6C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103922", "103922", "95-101 Flinders Lane", "Melbourne (CBD)", "Garden State Hotel", "840", "144.9711039", "-37.81553247", [ null, "-37.81553247", "144.9711039", null, false, null ] ]
+, [ "row-cpqs-6hir~qx32", "00000000-0000-0000-3819-324104667784", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103172", "103172", "31-39 Elizabeth Street", "Melbourne (CBD)", "The Joint Bar", "329", "144.9643316", "-37.81741878", [ null, "-37.81741878", "144.9643316", null, false, null ] ]
+, [ "row-8k9v-wm6z~i5jm", "00000000-0000-0000-1CEE-524A12F9EB63", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "358", "107887", "107887", "351-359 Queensberry Street", "North Melbourne", "Bobbie Peels", "240", "144.9559672", "-37.80395618", [ null, "-37.80395618", "144.9559672", null, false, null ] ]
+, [ "row-8mb7_ehpu_yp9g", "00000000-0000-0000-08C9-94BCB548A2AA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "61", "105716", "105716", "597-603 Lonsdale Street", "Melbourne (CBD)", "The Men's Gallery", "675", "144.9544951", "-37.81491898", [ null, "-37.81491898", "144.9544951", null, false, null ] ]
+, [ "row-nehs_9z5d-cyw6", "00000000-0000-0000-F28F-5E8258493FC0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "12", "105401", "105401", "14-20 King Street", "Melbourne (CBD)", "Spearmint Rhino Gentlemen's Club", "660", "144.9577148", "-37.81977635", [ null, "-37.81977635", "144.9577148", null, false, null ] ]
+, [ "row-29hq.b55r.74tq", "00000000-0000-0000-AA4F-E7010BC18BB1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "108068", "108068", "111-129 Queen Street", "Melbourne (CBD)", "Blue Diamond", "200", "144.9606367", "-37.81581152", [ null, "-37.81581152", "144.9606367", null, false, null ] ]
+, [ "row-6j4n_kygw.ww54", "00000000-0000-0000-DAD2-C3B7CE98038B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "102597", "102597", "2-20 Drewery Place", "Melbourne (CBD)", "Baroq House", "303", "144.9639703", "-37.81130304", [ null, "-37.81130304", "144.9639703", null, false, null ] ]
+, [ "row-wsfm~xxzf~kjjg", "00000000-0000-0000-F94C-C47151EC37E4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "108581", "108581", "226-236 Russell Street", "Melbourne (CBD)", "Heartbreaker", "170", "144.9676444", "-37.81098272", [ null, "-37.81098272", "144.9676444", null, false, null ] ]
+, [ "row-gkgy.r4w4-4trc", "00000000-0000-0000-2FBB-63F87F8BF195", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "84", "105449", "105449", "293-299 La Trobe Street", "Melbourne (CBD)", "Burger Theory / The Hills Rooftop / The Tuxedo Cat", "200", "144.9605086", "-37.81081439", [ null, "-37.81081439", "144.9605086", null, false, null ] ]
+, [ "row-g7ys~kjr3~26kd", "00000000-0000-0000-1C8F-4F1B0ECE8C98", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "108064", "108064", "85-91 Queen Street", "Melbourne (CBD)", "Melbourne Black Rabbit", "230", "144.9610213", "-37.81649711", [ null, "-37.81649711", "144.9610213", null, false, null ] ]
+, [ "row-3dfa.mdw6~ymvh", "00000000-0000-0000-2D43-0C8FC6FD752A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103928", "103928", "133-135 Flinders Lane", "Melbourne (CBD)", "Meatball & Wine Bar", "110", "144.9701585", "-37.81573536", [ null, "-37.81573536", "144.9701585", null, false, null ] ]
+, [ "row-egy8_kuy4-zdyi", "00000000-0000-0000-509E-685880F3303B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "36", "102152", "102152", "162-168 Collins Street", "Melbourne (CBD)", "The Long Room", "620", "144.9678476", "-37.81450301", [ null, "-37.81450301", "144.9678476", null, false, null ] ]
+, [ "row-wgpt-jyai_5ymf", "00000000-0000-0000-BC93-BAD0E48B8DC7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "345", "103393", "103393", "7 Errol Street", "North Melbourne", "Joe Taylor", "60", "144.9490127", "-37.80479755", [ null, "-37.80479755", "144.9490127", null, false, null ] ]
+, [ "row-4ifs~ge3j~q5tg", "00000000-0000-0000-E33E-6BE9930A2FF0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109436", "109436", "27-29 Tattersalls Lane", "Melbourne (CBD)", "Section 8 Bar", "100", "144.9653899", "-37.81176167", [ null, "-37.81176167", "144.9653899", null, false, null ] ]
+, [ "row-qnyy_m4z8-kfde", "00000000-0000-0000-2C58-E42F36490400", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103925", "103925", "121-123 Flinders Lane", "Melbourne (CBD)", "Sake Restaurant and Bar", "350", "144.9705132", "-37.81567009", [ null, "-37.81567009", "144.9705132", null, false, null ] ]
+, [ "row-fcha-cce3~ctvr", "00000000-0000-0000-7187-D32D02258B82", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "115", "104103", "104103", "34-38 Franklin Street", "Melbourne (CBD)", "Captain Melville ", "355", "144.9616126", "-37.80752292", [ null, "-37.80752292", "144.9616126", null, false, null ] ]
+, [ "row-kmrq_hrwh-xevr", "00000000-0000-0000-7E2A-7CC2F931985A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1109", "601809", "593728", "425-427 Docklands Drive", "Docklands", "Waterfront Venues", "1059", "144.9390269", "-37.81517782", [ null, "-37.81517782", "144.9390269", null, false, null ] ]
+, [ "row-hkmg.bs3u-rde6", "00000000-0000-0000-C9F2-FBF660EBB057", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "11", "103984", "103984", "566-580 Flinders Street", "Melbourne (CBD)", "UBar", "98", "144.9553465", "-37.82072034", [ null, "-37.82072034", "144.9553465", null, false, null ] ]
+, [ "row-tgp8-p9zw-2ccx", "00000000-0000-0000-7A5E-CB249BB30814", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "24", "103174", "103174", "55-57 Elizabeth Street", "Melbourne (CBD)", "Fiftyfive", "88", "144.9641302", "-37.81697242", [ null, "-37.81697242", "144.9641302", null, false, null ] ]
+, [ "row-p2mi.vir5.act7", "00000000-0000-0000-45CD-F74705787B89", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "58", "101238", "101238", "2-8 Bourke Street", "Melbourne (CBD)", "Imperial Hotel", "894", "144.972676", "-37.8112003", [ null, "-37.8112003", "144.972676", null, false, null ] ]
+, [ "row-3umj_h9gz_z974", "00000000-0000-0000-170F-D5AD4D5967EC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "377", "102236", "102236", "56-58 Courtney Street", "North Melbourne", "The Castle Hotel", "317", "144.953035", "-37.8008985", [ null, "-37.8008985", "144.953035", null, false, null ] ]
+, [ "row-rhi6~76j6~ds9k", "00000000-0000-0000-EB8F-69EFAD39E8AD", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "102596", "102596", "22 Drewery Place", "Melbourne (CBD)", "Sister Bellas", "80", "144.9638158", "-37.81135", [ null, "-37.81135", "144.9638158", null, false, null ] ]
+, [ "row-vjej-nwip.f82k", "00000000-0000-0000-9FA3-109AB232809A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "108547", "108547", "199-203 Russell Street", "Melbourne (CBD)", "Exford Hotel", "300", "144.9673406", "-37.81179179", [ null, "-37.81179179", "144.9673406", null, false, null ] ]
+, [ "row-7nh8_iuyg_ambh", "00000000-0000-0000-FB8D-B99E30FA027F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "218", "106222", "106222", "270-276 Lygon Street", "Carlton", "University Hotel", "111", "144.9672432", "-37.8005263", [ null, "-37.8005263", "144.9672432", null, false, null ] ]
+, [ "row-mk2x~9t2h-fxyr", "00000000-0000-0000-D5B8-860BD8FE6180", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "25", "101789", "101789", "252-254 Flinders Lane", "Melbourne (CBD)", "Hell's Kitchen", "55", "144.9655966", "-37.8166033", [ null, "-37.8166033", "144.9655966", null, false, null ] ]
+, [ "row-sf2u-ussh-cms3", "00000000-0000-0000-DF88-5DEB55BD8484", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1105", "628712", "628712", "717-731 Collins Street", "Docklands", "Bar Nicional", "75", "144.9500934", "-37.82068699", [ null, "-37.82068699", "144.9500934", null, false, null ] ]
+, [ "row-9gd5-e362~72b3", "00000000-0000-0000-4344-B0A516A28093", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "102124", "102124", "430-442 Collins Street", "Melbourne (CBD)", "The Mug House", "80", "144.9597623", "-37.81703239", [ null, "-37.81703239", "144.9597623", null, false, null ] ]
+, [ "row-suir~3vzi_rvvz", "00000000-0000-0000-3CDD-4F3DB191724B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1108", "604125", "604125", "143-175 Harbour Esplanade", "Docklands", "Alumbra", "690", "144.9435654", "-37.8165193", [ null, "-37.8165193", "144.9435654", null, false, null ] ]
+, [ "row-f3px_jiat-yaib", "00000000-0000-0000-D4DB-940657834110", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1103", "558180", "558180", "122-148 Harbour Esplanade", "Docklands", "E J Whitten Bar ", "70", "144.9475776", "-37.81656591", [ null, "-37.81656591", "144.9475776", null, false, null ] ]
+, [ "row-pfsj-h8ra_f7gw", "00000000-0000-0000-1625-29CB4BA40E51", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "105963", "105963", "196-212 Little Collins Street", "Melbourne (CBD)", "Hairy Canary", "50", "144.9671568", "-37.81384227", [ null, "-37.81384227", "144.9671568", null, false, null ] ]
+, [ "row-8zuf.d3p5.eqx4", "00000000-0000-0000-42E2-8F936E7EEB51", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103950", "103950", "335-339 Flinders Lane", "Melbourne (CBD)", "Bartronica", "200", "144.9632258", "-37.81784765", [ null, "-37.81784765", "144.9632258", null, false, null ] ]
+, [ "row-v9cm_jv2i_8hw3", "00000000-0000-0000-22DC-1BCA6387CCEE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "266", "106081", "106081", "27-31 Lygon Street", "Carlton", "The Curtin", "350", "144.9656988", "-37.80619915", [ null, "-37.80619915", "144.9656988", null, false, null ] ]
+, [ "row-7wrh~wbxs_f9jc", "00000000-0000-0000-CB69-A28F5B05445C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "101109", "101109", "39-43 Bourke Street", "Melbourne (CBD)", "Spleen Central", "100", "144.9720472", "-37.81193572", [ null, "-37.81193572", "144.9720472", null, false, null ] ]
+, [ "row-waa8~jz6d.qiqs", "00000000-0000-0000-3B3D-AE727886AEA3", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "16", "103938", "103938", "187 Flinders Lane", "Melbourne (CBD)", "The Adelphi Hotel", "80", "144.9683751", "-37.81635789", [ null, "-37.81635789", "144.9683751", null, false, null ] ]
+, [ "row-tek2-ep38~prxy", "00000000-0000-0000-001F-3EB3928061EF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "204", "101613", "101613", "377-391 Cardigan Street", "Carlton", "Clyde Hotel", "239", "144.9657541", "-37.79725532", [ null, "-37.79725532", "144.9657541", null, false, null ] ]
+, [ "row-adcy_n6q8_xrqj", "00000000-0000-0000-5C48-7AA0D79E72AC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "358", "109829", "109829", "312-316 Victoria Street", "North Melbourne", "Victoria Hotel", "130", "144.9557051", "-37.80563237", [ null, "-37.80563237", "144.9557051", null, false, null ] ]
+, [ "row-dvv2_siaa~z5pe", "00000000-0000-0000-EBB4-2AC613FAD2B1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "101099", "101099", "16-26 Bond Street", "Melbourne (CBD)", "Bond Melbourne", "500", "144.9630575", "-37.81814578", [ null, "-37.81814578", "144.9630575", null, false, null ] ]
+, [ "row-sf9g~t4jk-3v7b", "00000000-0000-0000-CC5B-341F1622FFBF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "11", "103993", "103993", "508-514 Flinders Street", "Melbourne (CBD)", "Waterside Hotel", "983", "144.9571505", "-37.820166", [ null, "-37.820166", "144.9571505", null, false, null ] ]
+, [ "row-j7ag~u4my-bvwa", "00000000-0000-0000-FDE0-5EA70CAF0F7A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "23", "102099", "102099", "419-429 Collins Street", "Melbourne (CBD)", "Ms Collins", "850", "144.9606531", "-37.81752882", [ null, "-37.81752882", "144.9606531", null, false, null ] ]
+, [ "row-eein~gxcd-su5t", "00000000-0000-0000-E18B-87E5A9ED5CFA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "752", "108653", "110733", "100 St Kilda Road", "Southbank", "the Barre", "300", "144.9682264", "-37.82094188", [ null, "-37.82094188", "144.9682264", null, false, null ] ]
+, [ "row-3unj_vtzj~b34q", "00000000-0000-0000-2724-C5AC3C339549", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "105878", "105878", "242-244 Little Bourke Street", "Melbourne (CBD)", "Shanghai Club", "209", "144.965603", "-37.81213633", [ null, "-37.81213633", "144.965603", null, false, null ] ]
+, [ "row-qxxb-cpgf.qwgy", "00000000-0000-0000-7E0B-73FC043F84DD", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "65", "105875", "105875", "318-322 Little Bourke Street", "Melbourne (CBD)", "Penny Blue", "85", "144.9631276", "-37.81292437", [ null, "-37.81292437", "144.9631276", null, false, null ] ]
+, [ "row-s96w~726m-33e3", "00000000-0000-0000-C303-2D56BC91EE5B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101212", "101212", "152-158 Bourke Street", "Melbourne (CBD)", "Charltons Entertainment Complex / Roxanne Bar", "1500", "144.9685359", "-37.81206119", [ null, "-37.81206119", "144.9685359", null, false, null ] ]
+, [ "row-56qf.c7nc_4vpz", "00000000-0000-0000-AC58-2AF529B49F19", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "808", "110385", "110385", "174-184 City Road", "Southbank", "Rumour Restaurant Bar & Lounge", "100", "144.9618918", "-37.82382188", [ null, "-37.82382188", "144.9618918", null, false, null ] ]
+, [ "row-2fdz.f5zg.9c5i", "00000000-0000-0000-6B83-065BF753C749", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "375", "103809", "103809", "1-3 Flemington Road", "North Melbourne", "Turf Club Hotel ", "629", "144.9563792", "-37.80130394", [ null, "-37.80130394", "144.9563792", null, false, null ] ]
+, [ "row-emqs_nj2r.s9i5", "00000000-0000-0000-5B5A-6850B010AEB9", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "35", "105919", "105919", "267 Little Collins Street", "Melbourne (CBD)", "Bar Americano", "10", "144.9656034", "-37.81483458", [ null, "-37.81483458", "144.9656034", null, false, null ] ]
+, [ "row-vkr2.f5g2-f9je", "00000000-0000-0000-8A38-A425952A1514", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Partyworld", "500", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-cies_g7m8.da9s", "00000000-0000-0000-C36C-2E3A5659DE5B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1110", "620312", "593737", "23-37 Star Crescent", "Docklands", "Harbour Town Hotel", "498", "144.9378299", "-37.81315031", [ null, "-37.81315031", "144.9378299", null, false, null ] ]
+, [ "row-fuiw.c443.mxrb", "00000000-0000-0000-A751-7B71DE4B24EC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "96", "606638", "105490", "124 La Trobe Street", "Melbourne (CBD)", "Pearson and Murph'y Cafe", "156", "144.9645504", "-37.80818365", [ null, "-37.80818365", "144.9645504", null, false, null ] ]
+, [ "row-48uf-zar9.kvc4", "00000000-0000-0000-C84E-2C977A4F2A32", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "55", "101193", "101193", "338-352 Bourke Street", "Melbourne (CBD)", "Alto Events", "400", "144.9632879", "-37.81360425", [ null, "-37.81360425", "144.9632879", null, false, null ] ]
+, [ "row-esz7~v4p4_qf5q", "00000000-0000-0000-8661-E36D397127F5", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103921", "103921", "91-93 Flinders Lane", "Melbourne (CBD)", "Papa Goose / Mary Fortune Cocktail Bar", "440", "144.9712228", "-37.81543506", [ null, "-37.81543506", "144.9712228", null, false, null ] ]
+, [ "row-aaf6-gtj9-s3gz", "00000000-0000-0000-35F3-0B7233554B15", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "207", "106153", "106153", "331-335 Lygon Street", "Carlton", "Wolfs Lair", "80", "144.9671779", "-37.7975082", [ null, "-37.7975082", "144.9671779", null, false, null ] ]
+, [ "row-mkty_bhe2-rqfr", "00000000-0000-0000-6332-AA5469F418DC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109952", "109952", "7-9 Waratah Place", "Melbourne (CBD)", "Manchuria", "80", "144.9669911", "-37.81162502", [ null, "-37.81162502", "144.9669911", null, false, null ] ]
+, [ "row-rxnk~n9ux_mz6h", "00000000-0000-0000-103B-FE791732A0E4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101217", "101217", "124-128 Bourke Street", "Melbourne (CBD)", "Welcome Stranger", "350", "144.9692645", "-37.81207094", [ null, "-37.81207094", "144.9692645", null, false, null ] ]
+, [ "row-g2tx~2d5c~8s4j", "00000000-0000-0000-565E-40B2D7034FAE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "2530", "616125", "616125", "25-27 Rankins Road", "Kensington", "Flemington & Kensington RSL Club", "90", "144.9321953", "-37.78932218", [ null, "-37.78932218", "144.9321953", null, false, null ] ]
+, [ "row-yjvk-r7bi-yngk", "00000000-0000-0000-4BB6-B4F098D4EB05", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "64", "515538", "515538", "4-6 Goldie Place", "Melbourne (CBD)", "Paris Cat Jazz Club", "120", "144.9608287", "-37.81351769", [ null, "-37.81351769", "144.9608287", null, false, null ] ]
+, [ "row-m2dd-2vuz_en2y", "00000000-0000-0000-C15A-EA1A7847D6C0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "37", "102158", "102158", "86-88 Collins Street", "Melbourne (CBD)", "Collins Quarter ", "290", "144.9705847", "-37.81393777", [ null, "-37.81393777", "144.9705847", null, false, null ] ]
+, [ "row-p47m-8bpk~5442", "00000000-0000-0000-A162-CFFA53A4C534", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "52", "592048", "592048", "188-202 King Street", "Melbourne (CBD)", "La Di Da", "458", "144.9556244", "-37.81551353", [ null, "-37.81551353", "144.9556244", null, false, null ] ]
+, [ "row-fpdc.wwdb_tpv2", "00000000-0000-0000-3B3A-2F3019F3416F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "48", "103626", "103626", "114-122 Exhibition Street", "Melbourne (CBD)", "European Bier Cafe", "550", "144.9711999", "-37.81285806", [ null, "-37.81285806", "144.9711999", null, false, null ] ]
+, [ "row-g295-iabn-razp", "00000000-0000-0000-F61A-3DAF405A8AC8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "35", "105919", "105919", "267 Little Collins Street", "Melbourne (CBD)", "Polepole Bar", "100", "144.9656034", "-37.81483458", [ null, "-37.81483458", "144.9656034", null, false, null ] ]
+, [ "row-it3h_jfd6_4b4z", "00000000-0000-0000-ACC7-EB8DCB16EF4D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "361", "109842", "109842", "240-248 Victoria Street", "North Melbourne", "Central Club Hotel", "150", "144.9581264", "-37.80591439", [ null, "-37.80591439", "144.9581264", null, false, null ] ]
+, [ "row-mg2y_gk2s-f28r", "00000000-0000-0000-DFE0-6B547854C6F1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "64", "104659", "104659", "67-73 Hardware Lane", "Melbourne (CBD)", "Charlie's Bar", "143", "144.960908", "-37.81323451", [ null, "-37.81323451", "144.960908", null, false, null ] ]
+, [ "row-uxv4-uzcj-wq48", "00000000-0000-0000-1A49-045EC530EA5E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103924", "103924", "107-109 Flinders Lane", "Melbourne (CBD)", "Jack & Bones", "230", "144.9708344", "-37.81560645", [ null, "-37.81560645", "144.9708344", null, false, null ] ]
+, [ "row-a79f.75v6_smhu", "00000000-0000-0000-2848-306CFAB7BB93", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "55", "109284", "109284", "191-205 Swanston Street", "Melbourne (CBD)", "Cocoon Bar", "200", "144.9649993", "-37.81309229", [ null, "-37.81309229", "144.9649993", null, false, null ] ]
+, [ "row-323p_vq7g~52hp", "00000000-0000-0000-36F7-7DC840F9680B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "104003", "104003", "2-8 Queen Street", "Melbourne (CBD)", "Candela Nuevo", "300", "144.9627098", "-37.81858716", [ null, "-37.81858716", "144.9627098", null, false, null ] ]
+, [ "row-k8xn_7ffm-45ta", "00000000-0000-0000-28A3-09CCCBCFF8B0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "806", "110343", "640947", "27-45 Whiteman Street", "Southbank", "Kingpin Bowling Crown / Playtime", "347", "144.9583432", "-37.82559096", [ null, "-37.82559096", "144.9583432", null, false, null ] ]
+, [ "row-srjt_n4e3.g92f", "00000000-0000-0000-70FE-353B3D674DEE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "105691", "105691", "209-211 Lonsdale Street", "Melbourne (CBD)", "Boilermaker House", "180", "144.9662609", "-37.8114331", [ null, "-37.8114331", "144.9662609", null, false, null ] ]
+, [ "row-rcap.u9c2_pms5", "00000000-0000-0000-BB73-48A684F10238", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "108068", "108068", "111-129 Queen Street", "Melbourne (CBD)", "CitiClub On Queen Hotel ", "940", "144.9606367", "-37.81581152", [ null, "-37.81581152", "144.9606367", null, false, null ] ]
+, [ "row-tstc~up5k~wi6a", "00000000-0000-0000-9DF1-BC1DF8D687BE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "61", "105308", "105308", "203-207 King Street", "Melbourne (CBD)", "Bar Humbug", "30", "144.9549691", "-37.81538904", [ null, "-37.81538904", "144.9549691", null, false, null ] ]
+, [ "row-wnf5-4uga.q5gg", "00000000-0000-0000-A567-D5C0BEFBB6CB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "37", "102158", "102158", "86-88 Collins Street", "Melbourne (CBD)", "Ra", "83", "144.9705847", "-37.81393777", [ null, "-37.81393777", "144.9705847", null, false, null ] ]
+, [ "row-muhz_7g3x-zrey", "00000000-0000-0000-13CB-86CB753BE62F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "131", "108844", "108844", "1-5 Spencer Street", "Docklands", "Crown Plaza", "60", "144.9549939", "-37.8226581", [ null, "-37.8226581", "144.9549939", null, false, null ] ]
+, [ "row-qr7b-fhar_intj", "00000000-0000-0000-FB13-FBBBF2DE69A1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "107", "108561", "108561", "380-388 Russell Street", "Melbourne (CBD)", "Blue Moon Bar", "170", "144.9660836", "-37.80749583", [ null, "-37.80749583", "144.9660836", null, false, null ] ]
+, [ "row-w9nk-unvi-xkn4", "00000000-0000-0000-2336-A4695EE11596", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1103", "558180", "558180", "122-148 Harbour Esplanade", "Docklands", "Locker Room Club Bar", "500", "144.9475776", "-37.81656591", [ null, "-37.81656591", "144.9475776", null, false, null ] ]
+, [ "row-pwpg~awqb_65uj", "00000000-0000-0000-462B-B37F23E68D84", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "87", "106057", "106057", "106 Little Lonsdale Street", "Melbourne (CBD)", "Troika Bar ", "60", "144.96859", "-37.8091536", [ null, "-37.8091536", "144.96859", null, false, null ] ]
+, [ "row-f6qq~c6h7~wwv4", "00000000-0000-0000-3A3E-627FCB30863B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "228", "101450", "101450", "223-227 Canning Street", "Carlton", "Dan O'Connell Hotel", "100", "144.9733817", "-37.79303229", [ null, "-37.79303229", "144.9733817", null, false, null ] ]
+, [ "row-88hs-dvsr.hg2b", "00000000-0000-0000-5C89-9A612FDA2DF2", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Co", "560", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-m2jv.9qs2~fc9k", "00000000-0000-0000-4D7F-F5446727C385", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "102200", "102200", "12-14 Corrs Lane", "Melbourne (CBD)", "Fad Gallery", "80", "144.9684328", "-37.81123016", [ null, "-37.81123016", "144.9684328", null, false, null ] ]
+, [ "row-ctin~wrrp-9xx5", "00000000-0000-0000-DEDA-6CAA8C909C5D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103947", "103947", "317-323 Flinders Lane", "Melbourne (CBD)", "Sebel Melbourne - Flinders Lane", "60", "144.9637238", "-37.81771479", [ null, "-37.81771479", "144.9637238", null, false, null ] ]
+, [ "row-fexp-qdwe-88nt", "00000000-0000-0000-527D-93EFF71D6184", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "270", "664626", "104468", "230 Grattan Street", "Parkville", "HJC Bar", "200", "144.9612468", "-37.79739836", [ null, "-37.79739836", "144.9612468", null, false, null ] ]
+, [ "row-4mwz~s6h9-qhkw", "00000000-0000-0000-E7CC-FF54ED6083F1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "87", "101023", "101023", "25 Bennetts Lane", "Melbourne (CBD)", "Bennetts Lane Jazz Club", "300", "144.967558", "-37.80889245", [ null, "-37.80889245", "144.967558", null, false, null ] ]
+, [ "row-drz7.2g8x_m6wh", "00000000-0000-0000-8F4B-814D93137979", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1103", "558180", "558180", "122-148 Harbour Esplanade", "Docklands", "Legends Bar", "250", "144.9475776", "-37.81656591", [ null, "-37.81656591", "144.9475776", null, false, null ] ]
+, [ "row-97sf-immt~3yyi", "00000000-0000-0000-3448-93B4478A10F4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "108068", "108068", "111-129 Queen Street", "Melbourne (CBD)", "Karstens At CQ ", "170", "144.9606367", "-37.81581152", [ null, "-37.81581152", "144.9606367", null, false, null ] ]
+, [ "row-eazh~gwv3-ubeb", "00000000-0000-0000-F0C4-C488F236E2E5", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Crown Entertainment Complex", "320", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-gksj-sykh_kcfy", "00000000-0000-0000-F6F8-E53A01B5BFEC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "613", "595153", "109643", "166 Albert Street", "East Melbourne", "Cohen Cellars Wine Bar", "40", "144.9856254", "-37.81004657", [ null, "-37.81004657", "144.9856254", null, false, null ] ]
+, [ "row-5244.ccsx.xvnz", "00000000-0000-0000-F9DF-3DDE49C1F39D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "6", "578327", "573333", "2 Swanston Street", "Melbourne (CBD)", "Zinc at Federation Square", "1000", "144.9699175", "-37.81784465", [ null, "-37.81784465", "144.9699175", null, false, null ] ]
+, [ "row-hx6t-cwkk-uugb", "00000000-0000-0000-40B4-71BEE96B14AE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "97", "105493", "105493", "52 La Trobe Street", "Melbourne (CBD)", "Karaoke Box", "300", "144.9672465", "-37.80828608", [ null, "-37.80828608", "144.9672465", null, false, null ] ]
+, [ "row-9awv_99v8_ns24", "00000000-0000-0000-DB41-624C5DCDDC0A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "56", "101202", "101202", "206-218 Bourke Street", "Melbourne (CBD)", "Rainbow Karaoke", "400", "144.9668768", "-37.81259409", [ null, "-37.81259409", "144.9668768", null, false, null ] ]
+, [ "row-fdvj_mhmz-3hvi", "00000000-0000-0000-96D7-F6D172A6E18F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "108537", "108537", "131-141 Russell Street", "Melbourne (CBD)", "QT Melbourne", "185", "144.967831", "-37.81342885", [ null, "-37.81342885", "144.967831", null, false, null ] ]
+, [ "row-sy4a.hq9p.eueq", "00000000-0000-0000-EFDF-E7602D3386AF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "419", "108876", "108876", "573-579 Spencer Street", "West Melbourne (Residential)", "McMahons", "160", "144.9469867", "-37.80740767", [ null, "-37.80740767", "144.9469867", null, false, null ] ]
+, [ "row-swnd~yyk2.dr8r", "00000000-0000-0000-77D6-348DE044A927", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "74", "108103", "108103", "244-250 Queen Street", "Melbourne (CBD)", "Bar 420", "200", "144.959964", "-37.81269018", [ null, "-37.81269018", "144.959964", null, false, null ] ]
+, [ "row-kt8z-pxr5_9ygc", "00000000-0000-0000-075C-4C197B0B8F87", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109392", "109392", "248-258 Swanston Street", "Melbourne (CBD)", "The Toff In Town", "342", "144.9652504", "-37.81199559", [ null, "-37.81199559", "144.9652504", null, false, null ] ]
+, [ "row-qctf-8tvv-gr3s", "00000000-0000-0000-65DD-F638297EB3A3", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "804", "110542", "110484", "20-30 Convention Centre Place", "Southbank", "Aerial Events", "900", "144.9523782", "-37.82539976", [ null, "-37.82539976", "144.9523782", null, false, null ] ]
+, [ "row-ijne.afeb_xfyi", "00000000-0000-0000-ABE4-CB18AF4A67BB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "76", "589841", "105749", "221 Little Lonsdale Street", "Melbourne (CBD)", "Strike Bowling", "370", "144.9657034", "-37.810658", [ null, "-37.810658", "144.9657034", null, false, null ] ]
+, [ "row-ypx9-nvzq.ege3", "00000000-0000-0000-CD2B-E841A75C72B0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "105694", "105694", "233-237 Lonsdale Street", "Melbourne (CBD)", "The Emerald Peacock", "300", "144.9655481", "-37.81158031", [ null, "-37.81158031", "144.9655481", null, false, null ] ]
+, [ "row-5qnf-7xus.z8xf", "00000000-0000-0000-5D8F-603475A1B2E0", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "4", "104034", "104034", "207-361 Flinders Street", "Melbourne (CBD)", "Clocks At Flinders Street Station", "300", "144.9654659", "-37.81866105", [ null, "-37.81866105", "144.9654659", null, false, null ] ]
+, [ "row-dcfq.n37d.6scu", "00000000-0000-0000-99FB-C37E877D1B02", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "730", "110473", "110473", "65-73 Haig Street", "Southbank", "The Backlot Studios ", "78", "144.95658", "-37.82791506", [ null, "-37.82791506", "144.95658", null, false, null ] ]
+, [ "row-v7eu_bcyt.zpxq", "00000000-0000-0000-DBFC-45632CFCF9FB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "15", "109257", "109257", "1-7 Swanston Street", "Melbourne (CBD)", "Young & Jacksons", "470", "144.967023", "-37.817356", [ null, "-37.817356", "144.967023", null, false, null ] ]
+, [ "row-6dh3.n4wk-78ea", "00000000-0000-0000-41D2-275FB638F289", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "12", "103994", "103994", "502-504 Flinders Street", "Melbourne (CBD)", "Insignia on Flinders", "100", "144.9576571", "-37.82005619", [ null, "-37.82005619", "144.9576571", null, false, null ] ]
+, [ "row-r7a4_4e94_9mke", "00000000-0000-0000-F131-8986246769C1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109390", "109390", "264-266 Swanston Street", "Melbourne (CBD)", "Goldilocks", "300", "144.9651474", "-37.81181063", [ null, "-37.81181063", "144.9651474", null, false, null ] ]
+, [ "row-rbar~4c5b-mz6b", "00000000-0000-0000-92E5-868A096AE587", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "6", "578324", "573333", "2 Swanston Street", "Melbourne (CBD)", "Transit Rooftop Bar", "200", "144.9699175", "-37.81784465", [ null, "-37.81784465", "144.9699175", null, false, null ] ]
+, [ "row-utjy_mbty-etrd", "00000000-0000-0000-DCB3-6C4A60782BDB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "267", "106251", "106251", "66-88 Lygon Street", "Carlton", "Lagers On Lygon", "80", "144.9665747", "-37.80530329", [ null, "-37.80530329", "144.9665747", null, false, null ] ]
+, [ "row-tihz~fers-5rvi", "00000000-0000-0000-99A6-843CF0C0B09D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "105", "109318", "109318", "427-457 Swanston Street", "Melbourne (CBD)", "The Oxford Scholar Hotel", "486", "144.9626932", "-37.80826292", [ null, "-37.80826292", "144.9626932", null, false, null ] ]
+, [ "row-jiw3~4qn8.ukyj", "00000000-0000-0000-BBFA-5E113A7D1E6F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "252", "106244", "106244", "160-162 Lygon Street", "Carlton", "Vodka Temple", "200", "144.9667699", "-37.80344164", [ null, "-37.80344164", "144.9667699", null, false, null ] ]
+, [ "row-rr3s~usnf~jnge", "00000000-0000-0000-6EE7-80DD137E4474", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "16", "104020", "104020", "150-162 Flinders Street", "Melbourne (CBD)", "Forum Theatre Bar", "1500", "144.9693866", "-37.81648541", [ null, "-37.81648541", "144.9693866", null, false, null ] ]
+, [ "row-z5tv-2kdm_5ac4", "00000000-0000-0000-F7C0-BE5D619FB132", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "105964", "105964", "188-194 Little Collins Street", "Melbourne (CBD)", "Gin Palace", "150", "144.9675807", "-37.81390779", [ null, "-37.81390779", "144.9675807", null, false, null ] ]
+, [ "row-kvkd-wxcw_rhnf", "00000000-0000-0000-814D-1EA58B4AFE70", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "347", "110920", "110920", "161-163 Errol Street", "North Melbourne", "Limerick Castle Hotel & Restaurant", "50", "144.9496139", "-37.80114341", [ null, "-37.80114341", "144.9496139", null, false, null ] ]
+, [ "row-494m.tueh_gi2y", "00000000-0000-0000-9425-035642097AA2", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "108067", "108067", "103-105 Queen Street", "Melbourne (CBD)", "Chaise Lounge", "140", "144.9608476", "-37.81614776", [ null, "-37.81614776", "144.9608476", null, false, null ] ]
+, [ "row-q2q2~yq7u~ykre", "00000000-0000-0000-1EBE-DA55B2494D6C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "861", "102503", "102503", "161-173 Domain Road", "South Yarra", "Botanical Hotel", "245", "144.9816996", "-37.83431735", [ null, "-37.83431735", "144.9816996", null, false, null ] ]
+, [ "row-75h4.7n7g~j55n", "00000000-0000-0000-3C84-DA1AEDE85328", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "72", "110106", "110106", "263-267 William Street", "Melbourne (CBD)", "Metropolitan Hotel", "300", "144.9565837", "-37.81292397", [ null, "-37.81292397", "144.9565837", null, false, null ] ]
+, [ "row-uky5~532y-wbtx", "00000000-0000-0000-A679-9D97D56C6FB6", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103165", "103165", "1-5 Elizabeth Street", "Melbourne (CBD)", "Dreams Gentlemen's Club", "160", "144.964608", "-37.81805666", [ null, "-37.81805666", "144.964608", null, false, null ] ]
+, [ "row-gp9j~ucuz_msfx", "00000000-0000-0000-0EBF-B985FD606468", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "64", "104376", "104376", "14-20 Goldie Place", "Melbourne (CBD)", "Word", "200", "144.960731", "-37.81328585", [ null, "-37.81328585", "144.960731", null, false, null ] ]
+, [ "row-rsdr~2bqt-txty", "00000000-0000-0000-1F33-87053946A531", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "54", "105852", "105852", "401-405 Little Bourke Street", "Melbourne (CBD)", "The Apartment Restaurant Club Lounge", "250", "144.9610348", "-37.81403196", [ null, "-37.81403196", "144.9610348", null, false, null ] ]
+, [ "row-rx54-as9a-vcjd", "00000000-0000-0000-744C-1FF20D313890", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109392", "109392", "248-258 Swanston Street", "Melbourne (CBD)", "Mesa Verde", "175", "144.9652504", "-37.81199559", [ null, "-37.81199559", "144.9652504", null, false, null ] ]
+, [ "row-2dy2.ff9r-548q", "00000000-0000-0000-8989-E32964C235F8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "56", "101202", "101202", "206-218 Bourke Street", "Melbourne (CBD)", "VS Sports Bar", "80", "144.9668768", "-37.81259409", [ null, "-37.81259409", "144.9668768", null, false, null ] ]
+, [ "row-9g8g_pme3.5ahv", "00000000-0000-0000-7EEC-85E69F17A22A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "56", "108538", "108538", "163-169 Russell Street", "Melbourne (CBD)", "Eden Bar", "350", "144.9676479", "-37.81246709", [ null, "-37.81246709", "144.9676479", null, false, null ] ]
+, [ "row-tm9v_k6e6.waah", "00000000-0000-0000-4BBB-87CB3E384E68", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "84", "106037", "106037", "324-328 Little Lonsdale Street", "Melbourne (CBD)", "Alchemist's Refuge", "60", "144.9599402", "-37.81167474", [ null, "-37.81167474", "144.9599402", null, false, null ] ]
+, [ "row-tfic-mgcu.j5xz", "00000000-0000-0000-11EA-C1C7D4DB1A8F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "435", "107481", "107481", "65-67 Peel Street", "West Melbourne (Residential)", "The Drunken Poet Pty Ltd", "50", "144.955498", "-37.80666721", [ null, "-37.80666721", "144.955498", null, false, null ] ]
+, [ "row-jnnj_6kqt~zijn", "00000000-0000-0000-C480-EA7EEA63A659", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "375", "103810", "103810", "5-17 Flemington Road", "North Melbourne", "RMIT Village Melbourne", "356", "144.9558713", "-37.80140031", [ null, "-37.80140031", "144.9558713", null, false, null ] ]
+, [ "row-knyk.b5c3_53b9", "00000000-0000-0000-ADDA-947A27861681", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "95", "109314", "109314", "401-405 Swanston Street", "Melbourne (CBD)", "Red Love Bar Musicroom", "360", "144.963217", "-37.80904283", [ null, "-37.80904283", "144.963217", null, false, null ] ]
+, [ "row-b3c9.s473-arf7", "00000000-0000-0000-ED79-91FF17FB652E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "215", "108202", "108202", "415-421 Rathdowne Street", "Carlton", "The Beaufort", "50", "144.9704262", "-37.79652005", [ null, "-37.79652005", "144.9704262", null, false, null ] ]
+, [ "row-35at~veqd~siwr", "00000000-0000-0000-80EE-E0C9BDB6D957", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "14", "103951", "103951", "341-347 Flinders Lane", "Melbourne (CBD)", "Bull And Bear Tavern", "415", "144.9630313", "-37.81782313", [ null, "-37.81782313", "144.9630313", null, false, null ] ]
+, [ "row-nqgn.zxat-fpmv", "00000000-0000-0000-2B1E-8FDA49A6D8A3", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "55", "101194", "101194", "314-336 Bourke Street", "Melbourne (CBD)", "Mural Hall", "900", "144.9638295", "-37.81344503", [ null, "-37.81344503", "144.9638295", null, false, null ] ]
+, [ "row-cj6r~cers~e5ss", "00000000-0000-0000-93C9-910F47E6375E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "508", "100820", "100820", "38-44 Barrett Street", "Kensington", "Henry St Brewhouse", "75", "144.9343238", "-37.79811158", [ null, "-37.79811158", "144.9343238", null, false, null ] ]
+, [ "row-z97x_xjgp~2huu", "00000000-0000-0000-E92B-94ACD357EAB5", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "807", "108054", "108054", "40-56 Queens Bridge Street", "Southbank", "Mesh/Tonic Bar", "300", "144.9597768", "-37.8238538", [ null, "-37.8238538", "144.9597768", null, false, null ] ]
+, [ "row-sc8q.32bg-6v8a", "00000000-0000-0000-86E6-349EDB05DBD1", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "27", "541562", "102071", "121-131 Collins Street", "Melbourne (CBD)", "RU-CO", "400", "144.9698467", "-37.81516811", [ null, "-37.81516811", "144.9698467", null, false, null ] ]
+, [ "row-s5pe~p7is_k8yx", "00000000-0000-0000-17FA-8A59237FBF89", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Atrium Bar", "100", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-facf.ypkb-y2fg", "00000000-0000-0000-B21B-A665E3543A2C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "804", "110542", "110484", "20-30 Convention Centre Place", "Southbank", "West Village NYC", "150", "144.9523782", "-37.82539976", [ null, "-37.82539976", "144.9523782", null, false, null ] ]
+, [ "row-xgma.9buk~ja8m", "00000000-0000-0000-90F0-55494B2440FA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "74", "106018", "106018", "395-397 Little Lonsdale Street", "Melbourne (CBD)", "Horse Bazaar", "158", "144.9602499", "-37.81190077", [ null, "-37.81190077", "144.9602499", null, false, null ] ]
+, [ "row-873p.229h-wjda", "00000000-0000-0000-F393-E59EE84ABDBA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "101154", "101154", "483-501 Bourke Street", "Melbourne (CBD)", "RACV City Club", "410", "144.9595925", "-37.81587957", [ null, "-37.81587957", "144.9595925", null, false, null ] ]
+, [ "row-hzzy~374b~8axb", "00000000-0000-0000-48CB-DF1B6304B711", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "108069", "108069", "131-141 Queen Street", "Melbourne (CBD)", "The Turf Bar & Restaurant", "527", "144.9605409", "-37.81549904", [ null, "-37.81549904", "144.9605409", null, false, null ] ]
+, [ "row-rx32~qh7n.m8j5", "00000000-0000-0000-2B02-C8C5971528B4", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "100727", "100727", "5-9 Bank Place", "Melbourne (CBD)", "Mitre Tavern", "300", "144.9603112", "-37.81680457", [ null, "-37.81680457", "144.9603112", null, false, null ] ]
+, [ "row-ac5k~4yf3~nijh", "00000000-0000-0000-6078-1F364433F323", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "74", "106017", "106017", "391-393 Little Lonsdale Street", "Melbourne (CBD)", "La La Land", "175", "144.9603411", "-37.81187439", [ null, "-37.81187439", "144.9603411", null, false, null ] ]
+, [ "row-8ftj-p5bg_xauw", "00000000-0000-0000-F622-73FDC2B8F3BF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "53", "110145", "110145", "170-176 William Street", "Melbourne (CBD)", "Cafe Lavita On William ", "50", "144.9582309", "-37.81492637", [ null, "-37.81492637", "144.9582309", null, false, null ] ]
+, [ "row-vyst_e6zp_uk92", "00000000-0000-0000-6526-DED8724D1724", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "87", "106059", "106059", "100 Little Lonsdale Street", "Melbourne (CBD)", "Gami Chicken and Beer", "73", "144.9687195", "-37.80913623", [ null, "-37.80913623", "144.9687195", null, false, null ] ]
+, [ "row-i9st.suu3-p4rf", "00000000-0000-0000-F853-C6FB3A9395E3", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "58", "105657", "105657", "21 Liverpool Street", "Melbourne (CBD)", "Double Happiness Bar / New Gold Mountain", "164", "144.9712639", "-37.81118056", [ null, "-37.81118056", "144.9712639", null, false, null ] ]
+, [ "row-566w~gtab~sc6s", "00000000-0000-0000-23C3-1FC729F40907", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "16", "103938", "103938", "187 Flinders Lane", "Melbourne (CBD)", "Mon Bijou", "180", "144.9683751", "-37.81635789", [ null, "-37.81635789", "144.9683751", null, false, null ] ]
+, [ "row-gju6~mnx9-v46w", "00000000-0000-0000-08A6-7F766D0E05DD", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "104", "103219", "103219", "413-417 Elizabeth Street", "Melbourne (CBD)", "Workshop", "230", "144.9605226", "-37.80918797", [ null, "-37.80918797", "144.9605226", null, false, null ] ]
+, [ "row-5vjw.e7yq~tt87", "00000000-0000-0000-8955-0D29138C7F0B", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "109392", "109392", "248-258 Swanston Street", "Melbourne (CBD)", "Cookie", "300", "144.9652504", "-37.81199559", [ null, "-37.81199559", "144.9652504", null, false, null ] ]
+, [ "row-ntrh.cvrx~8w25", "00000000-0000-0000-F847-FAD312AE7B72", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101218", "101218", "118-122 Bourke Street", "Melbourne (CBD)", "Fireflies Club", "72", "144.969548", "-37.81207418", [ null, "-37.81207418", "144.969548", null, false, null ] ]
+, [ "row-8j7z_hbai_ensj", "00000000-0000-0000-3A5B-841F44158D8F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "102199", "102199", "16-20 Corrs Lane", "Melbourne (CBD)", "Euro House / Pulp Club", "200", "144.9683854", "-37.81112914", [ null, "-37.81112914", "144.9683854", null, false, null ] ]
+, [ "row-kx4z_83fr.pjni", "00000000-0000-0000-72AC-6159BD396D6A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "103", "104086", "104086", "211-213 Franklin Street", "Melbourne (CBD)", "Island Somewhere", "120", "144.957829", "-37.8097181", [ null, "-37.8097181", "144.957829", null, false, null ] ]
+, [ "row-e8n9-ydka~reig", "00000000-0000-0000-7989-1A424F379D6E", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "345", "103402", "103402", "33 Errol Street", "North Melbourne", "Townhall Hotel North Melbourne", "80", "144.9489068", "-37.80414139", [ null, "-37.80414139", "144.9489068", null, false, null ] ]
+, [ "row-w7rg_b9y6_bi4e", "00000000-0000-0000-ED5B-C6259D86D150", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103926", "103926", "125-127 Flinders Lane", "Melbourne (CBD)", "GoGo Bar ", "300", "144.9703998", "-37.81568875", [ null, "-37.81568875", "144.9703998", null, false, null ] ]
+, [ "row-r3dr.7atb~2e44", "00000000-0000-0000-D468-50F459CB3013", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "23", "102098", "102098", "415-417 Collins Street", "Melbourne (CBD)", "The Sherlock Holmes Inn", "131", "144.9608681", "-37.81746814", [ null, "-37.81746814", "144.9608681", null, false, null ] ]
+, [ "row-3e2e~xeai.qvdt", "00000000-0000-0000-B702-CA35797A66EF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "362", "109843", "109843", "232-238 Victoria Street", "North Melbourne", "The Public Bar", "180", "144.9585875", "-37.80593327", [ null, "-37.80593327", "144.9585875", null, false, null ] ]
+, [ "row-55yy~xbzp_6jge", "00000000-0000-0000-D0E0-7CED6BAACB1F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "658", "110266", "110266", "120 Brunton Avenue", "East Melbourne", "Spotless Services", "2800", "144.9832828", "-37.81992883", [ null, "-37.81992883", "144.9832828", null, false, null ] ]
+, [ "row-ejuc_t5vb~e8ky", "00000000-0000-0000-82B2-73505194F933", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Melbourne Central Lion Hotel", "550", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-d62u.hw7f~f3ts", "00000000-0000-0000-5E0A-56BE77181C16", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "102198", "102198", "22-26 Corrs Lane", "Melbourne (CBD)", "Gr8 Bar", "50", "144.9683249", "-37.8109979", [ null, "-37.8109979", "144.9683249", null, false, null ] ]
+, [ "row-e39m-rxwj_juvq", "00000000-0000-0000-ABD3-98EEABB737CE", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "35", "102141", "102141", "280-292 Collins Street", "Melbourne (CBD)", "The Charles Dickens Tavern", "450", "144.9645574", "-37.81567229", [ null, "-37.81567229", "144.9645574", null, false, null ] ]
+, [ "row-5yth-psqt.vwmb", "00000000-0000-0000-F2E4-2079EAD6A96F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "57", "101214", "101214", "146-150 Bourke Street", "Melbourne (CBD)", "FM Karaoke Bar", "100", "144.9687387", "-37.81235798", [ null, "-37.81235798", "144.9687387", null, false, null ] ]
+, [ "row-zsup-znvs_vtfh", "00000000-0000-0000-0368-73466CCB03E8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "46", "111394", "111394", "16-30 Russell Place", "Melbourne (CBD)", "Bar Ampere", "60", "144.9674275", "-37.81355434", [ null, "-37.81355434", "144.9674275", null, false, null ] ]
+, [ "row-qiwr~zvgh.wpyc", "00000000-0000-0000-6938-6EB693443BA9", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "17", "103592", "103592", "11-37 Exhibition Street", "Melbourne (CBD)", "The Fair Trader Cafe", "118", "144.9717262", "-37.81546152", [ null, "-37.81546152", "144.9717262", null, false, null ] ]
+, [ "row-pqvm-mfvh~6su9", "00000000-0000-0000-BA34-BF0728A74236", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "247", "106238", "106238", "192-202 Lygon Street", "Carlton", "Players On Lygon", "200", "144.9670522", "-37.80245924", [ null, "-37.80245924", "144.9670522", null, false, null ] ]
+, [ "row-m7ri-z7ma.k8z2", "00000000-0000-0000-4E85-6BF0C738169F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "105937", "105937", "435-443 Little Collins Street", "Melbourne (CBD)", "Marrakech Bar", "200", "144.9600859", "-37.81638558", [ null, "-37.81638558", "144.9600859", null, false, null ] ]
+, [ "row-mjpt.qk2j.k4ft", "00000000-0000-0000-F96E-683876062E0F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "63", "105867", "105867", "428-432 Little Bourke Street", "Melbourne (CBD)", "DANSK Restaurant", "100", "144.9597229", "-37.81392392", [ null, "-37.81392392", "144.9597229", null, false, null ] ]
+, [ "row-dx6p_rcz6_v7mv", "00000000-0000-0000-5B10-2784DDDEF1DB", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "110148", "110148", "98-110 William Street", "Melbourne (CBD)", "The Australian Club", "280", "144.9591218", "-37.81674542", [ null, "-37.81674542", "144.9591218", null, false, null ] ]
+, [ "row-yr28.jckd-hjgq", "00000000-0000-0000-84D9-C035D04B0E1D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "108550", "108550", "213-217 Russell Street", "Melbourne (CBD)", "Escape City", "100", "144.9672365", "-37.81156167", [ null, "-37.81156167", "144.9672365", null, false, null ] ]
+, [ "row-5y9x-y9b8.eead", "00000000-0000-0000-7525-D36981A03BAA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "11", "108971", "108971", "561-585 Flinders Lane", "Melbourne (CBD)", "Holiday Inn On Flinders Melbourne", "100", "144.9551524", "-37.82020482", [ null, "-37.82020482", "144.9551524", null, false, null ] ]
+, [ "row-u3tm.kypj_ifeq", "00000000-0000-0000-0903-718FB19B723F", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "43", "105954", "105954", "422-428 Little Collins Street", "Melbourne (CBD)", "Little Red Pocket", "200", "144.960326", "-37.8159076", [ null, "-37.8159076", "144.960326", null, false, null ] ]
+, [ "row-yjcf_vi5k_di7h", "00000000-0000-0000-71CC-FB0AED229763", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "66", "105695", "105695", "239 Lonsdale Street", "Melbourne (CBD)", "Ferdydurke", "100", "144.965378", "-37.81159495", [ null, "-37.81159495", "144.965378", null, false, null ] ]
+, [ "row-bfkq_3pp5~26bg", "00000000-0000-0000-91E0-9CBE4AFF03A8", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "58", "108986", "108986", "161 Spring Street", "Melbourne (CBD)", "The European", "703", "144.9724291", "-37.8109513", [ null, "-37.8109513", "144.9724291", null, false, null ] ]
+, [ "row-wayh~yfq6-n98p", "00000000-0000-0000-9F16-99EECBD7DD7C", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "109302", "109302", "281-287 Swanston Street", "Melbourne (CBD)", "Bornga", "40", "144.9643593", "-37.81143223", [ null, "-37.81143223", "144.9643593", null, false, null ] ]
+, [ "row-n4yw_97jn_e4mg", "00000000-0000-0000-6CEB-C830094D20F9", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Velvet Bar", "100", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-4he8~8pgn-y9v8", "00000000-0000-0000-9CBA-D8AA6EE18825", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "62", "105384", "105384", "204-208 King Street", "Melbourne (CBD)", "Great Western Hotel", "390", "144.9554836", "-37.81521196", [ null, "-37.81521196", "144.9554836", null, false, null ] ]
+, [ "row-emaa.fga3~dvvh", "00000000-0000-0000-BF8F-910BA8558BDC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "597190", "110477", "8 Whiteman Street", "Southbank", "Club 23", "450", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-tez3~yyfz-fszc", "00000000-0000-0000-B978-FF39CA2F79B9", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "67", "105673", "105673", "103-105 Lonsdale Street", "Melbourne (CBD)", "Bomba Tapas Bar and Rooftop", "145", "144.9692541", "-37.81049305", [ null, "-37.81049305", "144.9692541", null, false, null ] ]
+, [ "row-sd7f~4ays~h4bx", "00000000-0000-0000-3F3A-7C96CDAB1316", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "6", "578324", "573333", "2 Swanston Street", "Melbourne (CBD)", "Transport Hotel", "600", "144.9699175", "-37.81784465", [ null, "-37.81784465", "144.9699175", null, false, null ] ]
+, [ "row-gew6-ynfz~cusu", "00000000-0000-0000-55CE-557E07AA0E83", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "255", "101593", "101593", "91-95 Cardigan Street", "Carlton", "Hotel Lincoln", "154", "144.9645057", "-37.80448528", [ null, "-37.80448528", "144.9645057", null, false, null ] ]
+, [ "row-dv54~cxi6.pe2g", "00000000-0000-0000-3C4A-998E0110CB96", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "87", "108567", "108567", "300 Russell Street", "Melbourne (CBD)", "Jankara Karaoke", "80", "144.966904", "-37.80951668", [ null, "-37.80951668", "144.966904", null, false, null ] ]
+, [ "row-th6g-8tna.ykzd", "00000000-0000-0000-E8C2-BA8FB8296B03", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "801", "110335", "110335", "1-9 Southbank Boulevard", "Southbank", "Left Bank Melbourne", "400", "144.9628914", "-37.8210403", [ null, "-37.8210403", "144.9628914", null, false, null ] ]
+, [ "row-n3eg~tnph_e354", "00000000-0000-0000-E377-C4D0F874ED01", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "1104", "576024", "576023", "747-757 Bourke Street", "Docklands", "The Nixon Hotel", "300", "144.9479753", "-37.81925128", [ null, "-37.81925128", "144.9479753", null, false, null ] ]
+, [ "row-fs8s.qe3a~qpnp", "00000000-0000-0000-075A-D780118BD8F7", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "The Waiting Room", "120", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-pjtv.ynhv~zyse", "00000000-0000-0000-42DD-D132B44F45C6", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "77", "108573", "108573", "270 Russell Street", "Melbourne (CBD)", "Whisky and Alement", "90", "144.9671591", "-37.81011116", [ null, "-37.81011116", "144.9671591", null, false, null ] ]
+, [ "row-bhed-fmhp_jsza", "00000000-0000-0000-DEDC-F1360E3EA4CF", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "109304", "109304", "301-303 Swanston Street", "Melbourne (CBD)", "Sahara Restaurant", "140", "144.9641938", "-37.81107765", [ null, "-37.81107765", "144.9641938", null, false, null ] ]
+, [ "row-jr7i.9qdb-5upx", "00000000-0000-0000-E649-F884A2F6D85A", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Hoyts", "300", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-v2u3_effz-wrwp", "00000000-0000-0000-EF64-2F874799DAEA", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "27", "102064", "102064", "69-73 Collins Street", "Melbourne (CBD)", "Harley House", "210", "144.9713489", "-37.8143446", [ null, "-37.8143446", "144.9713489", null, false, null ] ]
+, [ "row-4zsy~sq6d~qhn6", "00000000-0000-0000-EF20-B94D1718B9FC", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "803", "111175", "110477", "8 Whiteman Street", "Southbank", "Therapy", "600", "144.9586604", "-37.82312164", [ null, "-37.82312164", "144.9586604", null, false, null ] ]
+, [ "row-k9gt-euhb_r6s3", "00000000-0000-0000-EE24-BF24FBCED298", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "41", "105948", "105948", "582-584 Little Collins Street", "Melbourne (CBD)", "Saint & Rogue", "300", "144.9553525", "-37.81740928", [ null, "-37.81740928", "144.9553525", null, false, null ] ]
+, [ "row-pwx3-ecmy~pyqx", "00000000-0000-0000-34A8-3E1D98635221", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "35", "558610", "558610", "256 Collins Street", "Melbourne (CBD)", "The Butterfly Club", "190", "144.9652914", "-37.81552514", [ null, "-37.81552514", "144.9652914", null, false, null ] ]
+, [ "row-ruby.5c6j-uicd", "00000000-0000-0000-BA88-0337CF027B17", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "85", "105746", "105746", "183-265 La Trobe Street", "Melbourne (CBD)", "Equinox Bar Restaurant", "80", "144.9630189", "-37.81073331", [ null, "-37.81073331", "144.9630189", null, false, null ] ]
+, [ "row-dk6a-jchc~i3yj", "00000000-0000-0000-5CB3-0A4C39CACE1D", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "74", "104662", "104662", "106-112 Hardware Street", "Melbourne (CBD)", "Nieuw Amsterdam", "200", "144.9606805", "-37.81213605", [ null, "-37.81213605", "144.9606805", null, false, null ] ]
+, [ "row-szhg-h6pz.yvxn", "00000000-0000-0000-C024-95F1C9D21527", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "268", "108154", "108153", "49 Rathdowne Street", "Carlton", "Epocha Restaurant", "124", "144.9685944", "-37.80578725", [ null, "-37.80578725", "144.9685944", null, false, null ] ]
+, [ "row-nm47_fnvc.g36j", "00000000-0000-0000-4B1D-9AA38F850777", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "104", "104085", "104085", "167-175 Franklin Street", "Melbourne (CBD)", "Disco Bar", "200", "144.9591538", "-37.80895967", [ null, "-37.80895967", "144.9591538", null, false, null ] ]
+, [ "row-u6hh.e8jw.p7f8", "00000000-0000-0000-56EE-7CD198D41115", 0, 1536186189, null, 1536186189, null, "{ }", "2017", "33", "100730", "100730", "12-16 Bank Place", "Melbourne (CBD)", "Melbourne Savage Club", "90", "144.9605765", "-37.81654467", [ null, "-37.81654467", "144.9605765", null, false, null ] ]
+ ]
+}
