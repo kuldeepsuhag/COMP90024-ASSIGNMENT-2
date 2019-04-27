@@ -1,0 +1,47 @@
+##### add proxy just needs to run once.
+# - name: set proxy
+#   become: yes
+#   shell: |
+#     sudo echo 'http_proxy="http://wwwproxy.unimelb.edu.au:8000"
+#     https_proxy="http://wwwproxy.unimelb.edu.au:8000"
+#     ftp_proxy="http://wwwproxy.unimelb.edu.au:8000"' >> /etc/environment
+
+- name: install docker
+  become: yes
+  apt:
+    name: ['docker']
+    state:  latest
+    update_cache: yes
+
+# - name: install node.js
+#   become: yes
+#   apt:
+#     name: ['nodejs']
+#     state:  latest
+#     update_cache: yes
+
+- name: install pip
+  become: yes
+  apt:
+    name: ['python-pip']
+    state: latest
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"
+
+- name: Update pip
+  become: yes
+  pip:
+    name: ['pip']
+    state: latest
+
+- name: Install Tweepy
+  become: yes
+  pip:
+    name: ['tweepy']
+    state: latest
+
+- name: Install openstack
+  become: yes
+  pip:
+    name: ['openstacksdk']
+    state: latest
