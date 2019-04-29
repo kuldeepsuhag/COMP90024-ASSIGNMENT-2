@@ -22,7 +22,7 @@ db_user_name = 'admin'
 db_name = 'admin'
 db_pass = 'admin'
 db_address = "http://127.0.0.1:5984/"
-db_tweet_name = 'tweet'
+db_tweet_name = 'raw_tweets'
 # twitter api
 app_auth = {
     'HongtaoN': Keys(
@@ -45,15 +45,3 @@ app_auth = {
     )
     # add other users access info here n change in harvestMode.py as well
 }
-
-# geo box
-MELBOURNE_STR = [144.6550006954, -38.5089967291, 145.3498310249, -37.5916213868]  # http://boundingbox.klokantech.com
-SYD_STR = [150.9786666445, -34.0173030936, 151.3082564883, -33.7048428499]
-
-AUS_STR = MELBOURNE_STR + SYD_STR
-
-# topics
-envy_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/envy.txt"
-lust_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/lust.txt"
-pride_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/pride.txt"
-sloth_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/sloth.txt"
