@@ -13,17 +13,16 @@ class Keys:
         self.asec = asec
 
 
-# couchdb
-# db_name = 'testing'
-# db_admin = 'admin'
-# db_password = 'admin'
-# couchdb_uri = "http://127.0.0.1:5984"  couchdb address
 db_user_name = 'admin'
 db_name = 'admin'
 db_pass = 'admin'
 db_address = "http://127.0.0.1:5984/"
+<<<<<<< Updated upstream
 db_tweet_name = 'raw_tweets'
 # twitter api
+=======
+db_tweet_name = 'raw_tweet'
+>>>>>>> Stashed changes
 app_auth = {
     'HongtaoN': Keys(
         "xy3M4v47HoS3ReS3X47UedgdB",
@@ -43,5 +42,19 @@ app_auth = {
         "976598832321519616-CaBhQMefcmSeUHCoOK2Gc27OClibqU3",
         "ECVXpPGbCiH9a3crKrkYHzN71kiFSPW9lLZA4WAPxu2dK"
     )
-    # add other users access info here n change in harvestMode.py as well
+
 }
+<<<<<<< Updated upstream
+=======
+
+
+MELBOURNE_STR = [144.6550006954, -38.5089967291, 145.3498310249, -37.5916213868]  # http://boundingbox.klokantech.com
+SYD_STR = [150.9786666445, -34.0173030936, 151.3082564883, -33.7048428499]
+
+AUS_STR = MELBOURNE_STR + SYD_STR
+
+envy_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/envy.txt"
+lust_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/lust.txt"
+pride_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/pride.txt"
+sloth_file = "/Users/kuldeepsuhag/Desktop/sample/cluster-n-cloud-computing/analyser/scripts/crawler/topic_glossary/sloth.txt"
+>>>>>>> Stashed changes

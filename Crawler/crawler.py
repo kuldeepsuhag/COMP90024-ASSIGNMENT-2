@@ -5,29 +5,15 @@ import math
 from urllib3.exceptions import ProtocolError
 import sys
 from config import app_auth, db_user_name, db_name, db_pass, db_address, db_tweet_name
-# consumer_key = "c67rYQVxBfyQAqrN9oMes59PB"
-# consumer_secret = "ougb9ujqYgT1AJ1VtcsjVvpjfKTkqj0IljTrcgZBTp4kgbDw4M"
-#
-#
-# access_token = "981533044522627072-YFGoc8FBwK6pqOXc5teJhFnPcu3ghtg"
-# access_token_secret = "yXc72kyxq8F5EqtDacD1Kdneddm1XnfS1u57uS3tVyBmx"
+
 user = sys.argv[1]
-# auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-# auth.set_access_token(access_token, access_token_secret)
 auth = tweepy.OAuthHandler(app_auth[user].ckey, app_auth[user].csec)
-# auth = tweepy.AppAuthHandler(app_auth[user].ckey, app_auth[user].csec)
 auth.set_access_token(app_auth[user].atoken, app_auth[user].asec)
 print("connection started...")
 print(sys.argv[1] + " start crawling")
 
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
-# db_tweet_name = 'tweet'
-# db_user_name = 'admin'
-# db_name = 'admin'
-# db_pass = 'admin'
-# db_address = "http://127.0.0.1:5984/"
-#db_server = couchdb.Server(db_address)
 db_server = couchdb.Server("http://%s:%s@127.0.0.1:5984/" % (db_name,db_pass))
 if db_tweet_name in db_server:
     db_tweet = db_server[db_tweet_name]
