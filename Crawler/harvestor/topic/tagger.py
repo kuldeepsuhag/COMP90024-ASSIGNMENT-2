@@ -1,5 +1,5 @@
 import re
-from crawler.config import envy_file,lust_file,pride_file,sloth_file, wrath_file, crime_file
+from crawler.config import envy_file,lust_file,pride_file,sloth_file, wrath_file, gluttony_file
 
 
 def loadTopicFiles(param):
@@ -33,11 +33,11 @@ class Tagger():
                     if not containTopic(topics, text):
                         topics = loadTopicFiles(wrath_file)
                         if not containTopic(topics,text):
-                            topics = loadTopicFiles(crime_file)
+                            topics = loadTopicFiles(gluttony_file)
                             if not containTopic(topics, text):
                                 topic = "Bad tweet"
                             else:
-                                topic = "crime"
+                                topic = "gluttony"
                         else:
                             topic = "wrath"
                     else:

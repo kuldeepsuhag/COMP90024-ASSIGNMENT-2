@@ -50,10 +50,10 @@ AUS_STR = MELBOURNE_STR+SYD_STR
 
            
 # topics
-envy_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/envy.txt"
-lust_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/lust.txt"
-pride_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/pride.txt"
-sloth_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/sloth.txt"
-wrath_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/wrath"
-crime_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/analyser/topic/topic_glossary/crime.txt"
+envy_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/envy.txt"
+lust_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/lust.txt"
+pride_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/pride.txt"
+sloth_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/sloth.txt"
+wrath_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/wrath"
+gluttony_file = "/Users/kuldeepsuhag/Desktop/Cloud Computiing/Assignment2/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/gluttony.txt"
 
