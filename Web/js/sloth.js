@@ -29,23 +29,7 @@ var chartData = {
 if (chBar) {
   new Chart(chBar, {
   type: 'bar',
-  data: chartData,
-  options: {
-    scales: {
-      xAxes: [{
-        barPercentage: 0.4,
-        categoryPercentage: 0.5
-      }],
-      yAxes: [{
-        ticks: {
-          beginAtZero: false
-        }
-      }]
-    },
-    legend: {
-      display: false
-    }
-  }
+  data: chartData
   });
 }
 
