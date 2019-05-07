@@ -1,0 +1,333 @@
+
+
+Crime : 
+
+
+1. Assault : assault is used for 'Wrath' scenario
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Assault and related offence count. The direct and confrontational infliction of force, injury or violence upon a person or a group of people. Includes: serious assault, assault police, emergency services or other authorised officer and common assault.
+
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+
+[631, 323, 395, 1514, 2345, 847, 1211, 497, 1698, 754, 834, 363, 573, 664, 3039, 931, 725, 610, 1010, 192, 871, 8, 615, 606, 1380, 1235, 838, 725, 548, 1596]
+
+
+2. Sexual offences : used for 'Lust' scenario 
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Sexual offences count. Acts, or intent of acts, of a sexual nature against another person, which are non-consensual or where consent is proscribed (for example, the person is legally deemed incapable of giving consent because of youth or temporary/permanent incapacity). Includes: rape, indecent assault, incest, sexual offences against children and other sexual offences.
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+
+[249, 211, 188, 370, 756, 257, 371, 123, 463, 275, 288, 103, 130, 172, 724, 260, 215, 145, 275, 86, 245, 2, 180, 253, 270, 298, 171, 494, 219, 739]
+
+
+
+
+3. Stalking : 'Lust' 
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Stalking, harassment and threatening behaviour offence count. Acts intended to cause physical or mental harm, or arouse apprehension or fear through a repeated course of unreasonable conduct. This includes actions that are intended to harass, threaten or invade the privacy of an individual. Includes: stalking, harassment and private nuisance, and threatening behaviour.
+
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+[246, 98, 204, 329, 650, 225, 336, 192, 568, 199, 197, 106, 117, 207, 526, 343, 216, 167, 258, 71, 178, 2, 135, 179, 503, 369, 187, 209, 144, 416]
+
+
+
+4. Arson : 'Wrath'
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Arson offence count. Intentionally and without lawful excuse destroying or damaging property by fire and intentionally or recklessly causing a bushfire. Includes: cause damage by fire, cause a bushfire and other fire related offences.
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+
+[34, 12, 18, 102, 172, 58, 95, 32, 180, 53, 39, 17, 18, 35, 55, 85, 29, 31, 42, 15, 36, 1, 9, 28, 78, 91, 55, 67, 26, 160]
+
+
+
+
+5. Theft : 'sloth'
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Theft offence count. The unlawful taking or obtaining of money or goods, not involving the use of force, threat of force or violence, coercion or deception, with the intent to permanently or temporarily deprive the owner of the use of the money or goods, or the receiving or handling of money or goods obtained unlawfully. Includes: motor vehicle theft, steal from a motor vehicle, steal from a retail store, theft of a bicycle, receiving or handling stolen goods, fare evasion and other theft.
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+
+[3446, 1554, 3329, 5801, 7548, 6685, 4400, 2261, 7259, 3645, 4641, 1971, 3460, 2986, 12919, 3875, 4325, 3461, 5478, 927, 5280, 49, 4145, 3325, 5897, 4630, 5508, 2275, 2526, 6977]
+
+
+
+6. Robbery : 'wrath'
+
+Data source : LGA Number of Offences in Victoria by Offence Type 2012 - 2016
+
+Description:  Robbery offence count. The unlawful taking of property, with intent to permanently deprive the owner of the property, from the immediate possession, control, custody or care of a person, accompanied by the use, or threatened use, of immediate force or violence. Includes: aggravated robbery and non-aggravated robbery.
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ']
+
+[33, 24, 39, 266, 147, 113, 70, 41, 96, 62, 60, 31, 125, 51, 416, 88, 112, 92, 79, 10, 82, None, 65, 62, 81, 153, 156, 33, 45, 83]
+
+
+Homeless : 
+
+7. Homeless: 'Envy'
+
+Data Source : LGA Estimating Homelessness 2016
+
+Description : This dataset contains estimates of the prevalence of homelessness on Census night 2016, derived from the Census of Population and Housing using the Australian Bureau of Statistics (ABS) definition of homelessness. Prevalence is an estimate of how many people experienced homelessness at a particular point-in-time. 
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong ', 'Mornington ', 'Kingston ']
+
+
+[461, 212, 383, 1134, 931, 989, 465, 215, 861, 352, 250, 206, 705, 425, 926, 267, 865, 409, 785, 77, 1461, 5, 523, 736, 455, 414, 844, 335, 382, 630, 269, 0]
+
+Habit : 
+
+
+8. Sedentary : 'sloth' & 'gluttony'
+
+Data Source : SLA Sedentary behaviour (sitting hours per day) 
+
+Description : The proportion of people who sit for 7 hours or more per day. 
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Glen Eira ', 'Greater Dandenong ', 'Greater Geelong ', 'Hobsons Bay ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Mornington Peninsula ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ']
+
+[34.3, 24.8, 23.3, 36.2, 36.3, 35.3, 38.3, 29.0, 33.5, 29.9, 27.4, 30.6, 33.9, 33.5, 33.0, 30.1, 28.3, 28.6, 30.1, 29.4, 30.8, 18.8, 24.9, 25.6, 22.0, 41.9, 36.2, 27.9]
+
+
+Health : 
+
+
+9. Waist : 'sloth' & 'gluttony'
+
+Data Source : PHIDU - Prevalence of Selected Health Risk Factors - Adults (LGA) 2014-2015
+TUA_PHIDU
+
+Description : Estimated Number Of People Aged 18 Years And Over With A Waist Measurement Indicating An Increased/ Substantially Increased Risk Of Developing Chronic Diseases (Modelled Estimates) 2014-15 AS
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Greater Geelong ', 'Glen Eira ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Mornington ', 'Kingston ']
+
+[59.8, 54.3, 52.1, 60.1, 63.2, 60.4, 62.9, 61.0, 64.8, 59.6, 58.7, 56.1, 59.1, 62.3, 47.7, 67.0, 56.5, 59.3, 62.0, 65.3, 57.0, 60.1, 55.4, 66.7, 52.6, 56.4, 64.2, 66.6, 52.7, 61.8, None, 70.7]
+
+10. Overweight : 'sloth' & 'gluttony'
+
+Data Source : PHIDU - Prevalence of Selected Health Risk Factors - Adults (LGA) 2014-2015
+TUA_PHIDU
+
+Description : Estimated Number Of People Aged 18 Years And Over Who Were Overweight (But Not Obese) (Modelled Estimates) 2014-15 ASR per 100
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Greater Geelong ', 'Glen Eira ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Mornington ', 'Kingston ']
+
+[38.6, 38.4, 38.6, 37.5, 38.4, 37.8, 37.9, 38.6, 37.8, 38.5, 38.4, 38.4, 37.9, 38.3, 33.0, 38.8, 37.4, 38.6, 38.0, 35.3, 38.2, 39.5, 36.6, 36.5, 37.4, 37.7, 38.5, 38.9, 37.0, 38.5, None, 34.2]
+
+11. Stress : 'wrath'
+
+Data Source : PHIDU - Prevalence of Selected Health Risk Factors - Adults (LGA) 2014-2015
+TUA_PHIDU
+
+Description : Estimated Number Of People Aged 18 Years And Over With High Or Very High Psychological Distress, Based On The Kessler 10 Scale (K10) (Modelled Estimates) 2014-15 ASR per 100
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Greater Geelong ', 'Glen Eira ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Mornington ', 'Kingston ']
+
+[10.7, 7.3, 7.3, 15.9, 14.9, 13.4, 15.0, 12.7, 15.3, 11.8, 11.6, 8.3, 13.2, 12.2, 10.8, 15.5, 10.1, 11.6, 13.2, 14.1, 10.0, 8.8, 10.4, 9.7, 8.5, 9.8, 15.0, 14.8, 10.7, 12.2, None, 9.0]
+
+
+12. bloodPress : 'wrath' 
+
+Data Source : PHIDU - Prevalence of Selected Health Risk Factors - Adults (LGA) 2014-2015
+TUA_PHIDU
+
+Description : Estimated Number Of People Aged 18 Years And Over Who Had High Blood Pressure (Modelled Estimates) 2014-15 ASR per 100
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Greater Geelong ', 'Glen Eira ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Mornington ', 'Kingston ']
+
+[21.5, 16.6, 19.3, 29.2, 25.0, 28.4, 24.0, 27.3, 25.8, 22.9, 22.9, 18.4, 32.5, 23.7, 43.1, 23.9, 20.3, 22.2, 31.7, 22.4, 22.2, 22.9, 31.9, 15.9, 24.7, 23.0, 24.1, 22.0, 36.4, 23.7, None, 24.0]
+
+13. Drink : might be 'sloth'? Or 'wrath' ? Or 'envy' ?
+
+Data Source : PHIDU - Prevalence of Selected Health Risk Factors - Adults (LGA) 2014-2015
+TUA_PHIDU
+
+Description : 
+
+['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Greater Geelong ', 'Glen Eira ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Mornington ', 'Kingston ']
+
+[59.8, 54.3, 52.1, 60.1, 63.2, 60.4, 62.9, 61.0, 64.8, 59.6, 58.7, 56.1, 59.1, 62.3, 47.7, 67.0, 56.5, 59.3, 62.0, 65.3, 57.0, 60.1, 55.4, 66.7, 52.6, 56.4, 64.2, 66.6, 52.7, 61.8, None, 70.7]
+
+Income : 
+
+Data Source : SA3-W15e Occupation by Total Personal Income (weekly) by Public/Private Employer Indicator-Census 2016
+
+Description : SA3 based data for Occupation by Total Personal Income (Weekly) by Public/Private Sector Employer, in Working Population Profile (WPP), 2016 Census. Count of employed persons aged 15 years and over. W15 is broken up into 5 sections (W15a - W15e), this section contains 'Total Negative Nil income Managers' - 'Total Total Total'. The data is by SA3 2016 boundaries. Periodicity: 5-Yearly. 
+
+Income 1 - 149:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[3897, 574, 1397, 2931, 1708, 1897, 1552, 1447, 1135, 2787, 976, 1604, 1817, 2836, 1136, 1896, 487, 3029, 280, 2240, 1209, 2495, 2308, 1517, 2393, 3174, 1975, 1126, 1513, 1718, 2637, 2164]
+
+Income 150 - 299
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[3886, 759, 2239, 3242, 1834, 2078, 1559, 1780, 924, 2851, 1542, 2628, 2111, 2883, 1354, 2030, 766, 3094, 263, 2350, 1251, 2583, 2307, 1634, 3277, 3885, 2448, 1159, 2031, 1676, 2905, 2102]
+
+Income 300 - 399
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[4296, 782, 2628, 3175, 1650, 2127, 1512, 1808, 842, 2961, 1753, 2935, 2038, 2754, 1313, 1905, 893, 2951, 264, 2242, 1269, 2508, 2191, 1524, 3729, 3944, 2611, 1202, 2042, 1716, 2991, 2168]
+
+Income 400 - 499
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[5096, 958, 3106, 3452, 1761, 2287, 1663, 2023, 970, 3331, 1860, 3470, 2316, 3322, 1398, 2253, 994, 3473, 275, 2508, 1331, 2826, 2516, 1795, 4506, 4492, 2975, 1414, 2365, 1877, 3329, 2567]
+
+Income 500 - 649:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[7927, 1387, 4593, 4989, 2353, 3560, 2404, 3000, 1316, 5207, 2617, 5268, 3257, 5264, 1812, 3471, 1611, 5392, 476, 3710, 1977, 4092, 3830, 2785, 8075, 7187, 4863, 2427, 3342, 2923, 5219, 4245]
+
+Income 650 - 799:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[9684, 1686, 6625, 5910, 2528, 4468, 2878, 3801, 1468, 6702, 3156, 7108, 4014, 7470, 2088, 4412, 1885, 7315, 524, 4820, 2515, 4632, 4513, 3213, 13643, 9623, 6823, 3472, 4116, 3657, 7428, 5177]
+
+Income 800 - 999:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[11368, 1923, 10426, 7539, 2835, 5612, 3499, 4370, 1639, 7986, 3977, 10036, 4627, 8943, 2446, 5105, 1995, 9124, 489, 5867, 2834, 5120, 5353, 3209, 17754, 12483, 8071, 4367, 5100, 3897, 9510, 5847]
+
+Income 1000 - 1249:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[11601, 1888, 12518, 8724, 2773, 6110, 3733, 4390, 1599, 7446, 4416, 11527, 4951, 8917, 2499, 5546, 1919, 9135, 506, 5738, 2850, 4794, 4989, 3051, 17728, 14638, 8062, 4954, 4959, 3860, 9705, 5757]
+
+Income 1250 - 1499:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[8006, 1213, 9698, 6703, 1716, 4607, 2537, 3044, 1105, 4850, 3146, 8812, 3488, 5837, 1683, 3955, 1267, 5802, 377, 3804, 1993, 3104, 3411, 1927, 10952, 10918, 5321, 3464, 3420, 2577, 6208, 3885]
+
+Income 1500 - 1749:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[6540, 905, 8735, 6204, 1448, 4008, 2259, 2546, 921, 3583, 2626, 7517, 2925, 4555, 1436, 3227, 937, 4529, 344, 2893, 1634, 2340, 2411, 1426, 8154, 9620, 3825, 2746, 2620, 1950, 4559, 2963]
+
+Income 1750 - 1999:
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[4328, 640, 6326, 4356, 1025, 2861, 1464, 1611, 604, 2381, 1732, 4940, 1884, 2959, 1007, 2078, 593, 2926, 224, 1865, 1027, 1469, 1651, 937, 5087, 6653, 2438, 1968, 1686, 1190, 2900, 1840]
+
+Income 2000 - 2999
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[5314, 725, 11780, 7196, 1248, 3977, 2070, 1880, 644, 2581, 2735, 8173, 2507, 3788, 1399, 2126, 555, 3949, 259, 2068, 1421, 1498, 1811, 797, 6400, 10060, 2567, 2836, 2091, 1200, 3199, 1915]
+
+Income 3000 - more
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[2531, 442, 8081, 5231, 774, 1980, 1645, 868, 425, 1220, 2291, 5699, 1575, 2002, 1176, 1359, 292, 1966, 174, 984, 789, 724, 938, 380, 3034, 5358, 1168, 1253, 1093, 509, 1396, 1109]
+
+Income nil income (0)
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[537, 131, 543, 575, 236, 332, 272, 277, 139, 449, 300, 450, 368, 477, 183, 288, 111, 450, 60, 342, 175, 395, 326, 279, 726, 677, 421, 254, 305, 321, 531, 325]
+
+Occupation :
+
+1. Clerical and administrative workers
+
+Clerical and administrative workers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[11393, 1472, 13922, 10454, 2712, 7803, 3649, 4371, 1750, 6648, 3815, 11090, 5094, 8201, 2648, 5205, 1479, 9380, 587, 5391, 3099, 4523, 5078, 2533, 15787, 16044, 7091, 3881, 4399, 3530, 7442, 5612]
+
+
+
+Community and personal service workers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[11092, 2181, 6618, 8362, 3859, 5112, 4726, 4104, 2224, 6035, 4316, 7020, 5914, 5897, 2434, 5613, 2501, 6037, 762, 4938, 2766, 5400, 4696, 3873, 7218, 9035, 5733, 3119, 4541, 4689, 7291, 5566]
+
+
+
+Inadequately described Not stated
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[1556, 258, 1736, 1303, 386, 834, 564, 639, 219, 1011, 579, 1535, 626, 1179, 356, 659, 285, 1147, 96, 701, 368, 707, 725, 405, 2410, 1992, 1317, 753, 796, 573, 1353, 775]
+
+
+Labourers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[8405, 997, 4676, 3371, 1785, 2422, 1796, 2796, 1174, 6433, 1920, 3730, 2546, 6374, 1308, 2710, 1487, 6361, 369, 4390, 1743, 4756, 3973, 2993, 12522, 6894, 6031, 4032, 3184, 2932, 6451, 4140]
+
+
+
+Machinery operators and drivers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[5241, 640, 2728, 1014, 741, 882, 800, 2324, 461, 4616, 467, 2304, 799, 5224, 262, 1271, 1187, 5396, 93, 2161, 993, 2175, 2237, 1645, 15429, 5482, 7064, 4858, 2923, 2329, 10378, 2112]
+
+
+Managers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[9175, 1938, 17546, 10763, 3022, 5602, 4003, 4091, 1749, 6155, 5454, 13505, 4473, 9137, 2752, 3848, 1490, 8770, 536, 5093, 3020, 5186, 4361, 2563, 14080, 14670, 5699, 4056, 4407, 2912, 6928, 4845]
+
+
+
+Professionals
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[19887, 3452, 27254, 24092, 4730, 15879, 7976, 7583, 3072, 10600, 9550, 28235, 11733, 10234, 5607, 12834, 2755, 11222, 1347, 8317, 4883, 6574, 7288, 4337, 16371, 29920, 9857, 4976, 8489, 5151, 10259, 9409]
+
+
+Sales workers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[9641, 1352, 7213, 6875, 4706, 4043, 3056, 4346, 1377, 7439, 4296, 7336, 3710, 8380, 4174, 3637, 1387, 7544, 248, 5670, 3235, 4558, 6215, 3444, 9404, 8929, 6115, 2735, 5275, 3939, 7134, 5395]
+
+
+
+Technicians and trades workers
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[11529, 2204, 9787, 6293, 2835, 4748, 3453, 3721, 2254, 7558, 3787, 7848, 4440, 9606, 2154, 5294, 2264, 9452, 687, 6385, 2889, 6437, 5471, 3603, 16160, 13035, 6803, 5445, 3823, 4191, 7526, 5923]
+
+
+
+Total personal income not stated Total
+
+['Geelong', 'Darebin ', 'Port Phillip', 'Boroondara', 'Manningham ', 'Whitehorse ', 'Bayside', 'Darebin ', 'Nillumbik ', 'Whittlesea ', 'Stonnington ', 'Yarra', 'Glen Eira', 'Kingston', 'Stonnington ', 'Banyule', 'Moreland ', 'Knox', 'Manningham ', 'Maroondah', 'Whitehorse ', 'Yarra Ranges', 'Casey ', 'Casey ', 'Dandenong', 'Monash', 'Brimbank', 'Hobsons Bay', 'Maribyrnong', 'Melton ', 'Wyndham', 'Frankston']
+
+[87929, 14482, 91469, 72531, 24767, 47317, 30023, 33985, 14284, 56495, 34186, 82607, 39333, 64228, 21686, 41060, 14845, 65313, 4708, 43033, 23001, 40312, 40035, 25405, 109376, 105992, 55715, 33858, 37839, 30237, 64770, 43761]
+
+
+
+
