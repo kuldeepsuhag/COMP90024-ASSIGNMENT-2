@@ -34,12 +34,30 @@
               </ul>
             </div>
           </nav>
-            <h1 class="mt-4 text-center">Wrath</h1>
+            <h7 class="mt-4 text-center">Wrath</h7>
           <!--Google map-->
           <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 400px">
               <!-- <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
               style="border:0" allowfullscreen></iframe> -->
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1drqCaQ-dSugGVn2oJnpUgRSdIcwvE5iK" width="640" height="480"></iframe>
+              <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1drqCaQ-dSugGVn2oJnpUgRSdIcwvE5iK" width="640" height="480"></iframe> -->
+              <script>          
+                function initMap() {
+                  var map_options = { };  
+                  var map = new google.maps.Map(document.getElementById("map-container-google-1"),map_options);
+                  var kmlUrl = 'https://sites.google.com/site/unimelbccc19/testkml/melbourne.kml';
+                  var kmlOptions = { map: map};
+                  var kmlLayer = new google.maps.KmlLayer(kmlUrl, kmlOptions);
+                  kmlLayer.addListener('click', function(event) {
+                    // var content = event.featureData.infoWindowHtml;
+                    // var testimonial = document.getElementById('capture');
+                    // testimonial.innerHTML = content;
+                    console.log('test');
+                  });
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHctoaB-_S_HicHBL6KFgc7zZyWB6GQX8&callback=initMap">
+              </script>
           </div>      
           <!--Google Maps-->
         <!-- /#page-content-wrapper -->
@@ -49,5 +67,7 @@
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <div id="map"></div>
+      <div id="capture"></div>
     </body>
 </html>
