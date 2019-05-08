@@ -1,0 +1,13 @@
+<h3>Tweets</h3>
+<ul>
+<% tweets.forEach(function(tweet){%>
+    <li>
+        <h4><%= tweet.value.topic %></h4>
+            <ul>
+                <li>
+                    <%= tweet.value.ploygon %>
+                </li>
+            </ul>
+    </li>
+<%});%>
+</ul>

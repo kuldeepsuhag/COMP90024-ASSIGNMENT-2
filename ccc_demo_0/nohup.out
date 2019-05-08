@@ -1,0 +1,248 @@
+
+> application-name@0.0.1 start /home/ubuntu/ccc_demo_0
+> nodejs ./bin/www
+
+[ 'tweets' ]
+[90mGET /Gluttony.html [36m304 [90m4ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m0ms[0m
+[90mGET / [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m13ms - 0b[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m3ms - 0b[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m2ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m0ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m3ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m3ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Gluttony.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /index.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/wrath.js [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m2ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m3ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m0ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m0ms[0m
+[90mGET /Gluttony.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m1ms[0m
+[90mGET /index.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+
+> application-name@0.0.1 start /home/ubuntu/ccc_demo_0
+> nodejs ./bin/www
+
+[ 'tweets' ]
+[90mGET /index.html [36m304 [90m4ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m12ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /Lust.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/lust.js [36m304 [90m0ms[0m
+[90mGET /Envy.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Gluttony.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+receive get request!
+{ Error: ESOCKETTIMEDOUT
+    at ClientRequest.<anonymous> (/home/ubuntu/ccc_demo_0/node_modules/request/request.js:816:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at ClientRequest.emit (events.js:208:7)
+    at Socket.emitTimeout (_http_client.js:711:34)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11) code: 'ESOCKETTIMEDOUT', connect: false }
+[90mPOST / [32m200 [90m5014ms - 42b[0m
+receive get request!
+{ Error: ESOCKETTIMEDOUT
+    at ClientRequest.<anonymous> (/home/ubuntu/ccc_demo_0/node_modules/request/request.js:816:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at ClientRequest.emit (events.js:208:7)
+    at Socket.emitTimeout (_http_client.js:711:34)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:106:13)
+    at Socket.emit (events.js:208:7)
+    at Socket._onTimeout (net.js:420:8)
+    at ontimeout (timers.js:482:11) code: 'ESOCKETTIMEDOUT', connect: false }
+[90mPOST / [32m200 [90m5006ms - 42b[0m
+[90mGET / [36m304 [90m3ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET / [36m304 [90m2ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+receive get request!
+207716
+Melbourne: 194861
+Sydeny: 1703
+undefined
+[90mPOST / [32m200 [90m7294ms - 13b[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m6ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /Lust.html [36m304 [90m0ms[0m
+[90mGET /js/lust.js [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Gluttony.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m2ms[0m
+[90mGET /js/charts.js [36m304 [90m2ms[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /index.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m3ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m1ms - 0b[0m
+[90mGET /Lust.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m0ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Gluttony.html [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Envy.html [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m2ms[0m
+[90mGET /Envy.html [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+receive get request!
+207716
+Melbourne: 194861
+Sydeny: 1703
+undefined
+[90mPOST / [32m200 [90m8687ms - 13b[0m
+receive get request!
+207716
+Melbourne: 194861
+Sydeny: 1703
+undefined
+[90mPOST / [32m200 [90m7468ms - 13b[0m
+receive get request!
+207716
+Melbourne: 194861
+Sydeny: 1703
+undefined
+[90mPOST / [32m200 [90m7213ms - 13b[0m
+[90mGET / [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m4ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/wrath.js [36m304 [90m0ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m2ms - 0b[0m
+[90mGET /Lust.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/lust.js [36m304 [90m0ms[0m
+[90mGET /Envy.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m0ms[0m
+[90mGET /js/charts.js [36m304 [90m0ms[0m
+[90mGET /Sloth.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/sloth.js [36m304 [90m1ms[0m
+[90mGET /Gluttony.html [36m304 [90m1ms[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/charts.js [36m304 [90m1ms[0m
+[90mGET /Wrath.html [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m4ms - 0b[0m
+[90mGET /css/style.css [36m304 [90m1ms[0m
+[90mGET /js/wrath.js [36m304 [90m1ms[0m
+[90mGET /datamaps.world.min.js [33m404 [90m1ms - 0b[0m
