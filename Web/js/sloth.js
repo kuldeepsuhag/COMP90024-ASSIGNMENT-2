@@ -33,3 +33,7 @@ if (chBar) {
   });
 }
 
+function showMap() {
+  location.href='sloth-map.html';
+  // show google map
+}

@@ -26,3 +26,7 @@ var myChart = new Chart(ctx, {
   }
 });
 
+function showMap() {
+  location.href='lust-map.html';
+  // show google map
+}
