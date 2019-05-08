@@ -1,3 +1,13 @@
+// // send json data request
+// $(document).ready(function(){
+//   $("button").click(function(){
+//     $.get("\wrath", function(data, status){
+//       alert("Data: " + data + "\nStatus: " + status);
+//       var jsonData = data
+//     });
+//   });
+// });
+
 // Our labels along the x-axis
 var areas = ['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong '];
 // For drawing the lines
@@ -49,6 +59,10 @@ function syddata(){
   data.datasets[2].data = robbery;
   data.labels = areas;
   myChart.update();
-  // location.href = "crimInSydney.html";
+}
+
+function showMap() {
+  myChart.clear();
+  // show google map
 }
 
