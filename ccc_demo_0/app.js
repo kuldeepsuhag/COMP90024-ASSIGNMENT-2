@@ -20,6 +20,7 @@ const couch = new NodeCouchDb({
 
 const dbName = 'tweets';
 const viewUrl = '_design/all_tweets/_view/all';
+const wrathUrl = '_design/all_tweets/_view/wrath';
 
 couch.listDatabases().then(function(dbs){
 	console.log(dbs);
@@ -47,7 +48,7 @@ var rawGrid = fs.readFileSync('./public/mel_polygen.json');
 var grid = JSON.parse(rawGrid);
 var grids = Object.entries(grid);
 
-app.post('/', function(req, res){
+app.post('/wrath', function(req, res){
 	console.log("receive get request!");
 	couch.get(dbName, viewUrl).then(
 		function(data, headers, status){
@@ -71,14 +72,6 @@ app.post('/', function(req, res){
 						}
 						count++;
 					}
-					// grids.forEach(function(element){
-					// 	polygon = element[1][0][0][0];
-					// 	var contain = inside(tweet.value.coordinates.coordinates, polygon);
-					// 	if (contain){
-					// 		result[count][1]++;
-					// 	}
-					// 	count++;
-					// });
 				}
 			});
 			console.log(result);
@@ -89,6 +82,27 @@ app.post('/', function(req, res){
 			res.send(err);
 		});
 });
+
+
+app.post('/wrath_map', function(req, res){
+	console.log("receive wrath request!");
+	couch.get(dbName, wrathUrl).then(
+		function(data, headers, status){
+			var result = [];
+			data.data.rows.forEach(function(tweet){
+				if(tweet.value.place == "Melbourne"){
+					result.push(tweet.value.coordinates.coordinates);
+				}
+			});
+			console.log(result.length);
+			res.send(result);
+		},
+		function(err){
+			console.log(err);
+			res.send(err);
+		});
+});
+
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
