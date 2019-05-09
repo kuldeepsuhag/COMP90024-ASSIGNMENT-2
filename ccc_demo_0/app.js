@@ -5,23 +5,25 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var NodeCouchDb = require('node-couchdb');
+var inside = require('point-in-polygon');
+const fs = require('fs');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
-// const couch = new NodeCouchDb({
-// 	auth:{
-// 		user: 'admin',
-// 		password: 'admin'
-// 	}
-// });
+const couch = new NodeCouchDb({
+	auth:{
+		user: 'admin',
+		password: 'admin'
+	}
+});
 
-// const dbName = 'tweets';
-// const viewUrl = '_design/all_tweets/_view/all';
+const dbName = 'tweets';
+const viewUrl = '_design/all_tweets/_view/all';
 
-// couch.listDatabases().then(function(dbs){
-// 	console.log(dbs);
-// });
+couch.listDatabases().then(function(dbs){
+	console.log(dbs);
+});
 
 var app = express();
 
@@ -41,32 +43,46 @@ app.use(express.static('public'));
 app.use('/', routes);
 app.use('/users', users);
 
+var rawGrid = fs.readFileSync('./public/mel_polygen.json');
+var grid = JSON.parse(rawGrid);
+var grids = Object.entries(grid);
+
 app.post('/', function(req, res){
 	console.log("receive get request!");
 	couch.get(dbName, viewUrl).then(
 		function(data, headers, status){
-			var test = 0;
 			var Melbourne = 0;
 			var Sydeny = 0;
-			var ploygon = 0;
+			var result = [];
+			grids.forEach(function(element){
+				result.push([element[0], 0]);
+			});
 			data.data.rows.forEach(function(tweet){
 				if(tweet.value.place == "Melbourne"){
 					Melbourne++;
-				}
-				if(tweet.value.place == "Sydney"){
-					Sydeny++;
-				}
-				test++;
-				if(tweet.value.ploygon == "Melbourne "){
-					ploygon++;
+					var polygon;
+					var count = 0;
+					for (let i = 0; i < grids.length; i++){
+						polygon = grids[i][1][0][0][0];
+						var contain = inside(tweet.value.coordinates.coordinates, polygon);
+						if (contain){
+							result[count][1]++;
+							break;
+						}
+						count++;
+					}
+					// grids.forEach(function(element){
+					// 	polygon = element[1][0][0][0];
+					// 	var contain = inside(tweet.value.coordinates.coordinates, polygon);
+					// 	if (contain){
+					// 		result[count][1]++;
+					// 	}
+					// 	count++;
+					// });
 				}
 			});
-			console.log(test);
-			console.log("Melbourne: " + Melbourne + "\n" + "Sydeny: " + Sydeny);
-			console.log("Melbourne ploygon: " + ploygon);
-			//console.log(data.data.rows);
-			console.log(status);
-			res.send([Melbourne, Sydeny, ploygon]);
+			console.log(result);
+			res.send(result);
 		},
 		function(err){
 			console.log(err);
