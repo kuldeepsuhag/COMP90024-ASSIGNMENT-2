@@ -91,6 +91,9 @@ app.post('/wrath_map', function(req, res){
 			var result = [];
 			data.data.rows.forEach(function(tweet){
 				if(tweet.value.place == "Melbourne"){
+					// var x = tweet.value.coordinates.coordinates[0].toFixed(2);
+					// var y = tweet.value.coordinates.coordinates[1].toFixed(2);
+					// result.push([parseFloat(x), parseFloat(y)]);
 					result.push(tweet.value.coordinates.coordinates);
 				}
 			});
