@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Team 9</title>
   </head>
@@ -50,8 +55,9 @@
                   kmlLayer.addListener('click', function(event) {
                     console.log('test');
                   });
+                  var Data = getData();
                   var heatmap = new google.maps.visualization.HeatmapLayer({
-                    data: getData(),
+                    data: Data,
                     radius: 5,
                     opacity: 0.6,
                     maxIntensity: 50
@@ -60,17 +66,21 @@
                 }
                 function getData() {
                     var rawData = [];
-                    const Http = new XMLHttpRequest();
-                    const url= '/wrath_map';
-                    Http.open("POST", url);
-                    Http.send();
-                    Http.onreadystatechange=(e)=>{
-                        rawData = Http.responseText;
-                        console.log(Http.responseText)
-                    }
+                    $.ajax({
+                      timeout : 60000,
+                      type:"post",
+                      async: false,
+                      url:"/wrath_map",
+                      data: { num: 123 },
+                      dataType:"json",
+                      success: function (data) {
+                        rawData = data;
+                        console.log(data.length);
+                      }
+                    });
                     var dataArray = [];
-                    for( var i = 0; i < rawData[0].length; i++) {
-                        var coord = new google.maps.LatLng(rawData[0][i][1], rawData[0][i][0]);
+                    for( var i = 0; i < rawData.length; i++) {
+                        var coord = new google.maps.LatLng(rawData[i][1], rawData[i][0]);
                         dataArray.push(coord);
                     }
                     return dataArray;
@@ -84,10 +94,6 @@
         <!-- /#page-content-wrapper -->
       </div>
       <!-- /#wrapper -->
-      <!-- Bootstrap core JavaScript -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       <div id="map"></div>
       <div id="capture"></div>
     </body>
