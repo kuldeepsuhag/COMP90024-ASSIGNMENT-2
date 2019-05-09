@@ -7,7 +7,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/Warth', function(req, res) {
-  res.redirect('Warth.html');
+  res.redirect('warth.html');
 });
 
 router.get('/Gluttony', function(req, res) {
