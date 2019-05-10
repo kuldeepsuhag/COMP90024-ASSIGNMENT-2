@@ -62,7 +62,7 @@ function syddata(){
 }
 
 function showMap() {
-  location.href='wrath-map.html';
+  location.href='envy-map.html';
   // show google map
 }
 

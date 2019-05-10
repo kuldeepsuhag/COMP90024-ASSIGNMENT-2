@@ -28,20 +28,20 @@ app.use(express.static('public'));
 app.use('/', routes);
 // app.use('/users', users);
 
-app.post('/positve', function(req, res){
-	console.log("receive envy request!");
-	var result = fs.readFileSync('./public/cache/positveMap.json');
+app.post('/positive', function(req, res){
+	console.log("receive positive request!");
+	var result = fs.readFileSync('./public/cache/positiveMap.json');
 	res.send(JSON.parse(result));
 });
 
 app.post('/negative', function(req, res){
-	console.log("receive envy request!");
+	console.log("receive negative request!");
 	var result = fs.readFileSync('./public/cache/negativeMap.json');
 	res.send(JSON.parse(result));
 });
 
 app.post('/netural', function(req, res){
-	console.log("receive envy request!");
+	console.log("receive netural request!");
 	var result = fs.readFileSync('./public/cache/netrualMap.json');
 	res.send(JSON.parse(result));
 });

@@ -7,6 +7,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Team 9</title>
   </head>
@@ -18,7 +23,6 @@
           <div class="list-group list-group-flush">
             <a href="index.html" class="list-group-item list-group-item-action bg-light">Introduction</a>
             <a href="wrath.html" class="list-group-item list-group-item-action bg-light">Wrath</a>
-            <a href="lust.html" class="list-group-item list-group-item-action bg-light">Lust</a>
             <a href="envy.html" class="list-group-item list-group-item-action bg-light">Envy</a>
             <a href="sloth.html" class="list-group-item list-group-item-action bg-light">Sloth</a>
             <a href="gluttony.html" class="list-group-item list-group-item-action bg-light">Gluttony</a>
@@ -34,19 +38,62 @@
               </ul>
             </div>
           </nav>
-            <h1 class="mt-4 text-center">Gluttony</h1>
+            <h7 class="mt-4 text-center">Gluttony</h7>
           <!--Google map-->
           <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 400px">
-              <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-              style="border:0" allowfullscreen></iframe>
+              <script>          
+                function initMap() {
+                  var map_options = { 
+                    zoom: 4,
+                    mapTypeId: 'satellite'
+                  };  
+                  var map = new google.maps.Map(document.getElementById("map-container-google-1"),map_options);
+                  var kmlUrl = 'https://sites.google.com/site/unimelbccc19/testkml/melbourne.kml';
+                  var kmlOptions = { map: map};
+                  var kmlLayer = new google.maps.KmlLayer(kmlUrl, kmlOptions);
+                  kmlLayer.addListener('click', function(event) {
+                    console.log('test');
+                  });
+                  var Data = getData();
+                  var heatmap = new google.maps.visualization.HeatmapLayer({
+                    data: Data,
+                    radius: 5,
+                    opacity: 0.6,
+                    maxIntensity: 50
+                    });
+                  heatmap.setMap(map);
+                }
+                function getData() {
+                    var rawData = [];
+                    $.ajax({
+                      timeout : 60000,
+                      type:"post",
+                      async: false,
+                      url:"/gluttony_map",
+                      data: { num: 123 },
+                      dataType:"json",
+                      success: function (data) {
+                        rawData = data;
+                        console.log(data.length);
+                      }
+                    });
+                    var dataArray = [];
+                    for( var i = 0; i < rawData.length; i++) {
+                        var coord = new google.maps.LatLng(rawData[i][1], rawData[i][0]);
+                        dataArray.push(coord);
+                    }
+                    return dataArray;
+                }
+              </script>
+              <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHctoaB-_S_HicHBL6KFgc7zZyWB6GQX8&libraries=visualization&callback=initMap">
+              </script>
           </div>      
           <!--Google Maps-->
         <!-- /#page-content-wrapper -->
       </div>
       <!-- /#wrapper -->
-      <!-- Bootstrap core JavaScript -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <div id="map"></div>
+      <div id="capture"></div>
     </body>
 </html>
