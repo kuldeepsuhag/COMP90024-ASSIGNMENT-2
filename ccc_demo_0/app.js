@@ -18,9 +18,12 @@ const couch = new NodeCouchDb({
 	}
 });
 
-const dbName = 'tweets';
+const dbName = 'tweets_view';
 const viewUrl = '_design/all_tweets/_view/all';
-const wrathUrl = '_design/all_tweets/_view/wrath';
+const wrathUrl = '_design/all%20views/_view/melbourne_wrath';
+const envyUrl = '_design/all%20views/_view/melbourne_envy';
+const slothUrl = '_design/all%20views/_view/melbourne_sloth';
+const gluttonyUrl = '_design/all%20views/_view/melbourne_gluttony';
 
 couch.listDatabases().then(function(dbs){
 	console.log(dbs);
@@ -55,6 +58,7 @@ app.post('/wrath', function(req, res){
 			var Melbourne = 0;
 			var Sydeny = 0;
 			var result = [];
+			var tweetsCount = 0;
 			grids.forEach(function(element){
 				result.push([element[0], 0]);
 			});
@@ -73,7 +77,9 @@ app.post('/wrath', function(req, res){
 						count++;
 					}
 				}
+				tweetsCount++;
 			});
+			console.log(tweetsCount);
 			console.log(result);
 			res.send(result);
 		},
@@ -91,13 +97,11 @@ app.post('/wrath_map', function(req, res){
 			var result = [];
 			data.data.rows.forEach(function(tweet){
 				if(tweet.value.place == "Melbourne"){
-					// var x = tweet.value.coordinates.coordinates[0].toFixed(2);
-					// var y = tweet.value.coordinates.coordinates[1].toFixed(2);
-					// result.push([parseFloat(x), parseFloat(y)]);
 					result.push(tweet.value.coordinates.coordinates);
 				}
 			});
 			console.log(result.length);
+			//console.log(data.data.rows);
 			res.send(result);
 		},
 		function(err){
