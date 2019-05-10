@@ -4,30 +4,10 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var NodeCouchDb = require('node-couchdb');
-var inside = require('point-in-polygon');
 const fs = require('fs');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
-const couch = new NodeCouchDb({
-	auth:{
-		user: 'admin',
-		password: 'admin'
-	}
-});
-
-const dbName = 'tweets_view';
-const viewUrl = '_design/all_tweets/_view/all';
-const wrathUrl = '_design/all%20views/_view/melbourne_wrath';
-const envyUrl = '_design/all%20views/_view/melbourne_envy';
-const slothUrl = '_design/all%20views/_view/melbourne_sloth';
-const gluttonyUrl = '_design/all%20views/_view/melbourne_gluttony';
-
-couch.listDatabases().then(function(dbs){
-	console.log(dbs);
-});
 
 var app = express();
 
@@ -43,73 +23,76 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'views')));
+app.use(express.static('views', {extensions: ['html', 'htm']}))
 app.use(express.static('public'));
 app.use('/', routes);
-app.use('/users', users);
+// app.use('/users', users);
 
-var rawGrid = fs.readFileSync('./public/mel_polygen.json');
-var grid = JSON.parse(rawGrid);
-var grids = Object.entries(grid);
+app.post('/positve', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/positveMap.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/negative', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/negativeMap.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/netural', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/netrualMap.json');
+	res.send(JSON.parse(result));
+});
 
 app.post('/wrath', function(req, res){
-	console.log("receive get request!");
-	couch.get(dbName, viewUrl).then(
-		function(data, headers, status){
-			var Melbourne = 0;
-			var Sydeny = 0;
-			var result = [];
-			var tweetsCount = 0;
-			grids.forEach(function(element){
-				result.push([element[0], 0]);
-			});
-			data.data.rows.forEach(function(tweet){
-				if(tweet.value.place == "Melbourne"){
-					Melbourne++;
-					var polygon;
-					var count = 0;
-					for (let i = 0; i < grids.length; i++){
-						polygon = grids[i][1][0][0][0];
-						var contain = inside(tweet.value.coordinates.coordinates, polygon);
-						if (contain){
-							result[count][1]++;
-							break;
-						}
-						count++;
-					}
-				}
-				tweetsCount++;
-			});
-			console.log(tweetsCount);
-			console.log(result);
-			res.send(result);
-		},
-		function(err){
-			console.log(err);
-			res.send(err);
-		});
+	console.log("receive wrath request!");
+	var result = fs.readFileSync('./public/cache/wrathCount.json');
+	res.send(JSON.parse(result));
 });
-
 
 app.post('/wrath_map', function(req, res){
-	console.log("receive wrath request!");
-	couch.get(dbName, wrathUrl).then(
-		function(data, headers, status){
-			var result = [];
-			data.data.rows.forEach(function(tweet){
-				if(tweet.value.place == "Melbourne"){
-					result.push(tweet.value.coordinates.coordinates);
-				}
-			});
-			console.log(result.length);
-			//console.log(data.data.rows);
-			res.send(result);
-		},
-		function(err){
-			console.log(err);
-			res.send(err);
-		});
+	console.log("receive wrath map request!");
+	var result = fs.readFileSync('./public/cache/wrathMap.json');
+	res.send(JSON.parse(result));
 });
 
+app.post('/envy', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/envyCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/envy_map', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/envyMap.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sloth', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/slothCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sloth_map', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/slothMap.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/gluttony', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/gluttonyCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/gluttony_map', function(req, res){
+	console.log("receive envy request!");
+	var result = fs.readFileSync('./public/cache/gluttonyMap.json');
+	res.send(JSON.parse(result));
+});
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
@@ -117,6 +100,7 @@ app.use(function(req, res, next) {
     err.status = 404;
     next(err);
 });
+
 
 /// error handlers
 
