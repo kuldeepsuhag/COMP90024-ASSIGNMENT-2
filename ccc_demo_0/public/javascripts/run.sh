@@ -1,4 +1,5 @@
 #!/bin/bash
+node all.js
 node envyCount.js
 node gluttonyCount.js
 node wrathCount.js

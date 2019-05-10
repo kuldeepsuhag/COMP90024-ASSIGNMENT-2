@@ -24,12 +24,15 @@ const sins = ["wrath", "envy", "sloth", "gluttony"];
 var rawGrid = fs.readFileSync('../cache/mel_polygen.json');
 var grid = JSON.parse(rawGrid);
 var grids = Object.entries(grid);
+
+var allTweets = fs.readFileSync('../cache/all.json');
+var all = JSON.parse(allTweets);
     couch.get(dbName, envyUrl).then(
         function(data, headers, status){
             var result = [];
             var tweetsCount = 0;
             grids.forEach(function(element){
-                result.push([element[0], 0]);
+                result.push([element[0], 0, 0]);
             });
             data.data.rows.forEach(function(tweet){
                 if(tweet.value.place == "Melbourne"){
@@ -48,6 +51,9 @@ var grids = Object.entries(grid);
                 tweetsCount++;
             });
             console.log(tweetsCount);
+            for(let i = 0; i < result.length; i++){
+                result[i][2] = result[i][1]/all[0][1];
+            }
             
             fs.writeFile("../cache/envyCount.json", JSON.stringify(result), function(err) {
                 if(err) {

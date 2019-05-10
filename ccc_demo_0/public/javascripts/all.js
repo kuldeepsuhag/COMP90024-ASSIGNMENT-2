@@ -24,15 +24,12 @@ const sins = ["wrath", "envy", "sloth", "gluttony"];
 var rawGrid = fs.readFileSync('../cache/mel_polygen.json');
 var grid = JSON.parse(rawGrid);
 var grids = Object.entries(grid);
-
-var allTweets = fs.readFileSync('../cache/all.json');
-var all = JSON.parse(allTweets);
-    couch.get(dbName, slothUrl).then(
+    couch.get(dbName, viewUrl).then(
         function(data, headers, status){
             var result = [];
             var tweetsCount = 0;
             grids.forEach(function(element){
-                result.push([element[0], 0, 0]);
+                result.push([element[0], 0]);
             });
             data.data.rows.forEach(function(tweet){
                 if(tweet.value.place == "Melbourne"){
@@ -51,15 +48,12 @@ var all = JSON.parse(allTweets);
                 tweetsCount++;
             });
             console.log(tweetsCount);
-            for(let i = 0; i < result.length; i++){
-                result[i][2] = result[i][1]/all[0][1];
-            }
             
-            fs.writeFile("../cache/slothCount.json", JSON.stringify(result), function(err) {
+            fs.writeFile("../cache/all.json", JSON.stringify(result), function(err) {
                 if(err) {
                     return console.log(err);
                 }
-                console.log("slothCount was saved!");
+                console.log("all was saved!");
             });
         },
         function(err){
