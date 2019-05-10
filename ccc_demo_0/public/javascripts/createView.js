@@ -16,7 +16,7 @@ const gluttonyUrl = '_design/all%20views/_view/melbourne_gluttony';
 const urls = [wrathUrl, envyUrl, slothUrl, gluttonyUrl];
 const sins = ["wrath", "envy", "sloth", "gluttony"];
 
-export function syncData(){
+function syncData(){
     for (let j = 0; j < urls.length; j++){
         couch.get(dbName, urls[j]).then(
             function(data, headers, status){
