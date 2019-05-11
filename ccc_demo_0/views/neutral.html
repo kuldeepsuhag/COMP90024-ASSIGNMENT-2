@@ -23,7 +23,6 @@
             <div class="sidebar-heading">Team 9</div>
             <div class="list-group list-group-flush">
               <a href="index.html" class="list-group-item list-group-item-action bg-light">Introduction</a>
-              <a href="sentiment.html" class="list-group-item list-group-item-action bg-light">Sentiment Analysis</a>
               <a href="wrath.html" class="list-group-item list-group-item-action bg-light">Wrath</a>
               <a href="sloth.html" class="list-group-item list-group-item-action bg-light">Sloth</a>
               <a href="gluttony.html" class="list-group-item list-group-item-action bg-light">Gluttony</a>
@@ -64,6 +63,23 @@
                       opacity: 0.6,
                       maxIntensity: 50
                       });
+                    var negativeGradient = [
+                      'rgba(0, 255, 255, 0)',
+                      'rgba(0, 255, 255, 1)',
+                      'rgba(0, 191, 255, 1)',
+                      'rgba(0, 127, 255, 1)',
+                      'rgba(0, 63, 255, 1)',
+                      'rgba(0, 0, 255, 1)',
+                      'rgba(0, 0, 223, 1)',
+                      'rgba(0, 0, 191, 1)',
+                      'rgba(0, 0, 159, 1)',
+                      'rgba(0, 0, 127, 1)',
+                      'rgba(63, 0, 91, 1)',
+                      'rgba(127, 0, 63, 1)',
+                      'rgba(191, 0, 31, 1)',
+                      'rgba(255, 0, 0, 1)'
+                    ];
+                    heatmap.set('gradient',negativeGradient);
                     heatmap.setMap(map);
                   }
                   function getData() {
@@ -72,7 +88,7 @@
                         timeout : 60000,
                         type:"post",
                         async: false,
-                        url:"positive",
+                        url:"/neutral",
                         data: { num: 123 },
                         dataType:"json",
                         success: function (data) {
