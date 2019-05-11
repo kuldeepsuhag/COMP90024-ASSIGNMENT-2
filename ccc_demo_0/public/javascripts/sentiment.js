@@ -31,11 +31,11 @@ couch.get(dbName, viewUrl).then(
         var neutral = [];
         data.data.rows.forEach(function(tweet){
             if(tweet.value.place == "Melbourne"){
-                if(tweet.value.label == "Positive"){
+                if(tweet.value.label > 0){
                     positive.push(tweet.value.coordinates.coordinates);
-                }else if (tweet.value.label == "Negative"){
+                }else if (tweet.value.label < 0){
                     negative.push(tweet.value.coordinates.coordinates);
-                }else if(tweet.value.label == "Neutral"){
+                }else if(tweet.value.label == 0){
                     neutral.push(tweet.value.coordinates.coordinates);
                 }
             }
