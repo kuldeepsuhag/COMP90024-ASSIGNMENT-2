@@ -9,33 +9,34 @@ var tweets = [];
 var ctx = document.getElementById("myChart");
 
 var config = {
-  type: 'line',
+  type: 'bar',
   data: {
       labels: areas,
       datasets: [
         { 
           data: assault,
           label: "Assault counts",
-          borderColor: "#a91834",
+          backgroundColor: "#a91834",
           fill: false
         },
         { 
           data: homicide,
-          label: "Arson counts",
-          borderColor: "#8e5ea2",
+          label: "homicide counts",
+          backgroundColor: "#8e5ea2",
           fill: false
         }, 
         {
           data: arson,
-          label: "Robbery counts",
-          borderColor: "#e8c3b9",
+          label: "arson counts",
+          backgroundColor: "#e8c3b9",
           fill: false
         },
         {
           data: tweets,
           label: "tweets counts",
           borderColor: "#1DA1F2",
-          fill: false
+          fill: false,
+          type: 'line'
         }
       ]
   }
@@ -49,8 +50,9 @@ var distressConfig = {
         { 
           data: distress,
           label: "Distress counts",
-          borderColor: "#a91834",
-          fill: false
+          backgroundColor: "#a91834",
+          fill: false,
+          type:'bar'
         },
         {
           data: tweets,
