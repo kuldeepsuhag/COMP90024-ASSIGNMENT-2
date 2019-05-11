@@ -53,7 +53,7 @@ var all = JSON.parse(allTweets);
             console.log(tweetsCount);
             for(let i = 0; i < result.length; i++){
                 if(all[i][1] != 0){
-                    result[i][2] = result[i][1]/all[i][1];
+                    result[i][2] = (result[i][1]/all[i][1])*10;
                 }else{
                     result[i][2] = 0;
                 }

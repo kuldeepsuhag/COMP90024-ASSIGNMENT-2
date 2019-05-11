@@ -40,9 +40,9 @@ app.post('/negative', function(req, res){
 	res.send(JSON.parse(result));
 });
 
-app.post('/netural', function(req, res){
-	console.log("receive netural request!");
-	var result = fs.readFileSync('./public/cache/netrualMap.json');
+app.post('/neutral', function(req, res){
+	console.log("receive neutral request!");
+	var result = fs.readFileSync('./public/cache/neturalMap.json');
 	res.send(JSON.parse(result));
 });
 
