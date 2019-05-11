@@ -1,21 +1,13 @@
-// // send json data request
-// $(document).ready(function(){
-//   $("button").click(function(){
-//     $.get("\wrath", function(data, status){
-//       alert("Data: " + data + "\nStatus: " + status);
-//       var jsonData = data
-//     });
-//   });
-// });
-
-// Our labels along the x-axis
+// x-axis
 var areas = ['Banyule ', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong '];
-// For drawing the lines
-var assault = [631, 323, 395, 1514, 2345, 847, 1211, 497, 1698, 754, 834, 363, 573, 664, 3039, 931, 725, 610, 1010, 192, 871, 8, 615, 606, 1380, 1235, 838, 725, 548, 1596];
-var arson = [34, 12, 18, 102, 172, 58, 95, 32, 180, 53, 39, 17, 18, 35, 55, 85, 29, 31, 42, 15, 36, 1, 9, 28, 78, 91, 55, 67, 26, 160];
-var robbery = [33, 24, 39, 266, 147, 113, 70, 41, 96, 62, 60, 31, 125, 51, 416, 88, 112, 92, 79, 10, 82, 0, 65, 62, 81, 153, 156, 33, 45, 83];
+// y-axis
+var assault =  [0.494, 0.314, 0.223, 0.736, 0.748, 0.546, 0.868, 0.532, 0.817, 0.474, 0.519, 0.295, 0.656, 0.577, 2.053, 0.657, 0.376, 0.496, 0.587, 0.669, 0.299, 0.368, 0.802, 0.275, 0.551, 0.356, 0.664, 0.541, 0.897, 0.467];
+var homicide =  [0.002, 0.002, 0.001, 0.006, 0.004, 0.003, 0.001, 0.002, 0.003, 0.004, 0.001, 0.002, 0.007, 0, 0.031, 0.003, 0.001, 0.002, 0.005, 0.003, 0.003, 0.003, 0.002, 0, 0.002, 0.003, 0.001, 0.002, 0.002, 0.003];
+var arson =  [0.027, 0.012, 0.01, 0.05, 0.055, 0.037, 0.068, 0.034, 0.087, 0.033, 0.024, 0.014, 0.021, 0.03, 0.037, 0.06, 0.015, 0.025, 0.024, 0.067, 0.023, 0.017, 0.033, 0.034, 0.008, 0.016, 0.038, 0.04, 0.059, 0.043];
+var distress = [10.7, 7.3, 7.3, 15.9, 14.9, 13.4, 15.0, 12.7, 15.3, 11.8, 11.6, 8.3, 13.2, 12.2, 10.8, 15.5, 10.1, 11.6, 13.2, 8.8, 10.4, 9.7, 8.5, 9.8, 15.0, 14.8, 10.7, 12.2, 10.0, 14.1];
 var tweets = [];
 var ctx = document.getElementById("myChart");
+
 var config = {
   type: 'line',
   data: {
@@ -24,17 +16,17 @@ var config = {
         { 
           data: assault,
           label: "Assault counts",
-          borderColor: "#3e95cd",
+          borderColor: "#a91834",
           fill: false
         },
         { 
-          data: arson,
+          data: homicide,
           label: "Arson counts",
           borderColor: "#8e5ea2",
           fill: false
         }, 
         {
-          data: robbery,
+          data: arson,
           label: "Robbery counts",
           borderColor: "#e8c3b9",
           fill: false
@@ -42,36 +34,65 @@ var config = {
         {
           data: tweets,
           label: "tweets counts",
-          borderColor: "#e8c3b9",
+          borderColor: "#1DA1F2",
           fill: false
         }
       ]
   }
 };
 
-// var myChart = new Chart(ctx, config);
+var distressConfig = {
+  type: 'line',
+  data: {
+      labels: areas,
+      datasets: [
+        { 
+          data: distress,
+          label: "Distress counts",
+          borderColor: "#a91834",
+          fill: false
+        },
+        {
+          data: tweets,
+          label: "tweets counts",
+          borderColor: "#1DA1F2",
+          fill: false
+        }
+      ]
+  }
+};
 
-function melbdata(tweet){
-  var myChart = new Chart(ctx, config);
-  var data = myChart.config.data;
-  data.datasets[0].data = assault;
-  data.datasets[1].data = arson;
-  data.datasets[2].data = robbery;
-  data.datasets[3].data = tweet;
-  data.labels = areas;
+$(document).ready(function(){
+  $.ajax({
+    timeout : 6000,
+    type:"post",
+    async: false,
+    url:"/wrath",
+    data: { num: 123 },
+    dataType:"json",
+    success: function (data) {
+      for(let i = 0; i < data.length; i++)
+      {
+        tweets.push(data[i][2]);
+      }
+      crimesData();
+      console.log(data.length);
+    }
+  });
+});
+
+var myChart = new Chart(ctx, config);
+
+function crimesData(){
+  myChart.config = config;
   myChart.update();
 }
-function syddata(){
-  var data = myChart.config.data;
-  data.datasets[0].data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 28, 78, 91, 55, 67, 26, 160];
-  data.datasets[1].data = arson;
-  data.datasets[2].data = robbery;
-  data.labels = areas;
+function distressData(){
+  myChart.config = distressConfig;
   myChart.update();
 }
 
 function showMap() {
   location.href='wrath-map.html';
-  // show google map
 }
 
