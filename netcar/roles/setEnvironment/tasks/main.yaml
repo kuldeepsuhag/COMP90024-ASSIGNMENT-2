@@ -20,13 +20,13 @@
 #     state:  latest
 #     update_cache: yes
 
-- name: install pip
-  become: yes
-  apt:
-    name: ['python-pip']
-    state: latest
-    update_cache: yes
-  when: ansible_distribution == "Ubuntu"
+# - name: install pip
+#   become: yes
+#   apt:
+#     name: ['python-pip']
+#     state: latest
+#     update_cache: yes
+#   when: ansible_distribution == "Ubuntu"
 
 - name: Update pip
   become: yes
@@ -45,3 +45,11 @@
   pip:
     name: ['openstacksdk']
     state: latest
+
+- name: install docker-machine
+  become: yes
+  shell: |
+    base=https://github.com/docker/machine/releases/download/v0.16.0 &&
+    curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+    sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+    
