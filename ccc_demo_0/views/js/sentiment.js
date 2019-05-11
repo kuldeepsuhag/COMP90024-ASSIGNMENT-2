@@ -12,13 +12,13 @@ $(document).ready(function(){
     timeout : 6000,
     type:"post",
     async: false,
-    url:"/sentiment_postive",
+    url:"/sentiment_positive",
     data: { num: 123 },
     dataType:"json",
     success: function (data) {
       for(let i = 0; i < data.length; i++)
       {
-        negative_tweets.push(data[i][2]);
+        positive_tweets.push(data[i][1]);
       }
       showData();
       console.log(data.length);
@@ -35,7 +35,7 @@ $(document).ready(function(){
     success: function (data) {
       for(let i = 0; i < data.length; i++)
       {
-        neutral_tweets.push(data[i][2]);
+        neutral_tweets.push(data[i][1]);
       }
       showData();
       console.log(data.length);
@@ -52,7 +52,7 @@ $(document).ready(function(){
     success: function (data) {
       for(let i = 0; i < data.length; i++)
       {
-        negative_tweets.push(data[i][2]);
+        negative_tweets.push(data[i][1]);
       }
       showData();
       console.log(data.length);

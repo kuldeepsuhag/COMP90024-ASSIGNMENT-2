@@ -94,6 +94,24 @@ app.post('/gluttony_map', function(req, res){
 	res.send(JSON.parse(result));
 });
 
+app.post('/sentiment_positive', function(req, res){
+	console.log("receive positive count request!");
+	var result = fs.readFileSync('./public/cache/positiveCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sentiment_negative', function(req, res){
+	console.log("receive negative count request!");
+	var result = fs.readFileSync('./public/cache/negativeCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sentiment_neutral', function(req, res){
+	console.log("receive neutral request!");
+	var result = fs.readFileSync('./public/cache/netrualCount.json');
+	res.send(JSON.parse(result));
+});
+
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
