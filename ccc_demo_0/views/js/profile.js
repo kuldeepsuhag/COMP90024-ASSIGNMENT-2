@@ -1,31 +1,19 @@
 var colors = ['#007bff','#28a745','#444444','#c3e6cb','#dc3545','#6c757d'];
 var areas = ['Banyule', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong '];
-var sins = ["Gluttony", "Sloth", "Wrath"];
-var twittersCount = [];
+var sins = ["Wrath", "Sloth", "Gluttony"];
 var ctx = document.getElementById("profileChart");
 
-$(document).ready(function(){
-    $.ajax({
-      timeout : 6000,
-      type:"post",
-      async: false,
-      url:"/banyule_count",
-      data: { num: 123 },
-      dataType:"json",
-      success: function (data) {
-        for(let i = 0; i < data.length; i++)
-        {
-            twittersCount.push(data[i]);
-        }
-        console.log(data.length);
-      }
-    });
-  });
-
-options = {
+var options = {
     scale: {
         // Hides the scale
-        display: true
+        display: false
+    },
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero:true
+            }
+        }]
     }
 };
 var config = {
@@ -33,19 +21,20 @@ var config = {
     data: {
         labels: sins,
         datasets: [{
-            data: twittersCount
+            data: []
         }],
         option: options
     }
 };
 var profileChart = new Chart(ctx, config);
 
-function showBanyule() {
+function showProfile(index) {
+    var twittersCount = [];
     $.ajax({
         timeout : 6000,
         type:"post",
         async: false,
-        url:"/banyule_count",
+        url:"/" + areas[index] + "_count",
         data: { num: 123 },
         dataType:"json",
         success: function (data) {
@@ -53,29 +42,21 @@ function showBanyule() {
           {
               twittersCount.push(data[i]);
           }
-          profileChart.datasets.data = twittersCount;
+          profileChart.config.data.datasets[0].label = areas[index];
+          profileChart.config.data.datasets[0].borderColor = getRandomColor();
+          profileChart.config.data.datasets[0].data = [20,30,40];
+          profileChart.update();
           console.log(data.length);
+          console.log(index);
         }
       });
-    console.log("Banyule");
+    console.log(areas[index]);
   }
-
-  function showBayside() {
-    $.ajax({
-        timeout : 6000,
-        type:"post",
-        async: false,
-        url:"/bayside_count",
-        data: { num: 123 },
-        dataType:"json",
-        success: function (data) {
-          for(let i = 0; i < data.length; i++)
-          {
-              twittersCount.push(data[i]);
-          }
-          profileChart.datasets.data = twittersCount;
-          console.log(data.length);
-        }
-      });
-    console.log("Banyule");
+  function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
   }
