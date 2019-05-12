@@ -5,14 +5,20 @@ ENV http_proxy http://wwwproxy.unimelb.edu.au:8000
 ENV https_proxy http://wwwproxy.unimelb.edu.au:8000
 
 EXPOSE 80
+EXPOSE 5984
+EXPOSE 3000
 
 WORKDIR /home/ubuntu/
 
-COPY ./ccc_demo_0 /
+COPY ./ccc_demo_0 /home/ubuntu/
+COPY ./startserver.sh /home/ubuntu/startserver.sh
+
+WORKDIR /home/ubuntu/
 
 RUN apt-get update -y \
     && apt-get upgrade -y \
     && apt-get dist-upgrade -y \
     && apt install npm -y --auto-remove;
 
-ENTRYPOINT nohup npm start 'daemon off';
+RUN ["chmod", "+x", "/home/ubuntu/startserver.sh"]
+ENTRYPOINT ["/home/ubuntu/startserver.sh"]
