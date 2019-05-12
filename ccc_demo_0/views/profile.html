@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <title>Team 9</title>
+  </head>
+  <body>
+      <div class="d-flex" id="wrapper">
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+          <div class="sidebar-heading">Team 9</div>
+          <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-light">Introduction</a>
+            <a href="sentiment.html" class="list-group-item list-group-item-action bg-light">Sentiment Analysis</a>
+            <a href="wrath.html" class="list-group-item list-group-item-action bg-light">Wrath</a>
+            <a href="sloth.html" class="list-group-item list-group-item-action bg-light">Sloth</a>
+            <a href="gluttony.html" class="list-group-item list-group-item-action bg-light">Gluttony</a>
+            <a href="profile.html" class="list-group-item list-group-item-action bg-light">Profile</a>
+          </div>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            </div>
+          </nav>
+          <div class="container-fluid">
+            <h1 class="mt-4 text-center">Area Profile</h1>
+            <canvas id="profileChart" width="900" height="450"></canvas>
+            <div class="dropdown">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                  Areas
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="showProfile(0)">Banyule</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(1)">Bayside</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(2)"> Boroondara</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(3)">Brimbank</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(4)">Casey</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(5)">Darebin</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(6)">Frankston</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(7)">Hobsons Bay</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(8)">Hume</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(9)">Kingston</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(10)">Knox</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(11)">Manningham</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(12)">Maribyrnong</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(13)">Maroondah</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(14)">Melbourne</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(15)">Melton</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(16)">Monash</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(17)">Moonee Valley</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(18)">Moreland</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(19)">Nillumbik</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(20)">Port Phillip</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(21)">Queenscliffe</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(22)">Stonnington</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(23)">Whitehorse</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(24)">Whittlesea</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(25)">Wyndham</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(26)">Yarra</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(27)">Yarra Range</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(28)">Glen Eira</a>
+                  <a class="dropdown-item" href="#" onclick="showProfile(29)">Greater Geelong</a>
+                </div>
+              </div>
+          <script src="./js/profile.js"></script>
+        </div>
+        <!-- /#page-content-wrapper -->
+      </div>
+      <!-- /#wrapper -->
+    </body>
+</html>

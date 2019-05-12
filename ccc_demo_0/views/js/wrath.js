@@ -15,7 +15,7 @@ var config = {
       datasets: [
         {
           data: tweets,
-          label: "tweets counts",
+          label: "Wrath tweets",
           borderColor: "#1DA1F2",
           fill: false,
           type: 'line'
