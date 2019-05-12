@@ -34,7 +34,7 @@ var config = {
       datasets: [
         {
           data: twitter,
-          label: "tweets counts",
+          label: "Sloth tweets",
           borderColor: "#1DA1F2",
           fill: false,
           type: 'line'
