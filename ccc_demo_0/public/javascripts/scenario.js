@@ -11,6 +11,7 @@ var ipFile = fs.readFileSync('../../ipAddress.txt');
 var allIp = ipFile.toString();
 var ips = allIp.split(" ");
 var ipaddress = ips[0];
+console.log(ipaddress);
 // var ipaddress;
 // var ifaces = os.networkInterfaces();
 // Object.keys(ifaces).forEach(function (ifname) {
