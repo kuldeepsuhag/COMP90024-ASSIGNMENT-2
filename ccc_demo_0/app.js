@@ -112,6 +112,34 @@ app.post('/sentiment_neutral', function(req, res){
 	res.send(JSON.parse(result));
 });
 
+app.post('/arson', function(req, res){
+	console.log("receive arsonrequest!");
+	var result = fs.readFileSync('./public/cache/arsonCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/aurin_arson', function(req, res){
+	console.log("receive arson request!");
+	var result = fs.readFileSync('./views/dataSource/AURIN/aurin_mel.json');
+	var aurin = JSON.parse(result);
+	res.send(aurin.arson);
+});
+
+app.post('/assault', function(req, res){
+	console.log("receive arsonrequest!");
+	var result = fs.readFileSync('./public/cache/assaultCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/aurin_assault', function(req, res){
+	console.log("receive arson request!");
+	var result = fs.readFileSync('./views/dataSource/AURIN/aurin_mel.json');
+	var aurin = JSON.parse(result);
+	res.send(aurin.assault);
+});
+
+
+
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');

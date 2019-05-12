@@ -34,4 +34,12 @@ router.get('/crime_in_Sydeny', function (req, res){
   res.redirect('crimInSydney.html');
 });
 
+router.get('/arson', function (req, res){
+  res.redirect('arson.html');
+});
+
+router.get('/assault', function (req, res){
+  res.redirect('assault.html');
+});
+
 module.exports = router;
