@@ -13,6 +13,13 @@ var config = {
   data: {
       labels: areas,
       datasets: [
+        {
+          data: tweets,
+          label: "tweets counts",
+          borderColor: "#1DA1F2",
+          fill: false,
+          type: 'line'
+        },
         { 
           data: assault,
           label: "Assault counts",
@@ -30,13 +37,6 @@ var config = {
           label: "arson counts",
           backgroundColor: "#e8c3b9",
           fill: false
-        },
-        {
-          data: tweets,
-          label: "tweets counts",
-          borderColor: "#1DA1F2",
-          fill: false,
-          type: 'line'
         }
       ]
   }
@@ -47,18 +47,18 @@ var distressConfig = {
   data: {
       labels: areas,
       datasets: [
+        {
+          data: tweets,
+          label: "tweets counts",
+          borderColor: "#1DA1F2",
+          fill: false
+        },
         { 
           data: distress,
           label: "Distress counts",
           backgroundColor: "#a91834",
           fill: false,
           type:'bar'
-        },
-        {
-          data: tweets,
-          label: "tweets counts",
-          borderColor: "#1DA1F2",
-          fill: false
         }
       ]
   }

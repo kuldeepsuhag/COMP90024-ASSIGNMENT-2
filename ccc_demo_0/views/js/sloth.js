@@ -32,6 +32,13 @@ var config = {
   data: {
       labels: areas,
       datasets: [
+        {
+          data: twitter,
+          label: "tweets counts",
+          borderColor: "#1DA1F2",
+          fill: false,
+          type: 'line'
+        },
         { 
           data: sedentary,
           label: "Sedentary",
@@ -43,13 +50,6 @@ var config = {
           label: "Unemployment",
           backgroundColor: colors[1],
           fill: false,
-        },
-        {
-          data: twitter,
-          label: "tweets counts",
-          borderColor: "#1DA1F2",
-          fill: false,
-          type: 'line'
         }
       ]
   }

@@ -31,6 +31,13 @@ var config = {
   data: {
       labels: areas,
       datasets: [
+        {
+          data: twitter,
+          label: "tweets counts",
+          borderColor: "#1DA1F2",
+          fill: false,
+          type: 'line'
+        },
         { 
           data: overWeight,
           label: "OverWeight",
@@ -42,13 +49,6 @@ var config = {
           label: "High Blood Preasure",
           backgroundColor: colors[3],
           fill: false,
-        },
-        {
-          data: twitter,
-          label: "tweets counts",
-          borderColor: "#1DA1F2",
-          fill: false,
-          type: 'line'
         }
       ]
   }
