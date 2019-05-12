@@ -1,5 +1,11 @@
 #!/bin/bash
 
+cd /home/ubuntu/public/javascripts/;
+
+rm ipAddress.txt;
+touch ipAddress.txt;
+echo $DOCKER_HOST >> ipAddress.txt;
+
 cd /home/ubuntu/;
 
 nohup npm start 'daemon off';

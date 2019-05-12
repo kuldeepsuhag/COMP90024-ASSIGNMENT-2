@@ -5,8 +5,6 @@ ENV http_proxy http://wwwproxy.unimelb.edu.au:8000
 ENV https_proxy http://wwwproxy.unimelb.edu.au:8000
 
 EXPOSE 80
-EXPOSE 5984
-EXPOSE 3000
 
 WORKDIR /home/ubuntu/
 
