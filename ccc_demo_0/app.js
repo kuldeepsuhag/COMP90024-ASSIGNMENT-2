@@ -40,9 +40,9 @@ app.post('/negative', function(req, res){
 	res.send(JSON.parse(result));
 });
 
-app.post('/netural', function(req, res){
-	console.log("receive netural request!");
-	var result = fs.readFileSync('./public/cache/netrualMap.json');
+app.post('/neutral', function(req, res){
+	console.log("receive neutral request!");
+	var result = fs.readFileSync('./public/cache/neturalMap.json');
 	res.send(JSON.parse(result));
 });
 
@@ -91,6 +91,24 @@ app.post('/gluttony', function(req, res){
 app.post('/gluttony_map', function(req, res){
 	console.log("receive envy request!");
 	var result = fs.readFileSync('./public/cache/gluttonyMap.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sentiment_positive', function(req, res){
+	console.log("receive positive count request!");
+	var result = fs.readFileSync('./public/cache/positiveCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sentiment_negative', function(req, res){
+	console.log("receive negative count request!");
+	var result = fs.readFileSync('./public/cache/negativeCount.json');
+	res.send(JSON.parse(result));
+});
+
+app.post('/sentiment_neutral', function(req, res){
+	console.log("receive neutral request!");
+	var result = fs.readFileSync('./public/cache/netrualCount.json');
 	res.send(JSON.parse(result));
 });
 

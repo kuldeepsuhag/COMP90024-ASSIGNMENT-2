@@ -52,7 +52,11 @@ var all = JSON.parse(allTweets);
             });
             console.log(tweetsCount);
             for(let i = 0; i < result.length; i++){
-                result[i][2] = result[i][1]/all[0][1];
+                if(all[i][1] != 0){
+                    result[i][2] = (result[i][1]/all[i][1])*5000;
+                }else{
+                    result[i][2] = 0;
+                }
             }
             
             fs.writeFile("../cache/gluttonyCount.json", JSON.stringify(result), function(err) {
