@@ -3,9 +3,29 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 var NodeCouchDb = require('node-couchdb');
 var inside = require('point-in-polygon');
-const fs = require('fs');
+var fs = require('fs');
+var os = require('os');
+
+var ipaddress;
+var ifaces = os.networkInterfaces();
+Object.keys(ifaces).forEach(function (ifname) {
+  var alias = 0;
+  ifaces[ifname].forEach(function (iface) {
+    if ('IPv4' !== iface.family || iface.internal !== false) {
+      // skip over internal (i.e. 127.0.0.1) and non-ipv4 addresses
+      return;
+    }
+    if(ifname == "eth0" || ifname == 'en0'){
+        ipaddress = iface.address;
+        console.log(ipaddress);
+    }
+  });
+});
+
 
 const couch = new NodeCouchDb({
+    host: ipaddress,
+    port: 5984,
 	auth:{
 		user: 'admin',
 		password: 'admin'

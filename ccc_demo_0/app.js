@@ -138,6 +138,15 @@ app.post('/aurin_assault', function(req, res){
 	res.send(aurin.assault);
 });
 
+app.post('/banyule_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[0][1], sloth[0][1], gluttony[0][1]];
+	res.send(result);
+});
+
 
 
 /// catch 404 and forwarding to error handler
