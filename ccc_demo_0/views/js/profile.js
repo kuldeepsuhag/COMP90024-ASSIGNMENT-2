@@ -44,7 +44,7 @@ function showProfile(index) {
           }
           profileChart.config.data.datasets[0].label = areas[index];
           profileChart.config.data.datasets[0].borderColor = getRandomColor();
-          profileChart.config.data.datasets[0].data = [20,30,40];
+          profileChart.config.data.datasets[0].data = twittersCount;
           profileChart.update();
           console.log(data.length);
           console.log(index);
