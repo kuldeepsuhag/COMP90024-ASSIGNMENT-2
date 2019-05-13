@@ -1,0 +1,44 @@
+- name: Check that the /etc/systemd/system/docker.service.d exists
+  stat:
+      path: /etc/systemd/system/docker.service.d
+  register: stat_result
+
+- name: Create /etc/systemd/system/docker.service.d, if it doesnt exist already
+  sudo: yes
+  file:
+      path: /etc/systemd/system/docker.service.d
+      state: directory
+  when: stat_result.stat.exists == False
+
+- name: Create a systemd drop-in directory for the docker service
+  shell: |
+    cd /etc/systemd/system/docker.service.d &&
+    Environment="HTTP_PROXY=http://wwwproxy.unimelb.edu.au:8000"  
+
+- name: Check that the /etc/systemd/system/docker.service.d/https-proxy.conf exists
+  stat:
+      path: /etc/systemd/system/docker.service.d/https-proxy.conf
+  register: stat_result
+
+- name: Create /etc/systemd/system/docker.service.d/https-proxy.conf, if it doesnt exist already
+  sudo: yes
+  file:
+      path: /etc/systemd/system/docker.service.d/https-proxy.conf
+      state: directory
+  when: stat_result.stat.exists == False
+
+- name: adds HTTPS proxy server
+  shell: |
+    cd /etc/systemd/system/docker.service.d &&
+    Environment="HTTPS_PROXY=http://wwwproxy.unimelb.edu.au:8000"
+
+- name: Flush changes
+  become: yes
+  shell: |
+    sudo systemctl daemon-reload
+
+- name: Restart Docker
+  shell: |
+    sudo systemctl restart docker
+
+  
