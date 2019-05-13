@@ -84,7 +84,8 @@ var sedentaryConfig = {
     scales: {
       yAxes: [{
         ticks: {
-          beginAtZero: true
+          // beginAtZero: true
+          suggestedMin: 30
        },
         scaleLabel: {
           display: true,
@@ -93,7 +94,8 @@ var sedentaryConfig = {
       }],
       xAxes: [{
         ticks: {
-          beginAtZero: true
+          // beginAtZero: true
+          suggestedMin: 20
        },
         scaleLabel: {
           display: true,
@@ -121,13 +123,15 @@ function showSedentary() {
   var myData = [];
   for(let i = 0; i < twitter.length; i++)
   {
-    myData.push (
-      {
-        x: sedentary[i],
-        y: twitter[i]
-      }
-    );
-  };
+    if (twitter[i] !== 0 && twitter[i] !== 100){
+        myData.push (
+          {
+            x: sedentary[i],
+            y: twitter[i]
+          }
+        );
+      };
+    };
   myChart.config.data.datasets[0].data = myData;
   myChart.update();
 }
@@ -150,7 +154,8 @@ var overWeightConfig = {
     scales: {
       yAxes: [{
         ticks: {
-          beginAtZero: true
+          // beginAtZero: true
+          suggestedMin: 30
        },
         scaleLabel: {
           display: true,
@@ -159,7 +164,8 @@ var overWeightConfig = {
       }],
       xAxes: [{
         ticks: {
-          beginAtZero: true
+          suggestedMin: 30
+          // beginAtZero: true
        },
         scaleLabel: {
           display: true,
@@ -186,12 +192,14 @@ function showOverweight() {
   var myData = [];
   for(let i = 0; i < twitter.length; i++)
   {
-    myData.push (
-      {
-        x: overWeight[i],
-        y: twitter[i]
-      }
-    );
+    if (twitter[i] !== 0 && twitter[i] !== 100){
+      myData.push (
+        {
+          x: overWeight[i],
+          y: twitter[i]
+        }
+      );
+    };
   };
   myChart.config.data.datasets[0].data = myData;
   myChart.update();
