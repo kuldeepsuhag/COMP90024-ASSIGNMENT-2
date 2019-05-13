@@ -33,10 +33,35 @@ var config = {
      datasets: [{
         label: 'Legend',
         showLine: false,
+        borderColor: '#2196f3', // Add custom color border            
+        backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
         data: []
      }]
   },
   options: {
+    responsive: true,
+    maintainAspectRatio: true,
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true,
+          max: 40
+       },
+        scaleLabel: {
+          display: true,
+          labelString: 'Gluttony Twitter count'
+        }
+      }],
+      xAxes: [{
+        ticks: {
+          beginAtZero: true
+       },
+        scaleLabel: {
+          display: true,
+          labelString: 'OverWeight',
+        }
+      }]
+    } ,
      tooltips: {
         callbacks: {
            label: function(tooltipItem, data) {
@@ -46,7 +71,7 @@ var config = {
         }
      }
   }
-}
+};
 
 var myChart = new Chart(ctx, config);
 

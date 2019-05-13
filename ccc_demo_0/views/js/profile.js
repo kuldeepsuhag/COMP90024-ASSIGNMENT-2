@@ -57,7 +57,7 @@ function showProfile(index) {
           if (isExisted) {
             isExisted = false;
           }else {
-            profileChart.config.data.datasets.data.push(myData);
+            profileChart.config.data.datasets.push(myData);
             profileChart.update();
           };
           console.log(data.length);
