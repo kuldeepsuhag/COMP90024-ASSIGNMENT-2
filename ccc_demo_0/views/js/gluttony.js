@@ -3,7 +3,7 @@ var colors = ['#007bff','#28a745','#444444','#c3e6cb','#dc3545','#6c757d'];
 var areas = ['Banyule', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong '];
 // For drawing the lines
 var overWeight = [38.6, 38.4, 38.6, 37.5, 38.4, 37.8, 37.9, 38.6, 37.8, 38.5, 38.4, 38.4, 37.9, 38.3, 33.0, 38.8, 37.4, 38.6, 38.0, 39.5, 36.6, 36.5, 37.4, 37.7, 38.5, 38.9, 37.0, 38.5, 38.2 , 35.3];
-var HBP = [21.5 ,16.6 ,19.3,29.2,25.0,28.4,24.0,27.3,25.8,22.9,22.9,18.4,32.5,23.7,43.1,23.9,20.3,22.2,31.7,22.9,31.9,15.9,24.7,23.0,24.1,22.0,36.4,23.7,22.4,22.2];
+// var HBP = [21.5 ,16.6 ,19.3,29.2,25.0,28.4,24.0,27.3,25.8,22.9,22.9,18.4,32.5,23.7,43.1,23.9,20.3,22.2,31.7,22.9,31.9,15.9,24.7,23.0,24.1,22.0,36.4,23.7,22.4,22.2];
 var ctx = document.getElementById("myChart");
 var twitter = []; 
 
@@ -21,48 +21,52 @@ $(document).ready(function(){
         twitter.push(data[i][2]);
       }
       console.log(data.length);
-      showChart();
+      showChart(twitter);
     }
   });
 });
 
 var config = {
-  type: 'bar',
+  type: 'scatter',
   data: {
-      labels: areas,
-      datasets: [
-        {
-          data: twitter,
-          label: "Gluttony tweets",
-          borderColor: "#1DA1F2",
-          fill: false,
-          type: 'line'
-        },
-        { 
-          data: overWeight,
-          label: "OverWeight",
-          backgroundColor: colors[5],
-          fill: false,
-        },
-        {
-          data: HBP,
-          label: "High Blood Preasure",
-          backgroundColor: colors[3],
-          fill: false,
+     labels: areas,
+     datasets: [{
+        label: 'Legend',
+        showLine: false,
+        data: []
+     }]
+  },
+  options: {
+     tooltips: {
+        callbacks: {
+           label: function(tooltipItem, data) {
+              var label = data.labels[tooltipItem.index];
+              return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+           }
         }
-      ]
+     }
   }
-};
+}
 
 var myChart = new Chart(ctx, config);
 
-function showChart() {
+function showChart(twitter){
   myChart.config = config;
+  var myData = [];
+  for(let i = 0; i < twitter.length; i++)
+  {
+    myData.push (
+      {
+        x: overWeight[i],
+        y: twitter[i]
+      }
+    );
+  };
+  myChart.config.data.datasets[0].data = myData;
   myChart.update();
 }
 
 function showMap() {
   location.href='gluttony-map.html';
-  // show google map
 }
 
