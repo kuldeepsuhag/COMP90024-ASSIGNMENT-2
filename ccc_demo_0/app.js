@@ -138,12 +138,273 @@ app.post('/aurin_assault', function(req, res){
 	res.send(aurin.assault);
 });
 
-app.post('/banyule_count', function(req, res){
+app.post('/Banyule_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
 	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
 	result = [wrath[0][1], sloth[0][1], gluttony[0][1]];
+	res.send(result);
+});
+
+app.post('/Bayside_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[1][1], sloth[1][1], gluttony[1][1]];
+	res.send(result);
+});
+
+app.post('/Boroondara_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[2][1], sloth[2][1], gluttony[2][1]];
+	res.send(result);
+});
+
+app.post('/Brimbank_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[3][1], sloth[3][1], gluttony[3][1]];
+	res.send(result);
+});
+
+app.post('/Casey_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[4][1], sloth[4][1], gluttony[4][1]];
+	res.send(result);
+});
+
+app.post('/Darebin_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[5][1], sloth[5][1], gluttony[5][1]];
+	res.send(result);
+});
+
+app.post('/Frankston_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[6][1], sloth[6][1], gluttony[6][1]];
+	res.send(result);
+});
+
+app.post('/Hobsons_Bay_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[7][1], sloth[7][1], gluttony[7][1]];
+	res.send(result);
+});
+
+app.post('/Hume_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[8][1], sloth[8][1], gluttony[8][1]];
+	res.send(result);
+});
+
+app.post('/Kingston_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[9][1], sloth[9][1], gluttony[9][1]];
+	res.send(result);
+});
+
+app.post('/Knox_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[10][1], sloth[10][1], gluttony[10][1]];
+	res.send(result);
+});
+
+app.post('/Manningham_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[11][1], sloth[11][1], gluttony[11][1]];
+	res.send(result);
+});
+
+app.post('/Maribyrnong', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[12][1], sloth[12][1], gluttony[12][1]];
+	res.send(result);
+});
+
+app.post('/Maroondah_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[13][1], sloth[13][1], gluttony[13][1]];
+	res.send(result);
+});
+
+app.post('/Melbourne_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[14][1], sloth[14][1], gluttony[14][1]];
+	res.send(result);
+});
+
+app.post('/Melton_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[15][1], sloth[15][1], gluttony[15][1]];
+	res.send(result);
+});
+
+app.post('/Monash_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[16][1], sloth[16][1], gluttony[16][1]];
+	res.send(result);
+});
+
+app.post('/Moonee_Valley_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[17][1], sloth[17][1], gluttony[17][1]];
+	res.send(result);
+});
+
+app.post('/Moreland_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[18][1], sloth[18][1], gluttony[18][1]];
+	res.send(result);
+});
+
+app.post('/Nillumbik_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[19][1], sloth[19][1], gluttony[19][1]];
+	res.send(result);
+});
+
+app.post('/Port_Phillip_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[20][1], sloth[20][1], gluttony[20][1]];
+	res.send(result);
+});
+
+app.post('/Queenscliffe_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[21][1], sloth[21][1], gluttony[21][1]];
+	res.send(result);
+});
+
+app.post('/Stonnington_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[22][1], sloth[22][1], gluttony[22][1]];
+	res.send(result);
+});
+
+app.post('/Whittlesea_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[23][1], sloth[23][1], gluttony[23][1]];
+	res.send(result);
+});
+
+app.post('/Wyndham_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[24][1], sloth[24][1], gluttony[24][1]];
+	res.send(result);
+});
+
+app.post('/Yarra_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[25][1], sloth[25][1], gluttony[25][1]];
+	res.send(result);
+});
+
+app.post('/Yarra_Ranges_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[26][1], sloth[26][1], gluttony[26][1]];
+	res.send(result);
+});
+
+app.post('/Glen_Eira_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[27][1], sloth[27][1], gluttony[27][1]];
+	res.send(result);
+});
+
+app.post('/Glen_Eira_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[28][1], sloth[28][1], gluttony[28][1]];
+	res.send(result);
+});
+
+app.post('/Greater_Geelong_count', function(req, res){
+	console.log("receive banyule_coun request!");
+	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
+	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
+	var sloth = JSON.parse(fs.readFileSync('./public/cache/slothCount.json'));
+	result = [wrath[29][1], sloth[29][1], gluttony[29][1]];
 	res.send(result);
 });
 

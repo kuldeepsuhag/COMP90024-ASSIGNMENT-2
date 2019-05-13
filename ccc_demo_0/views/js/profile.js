@@ -1,5 +1,5 @@
 var colors = ['#007bff','#28a745','#444444','#c3e6cb','#dc3545','#6c757d'];
-var areas = ['Banyule', 'Bayside ', 'Boroondara ', 'Brimbank ', 'Casey ', 'Darebin ', 'Frankston ', 'Hobsons Bay ', 'Hume ', 'Kingston ', 'Knox ', 'Manningham ', 'Maribyrnong ', 'Maroondah ', 'Melbourne ', 'Melton ', 'Monash ', 'Moonee Valley ', 'Moreland ', 'Nillumbik ', 'Port Phillip ', 'Queenscliffe ', 'Stonnington ', 'Whitehorse ', 'Whittlesea ', 'Wyndham ', 'Yarra ', 'Yarra Ranges ', 'Glen Eira ', 'Greater Geelong '];
+var areas = ['Banyule', 'Bayside', 'Boroondara', 'Brimbank', 'Casey', 'Darebin', 'Frankston', 'Hobsons_Bay', 'Hume', 'Kingston', 'Knox', 'Manningham', 'Maribyrnong', 'Maroondah', 'Melbourne', 'Melton', 'Monash', 'Moonee_Valley', 'Moreland', 'Nillumbik', 'Port_Phillip', 'Queenscliffe', 'Stonnington', 'Whitehorse', 'Whittlesea', 'Wyndham', 'Yarra', 'Yarra_Ranges', 'Glen_Eira', 'Greater_Geelong'];
 var sins = ["Wrath", "Sloth", "Gluttony"];
 var ctx = document.getElementById("profileChart");
 
