@@ -94,6 +94,22 @@ app.post('/gluttony_map', function(req, res){
 	res.send(JSON.parse(result));
 });
 
+app.post('/gluttony_par', function(req, res){
+	console.log("receive gluttony r request!");
+	var temp = fs.readFileSync('./public/cache/gluttonyCount.json');
+	var tempAurin = fs.readFileSync('./views/dataSource/Aurin/aurin_mel.json');
+	temp = JSON.parse(temp);
+	tempAurin = JSON.parse(tempAurin);
+	var x = [];
+	var y = tempAurin.overweight;
+	for (let i = 0; i < temp.length; i++){
+		x.push(temp[i][2]);
+	}
+	var result = binArg(x, y);
+	console.log(result);
+	res.send([result]);
+});
+
 app.post('/sentiment_positive', function(req, res){
 	console.log("receive positive count request!");
 	var result = fs.readFileSync('./public/cache/positiveCount.json');
@@ -441,6 +457,30 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
+
+function binArg(x,y){
+	var i, xSquSum=0, xSum=0, ySum=0, xySum=0, maxLinearityError=0, linearityError=0, idealY;
+	var b=0, a=0, r = 0;
+	var yAver = 0, sst = 0, ssr = 0;
+	for(i=0; i<x.length; i++)
+		xSum += x[i];
+	for(i=0; i<x.length; i++)
+		ySum += y[i];
+	for(i=0; i<x.length; i++)
+		xySum += x[i]*y[i];
+	for(i=0; i<x.length; i++)
+		xSquSum += x[i]*x[i];
+	b = ((xSquSum*ySum)-(xSum*xySum))/(x.length*xSquSum-xSum*xSum);
+	a = (x.length*xySum-xSum*ySum)/(x.length*xSquSum-xSum*xSum);
+	yAver = ySum/(y.length);
+	for(i=0; i<x.length; i++)
+	{
+		sst += (y[i] - yAver)*(y[i] - yAver);
+		ssr += (a*x[i] + b - yAver)*(a*x[i] + b - yAver);
+		r = 1 - (sst - ssr)/sst;
+	}
+	return r;
+}
 
 
 module.exports = app;
