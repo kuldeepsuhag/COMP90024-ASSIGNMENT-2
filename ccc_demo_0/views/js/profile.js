@@ -42,9 +42,12 @@ function showProfile(index) {
           {
               twittersCount.push(data[i]);
           }
-          profileChart.config.data.datasets[0].label = areas[index];
-          profileChart.config.data.datasets[0].borderColor = getRandomColor();
-          profileChart.config.data.datasets[0].data = twittersCount;
+          var myData = {
+            data: twittersCount,
+            label: areas[index],
+            borderColor: getRandomColor()
+          };
+          profileChart.config.data.datasets.push(myData);
           profileChart.update();
           console.log(data.length);
           console.log(index);
@@ -52,6 +55,12 @@ function showProfile(index) {
       });
     console.log(areas[index]);
   }
+  function removeData() {
+    if (typeof profileChart.config.data.datasets !== 'undefined' && profileChart.config.data.datasets.length > 0) {
+      profileChart.config.data.datasets.pop();
+      profileChart.update();
+    }
+  };
   function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
