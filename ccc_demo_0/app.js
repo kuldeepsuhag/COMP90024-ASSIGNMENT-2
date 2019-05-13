@@ -361,7 +361,7 @@ app.post('/Stonnington_count', function(req, res){
 	res.send(result);
 });
 
-app.post('/Whittlesea_count', function(req, res){
+app.post('/Whitehorse_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
@@ -370,7 +370,7 @@ app.post('/Whittlesea_count', function(req, res){
 	res.send(result);
 });
 
-app.post('/Wyndham_count', function(req, res){
+app.post('/Whittlesea_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
@@ -379,7 +379,7 @@ app.post('/Wyndham_count', function(req, res){
 	res.send(result);
 });
 
-app.post('/Yarra_count', function(req, res){
+app.post('/Wyndham_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
@@ -388,7 +388,7 @@ app.post('/Yarra_count', function(req, res){
 	res.send(result);
 });
 
-app.post('/Yarra_Ranges_count', function(req, res){
+app.post('/Yarra_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
@@ -397,7 +397,7 @@ app.post('/Yarra_Ranges_count', function(req, res){
 	res.send(result);
 });
 
-app.post('/Glen_Eira_count', function(req, res){
+app.post('/Yarra_Ranges_count', function(req, res){
 	console.log("receive banyule_coun request!");
 	var gluttony = JSON.parse(fs.readFileSync('./public/cache/gluttonyCount.json'));
 	var wrath = JSON.parse(fs.readFileSync('./public/cache/wrathCount.json'));
