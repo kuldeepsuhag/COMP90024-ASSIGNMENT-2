@@ -1,0 +1,11 @@
+ansible conde for this project.
+process：
+
+1.	Setup instance
+    ——runIns.sh
+
+2.	Install environment
+    ——installEnv.sh
+    
+3.	Deploy swarm
+    ——runDocker.sh
