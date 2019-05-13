@@ -47,8 +47,19 @@ function showProfile(index) {
             label: areas[index],
             borderColor: getRandomColor()
           };
-          profileChart.config.data.datasets.push(myData);
-          profileChart.update();
+          var isExisted = false;
+          for(let i = 0; i < profileChart.config.data.datasets.length; i++)
+          {
+              if (profileChart.config.data.datasets[i].label ==areas[index]) {
+                isExisted = true;
+              };
+          }
+          if (isExisted) {
+            isExisted = false;
+          }else {
+            profileChart.config.data.datasets.push(myData);
+            profileChart.update();
+          };
           console.log(data.length);
           console.log(index);
         }
