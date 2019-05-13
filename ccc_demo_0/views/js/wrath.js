@@ -8,6 +8,25 @@ var distress = [10.7, 7.3, 7.3, 15.9, 14.9, 13.4, 15.0, 12.7, 15.3, 11.8, 11.6, 
 var tweets = [];
 var ctx = document.getElementById("myChart");
 
+$(document).ready(function(){
+  $.ajax({
+    timeout : 6000,
+    type:"post",
+    async: false,
+    url:"/wrath",
+    data: { num: 123 },
+    dataType:"json",
+    success: function (data) {
+      for(let i = 0; i < data.length; i++)
+      {
+        tweets.push(data[i][2]);
+      }
+      crimesData();
+      console.log(data.length);
+    }
+  });
+});
+
 var config = {
   type: 'bar',
   data: {
@@ -41,6 +60,16 @@ var config = {
       ]
   }
 };
+var myChart = new Chart(ctx, config);
+
+function crimesData(){
+  if (myChart) {
+    myChart.destroy();
+  }
+  myChart = new Chart(ctx, config);
+  myChart.config = config;
+  myChart.update();
+}
 
 var distressConfig = {
   type: 'line',
@@ -64,33 +93,81 @@ var distressConfig = {
   }
 };
 
-$(document).ready(function(){
-  $.ajax({
-    timeout : 6000,
-    type:"post",
-    async: false,
-    url:"/wrath",
-    data: { num: 123 },
-    dataType:"json",
-    success: function (data) {
-      for(let i = 0; i < data.length; i++)
-      {
-        tweets.push(data[i][2]);
-      }
-      crimesData();
-      console.log(data.length);
-    }
-  });
-});
-
-var myChart = new Chart(ctx, config);
-
-function crimesData(){
-  myChart.config = config;
+function distressData(){
+  if (myChart) {
+    myChart.destroy();
+  }
+  myChart = new Chart(ctx, distressConfig);
+  myChart.config = distressConfig;
   myChart.update();
 }
-function distressData(){
-  myChart.config = distressConfig;
+
+var assaultConfig = {
+  type: 'scatter',
+  data: {
+     labels: areas,
+     datasets: [{
+        label: 'Legend',
+        showLine: false,
+        borderColor: '#2196f3', // Add custom color border            
+        backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+        data: []
+     }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: true,
+    scales: {
+      yAxes: [{
+        ticks: {
+          // beginAtZero: true
+          suggestedMin: 0
+       },
+        scaleLabel: {
+          display: true,
+          labelString: 'Wrath Twitter count'
+        }
+      }],
+      xAxes: [{
+        ticks: {
+          suggestedMin: 0
+          // beginAtZero: true
+       },
+        scaleLabel: {
+          display: true,
+          labelString: 'Assult'
+        }
+      }]
+    } ,
+     tooltips: {
+        callbacks: {
+           label: function(tooltipItem, data) {
+              var label = data.labels[tooltipItem.index];
+              return label + ': (' + tooltipItem.xLabel + ', ' + tooltipItem.yLabel + ')';
+           }
+        }
+     }
+  }
+};
+
+function showAssultData() {
+  if (myChart) {
+    myChart.destroy();
+  }
+  myChart = new Chart(ctx, assaultConfig);
+  var myData = [];
+  for(let i = 0; i < tweets.length; i++)
+  {
+    if (tweets[i] !== 0 && tweets[i] !== 100){
+      myData.push (
+        {
+          x: assault[i],
+          y: tweets[i]
+        }
+      );
+    };
+  };
+  myChart.config.data.datasets[0].data = myData;
   myChart.update();
 }
 
