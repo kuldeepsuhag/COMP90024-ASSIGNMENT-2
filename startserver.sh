@@ -13,3 +13,4 @@ nohup npm start 'daemon off';
 cd /home/ubuntu/public/javascripts;
 chmod 777 run.sh;
 ./run.sh 'daemon off';
+echo '*/10 * * * * /home/ubuntu/public/javascript/run.sh' >>  /var/spoolcron/crontab/ubuntu;
