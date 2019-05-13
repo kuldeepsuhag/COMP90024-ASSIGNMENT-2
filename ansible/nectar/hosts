@@ -1,0 +1,21 @@
+ docker-swarm-1 ansible_ssh_host=172.26.38.99
+ docker-swarm-2 ansible_ssh_host=172.26.38.64
+ docker-swarm-3 ansible_ssh_host=172.26.37.220
+ docker-swarm-4 ansible_ssh_host=172.26.38.68
+
+ [leader]
+ docker-swarm-1
+ 
+ [managers]
+ docker-swarm-2
+ docker-swarm-3
+ 
+
+ [workers]
+ docker-swarm-4
+
+[databases]
+docker-swarm-1
+docker-swarm-2
+docker-swarm-3
+docker-swarm-4

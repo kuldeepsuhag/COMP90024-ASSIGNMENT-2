@@ -1,0 +1,19 @@
+security_groups:
+  - name: internal
+    direction: ingress
+    description: "This is the interrnal group only security group."
+    protocol: "{{item}}"
+    port_range_min: 1
+    port_range_max: 65535
+    remote_ip_prefix: 0.0.0.0/0
+    with_items:
+      - tcp
+      - udp
+      - icmp
+
+docker-swarm-1 ansible_ssh_host=172.26.38.99
+docker-swarm-2 ansible_ssh_host=172.26.38.64
+docker-swarm-3 ansible_ssh_host=172.26.37.220
+docker-swarm-4 ansible_ssh_host=172.26.38.68
+
+    
