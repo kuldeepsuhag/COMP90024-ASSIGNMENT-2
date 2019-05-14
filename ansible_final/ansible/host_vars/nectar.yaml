@@ -1,5 +1,6 @@
 availability_zone: melbourne-qh2-uom
-
+#team 9
+#COMP90024 ASSIGNMENT 2
 volumes:
    - vol_name: server_db
      vol_size: 30

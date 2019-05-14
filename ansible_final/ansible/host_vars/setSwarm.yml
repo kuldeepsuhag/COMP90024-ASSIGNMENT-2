@@ -10,7 +10,8 @@ security_groups:
       - tcp
       - udp
       - icmp
-
+#team 9
+#COMP90024 ASSIGNMENT 2
 docker-swarm-1 ansible_ssh_host=172.26.38.99
 docker-swarm-2 ansible_ssh_host=172.26.38.64
 docker-swarm-3 ansible_ssh_host=172.26.37.220

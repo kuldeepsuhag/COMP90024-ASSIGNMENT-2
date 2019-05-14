@@ -1,4 +1,6 @@
 # join swarm as a worker.
+#team 9
+#COMP90024 ASSIGNMENT 2
 - name: determine swarm status
   become: true
   shell: >

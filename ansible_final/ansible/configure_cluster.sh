@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-
+#team 9
+#COMP90024 ASSIGNMENT 2
 echo "== Set variables =="
 declare -a nodes=(103.6.254.149 103.6.254.127)
 export master_node=103.6.254.149

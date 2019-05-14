@@ -1,4 +1,5 @@
-
+#team 9
+#COMP90024 ASSIGNMENT 2
 echo "====== getting ip ======"
 NODENAME=$(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)
 echo "nodename couchdb@{$NODENAME}"
