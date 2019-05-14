@@ -1,9 +1,16 @@
+// Team: team 9
+// City: Melbourne Australia
+// Class: COMP90024 ASSIGNMENT 2 - Semester 2, 2019
+// Member 1: Naiyun Wu - 1008438
+// Member 2: Kuldeep Suhag - 919397
+// Member 3: Hongtao Ni - 938737
+// Member 4: Duoyi Zhang - 956812
+// Member 5: Zexian Huang - 1012710
+// store coordinates of tweets for each topics
 var path = require('path');
 var NodeCouchDb = require('node-couchdb');
 var fs = require('fs');
 var os = require('os');
-
-
 var ipFile = fs.readFileSync('../../ipAddress.txt');
 var allIp = ipFile.toString();
 var ips = allIp.split(" ");

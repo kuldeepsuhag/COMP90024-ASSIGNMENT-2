@@ -1,4 +1,5 @@
 #!/bin/bash
+# generate results from couchadb and store them in JSON format.
 node all.js
 node scenario.js
 node arson.js
