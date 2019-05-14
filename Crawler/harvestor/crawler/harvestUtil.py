@@ -5,7 +5,7 @@ from database import database
 
 from crawler.config import db_name
 from database.parser import Parser
-from crawler.config import app_auth,lust_file,pride_file,sloth_file,envy_file,wrath_file,crime_file
+from crawler.config import app_auth
 from topic.tagger import Tagger
 import re
 import time

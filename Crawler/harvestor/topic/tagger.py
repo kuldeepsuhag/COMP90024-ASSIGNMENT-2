@@ -1,7 +1,4 @@
-import re
-from crawler.config import envy_file,lust_file,pride_file,sloth_file, wrath_file, gluttony_file
-
-
+from crawler.config import arson, assault, homicide, highblood, highpsy, overweight, sedetary, unemploy
 def loadTopicFiles(param):
     file = open(param, "r")
     topics = []
@@ -23,31 +20,39 @@ def containTopic(topics, text):
 class Tagger():
 
     def topic_tagger(self,text):
-        topics = loadTopicFiles(envy_file)  # envy
+        #print(text)
+        topics = loadTopicFiles(arson)  # arson
         if not containTopic(topics, text):
-            topics = loadTopicFiles(lust_file)  # lust
+            topics = loadTopicFiles(assault)  # assault
             if not containTopic(topics, text):
-                topics = loadTopicFiles(pride_file)  # pride
+                topics = loadTopicFiles(homicide)  # homicide
                 if not containTopic(topics, text):
-                    topics = loadTopicFiles(sloth_file)  # sloth
+                    topic = loadTopicFiles(highblood) #highblood
                     if not containTopic(topics, text):
-                        topics = loadTopicFiles(wrath_file)
-                        if not containTopic(topics,text):
-                            topics = loadTopicFiles(gluttony_file)
+                        topic = loadTopicFiles(highpsy) #highpsy
+                        if not containTopic(topics, text):
+                            topic = loadTopicFiles(overweight) #overweight
                             if not containTopic(topics, text):
-                                topic = "Bad tweet"
+                                topic = loadTopicFiles(sedetary) #sedetary
+                                if not containTopic(topics, text):
+                                    topic = loadTopicFiles(unemploy) #unemploy
+                                    if not containTopic(topics, text):
+                                        topic = "bad_tweet"
+                                    else:
+                                        topic = "unemploy"
+                                else:
+                                    topic = "sedetary"
                             else:
-                                topic = "gluttony"
+                                topic = "overweight"
                         else:
-                            topic = "wrath"
+                            topic = "highpsy"
                     else:
-
-                        topic = "sloth"
+                        topic = "highblood"
                 else:
-                    topic = "pride"
+                    topic = "homicide"
 
             else:
-                topic = "lust"
+                topic = "assault"
         else:
-            topic = "envy"
+            topic = "arson"
         return topic

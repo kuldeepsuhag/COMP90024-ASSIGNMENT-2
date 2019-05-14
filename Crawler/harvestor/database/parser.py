@@ -16,8 +16,10 @@ def in_time_range(now):
         timestamp = "afternoon"
     elif time.strptime("190000","%H%M%S") <= now <= time.strptime("235959","%H%M%S"):
         timestamp = "evening"
-    elif time.strptime("000000","%H%M%S") <= now <= time.strptime("075959","%H%M%S"):
+    elif time.strptime("000000","%H%M%S") <= now <= time.strptime("035959","%H%M%S"):
         timestamp = "midnight"
+    elif time.strptime("040000","%H%M%S") <= now <= time.strptime("075959","%H%M%S"):
+        timestamp = "early morning"
     return timestamp
 
 
