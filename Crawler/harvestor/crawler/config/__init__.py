@@ -18,7 +18,7 @@ class Keys:
 db_name = 'tweets'
 db_admin = 'admin'
 db_password = 'admin'
-couchdb_uri = "http://172.26.38.68:5984"
+couchdb_uri = "http://127.0.0.1:5984"
 
 
 # twitter api
