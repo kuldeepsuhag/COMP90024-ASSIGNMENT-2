@@ -69,9 +69,7 @@ sudo sh ./installTest.sh
 The program will help you set up all environment and build a cluster for couchdb based on provided ip addresses. You can check the cluster by entering ```http://your_ip_address:5984/_membership``` in the browser.
 * After that, before starting the crawler, you have to log into the master node and install nltk dataset to make sure there will be no errors while crawlering:<br>
 ```
-python3
->>> import nltk
->>> nltk.download('words')
+python3 >>> import nltk >>> nltk.download('words')
 ```
 <br>
 Then 
@@ -112,6 +110,12 @@ Set up docker swarm
 as well as generating and adding the ssh key of the instance to the github repository.<br>
 Then by executing ```runDocker.sh```, the ansible script ```setSwarm.yml``` automatically clones/pulls from git, builds the image, pushes it to docker hub and starts the service with that image that was just pushed.<br>
 After doing all processes above, you can check the web page by enter in anyone of the ip addresses defined as ```ansible_ssh_host```.
+
+Update the docker swarm:
+---
+If there is a new version of the server uploaded to git, simply run the ```update.sh``` and it will perform a git pull on the leader of the swarm.
+The Ansible script will then build a new image from the updated code and perform a rolling update on the web service that are currently running
+on the instances
 
 
 
