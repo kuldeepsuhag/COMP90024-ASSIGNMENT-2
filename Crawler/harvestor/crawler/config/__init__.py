@@ -1,3 +1,6 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
 class Keys:
     """
         CONSUMER_KEY
@@ -52,25 +55,24 @@ app_auth = {
 
 }
 MELBOURNE_STR = [144.6550006954,-38.5089967291,145.3498310249,-37.5916213868]  #http://boundingbox.klokantech.com
-SYD_STR = [150.9786666445,-34.0173030936,151.3082564883,-33.7048428499]
 
-AUS_STR = MELBOURNE_STR+SYD_STR
+
 
            
 # topics
-arson = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/arson.txt"
-assault = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/assault.txt"
-homicide = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/Homicide.txt"
-highblood = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/highblood.txt"
-highpsy = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/highpsy.txt"
-overweight = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/overweight.txt"
-sedetary = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/sedetary.txt"
-unemploy = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/unemployment.txt"
-# arson = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/arson.txt"
-# assault = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/assault.txt"
-# homicide = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/Homicide.txt"
-# highblood = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/highblood.txt"
-# highpsy = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/highpsy.txt"
-# overweight = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/overweight.txt"
-# sedetary = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/sedetary.txt"
-# unemploy = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/unemployment.txt"
+# arson = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/arson.txt"
+# assault = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/assault.txt"
+# homicide = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/Homicide.txt"
+# highblood = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/highblood.txt"
+# highpsy = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/highpsy.txt"
+# overweight = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/overweight.txt"
+# sedetary = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/sedetary.txt"
+# unemploy = "/home/ubuntu/COMP90024-ASSIGNMENT-2/Crawler/harvestor/topic/topic_glossary/unemployment.txt"
+arson = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/arson.txt"
+assault = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/assault.txt"
+homicide = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/Homicide.txt"
+highblood = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/highblood.txt"
+highpsy = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/highpsy.txt"
+overweight = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/overweight.txt"
+sedetary = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/sedetary.txt"
+unemploy = "/Users/kuldeepsuhag/Downloads/Crawler/harvestor/topic/topic_glossary/unemployment.txt"

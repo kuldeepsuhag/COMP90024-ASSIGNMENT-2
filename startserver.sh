@@ -1,5 +1,6 @@
 #!/bin/bash
-
+# team 9
+#COMP90024 ASSIGNMENT 2
 cd /home/ubuntu/public/javascripts/;
 
 rm ipAddress.txt;

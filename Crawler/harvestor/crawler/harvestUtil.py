@@ -1,4 +1,5 @@
-
+# team 9
+#COMP90024 ASSIGNMENT 2
 import tweepy
 from sentiment import classifier
 from database import database

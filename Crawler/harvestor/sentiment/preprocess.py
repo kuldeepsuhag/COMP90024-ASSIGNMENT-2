@@ -1,3 +1,7 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
+
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import words

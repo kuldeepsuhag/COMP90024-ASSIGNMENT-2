@@ -1,3 +1,6 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
 from textblob import TextBlob
 from sentiment import preprocess
 import numpy

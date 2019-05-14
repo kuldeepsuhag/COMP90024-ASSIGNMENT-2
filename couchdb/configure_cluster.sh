@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#team9 - script for setting up cluster
 echo "== Set variables =="
 declare -a nodes=(103.6.254.144 103.6.254.102)
 export master_node=103.6.254.144

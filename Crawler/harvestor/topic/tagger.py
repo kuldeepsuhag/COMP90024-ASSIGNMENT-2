@@ -1,3 +1,6 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
 from crawler.config import arson, assault, homicide, highblood, highpsy, overweight, sedetary, unemploy
 def loadTopicFiles(param):
     file = open(param, "r")

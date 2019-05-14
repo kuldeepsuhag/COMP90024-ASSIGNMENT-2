@@ -1,3 +1,6 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
 import couchdb
 from crawler.config import couchdb_uri,db_admin,db_password
 from couchdb import Session

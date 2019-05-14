@@ -1,10 +1,13 @@
+# team 9
+#COMP90024 ASSIGNMENT 2
+
 import tweepy
 import sentiment.classifier as classifier
 import json
 from database import database
 from crawler import harvestUtil
 from database.parser import Parser
-from crawler.config import app_auth,couchdb_uri,AUS_STR,db_name
+from crawler.config import app_auth,couchdb_uri,MELBOURNE_STR,db_name
 import time
 import sys
 import nltk
@@ -37,7 +40,7 @@ class HarvestSys():
 
         
         try:
-            stream.filter(locations=AUS_STR,languages=["en"])  #location
+            stream.filter(locations=MELBOURNE_STR,languages=["en"])  #location
         except ConnectionRefusedError:
             print("ERROR: stream connection failed")
             exit(-1)
