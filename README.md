@@ -3,7 +3,7 @@ COMP90024 Assignment 2
 -
 **This repository is for assignment 2 of COMP90024. The whole project is divided into four parts: Crawler, Web server, Application server and couchdb database. The whole working direcory is shown as below:**
 .<br>
-├──AURIN\Datasets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*// This folder holds all aurin data*<br>
+├──AURIN\Datasets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*// This folder holds all aurin data and programs to process them*<br>
 ├── Crawler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *// Includes all codes related to sentiments and crawler*<br>
 ├── ServerDockerFile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *// All scripts to create and upload image to docker hub*<br>
 ├── _config.yml <br>
