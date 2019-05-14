@@ -85,11 +85,11 @@ var sedentaryConfig = {
       yAxes: [{
         ticks: {
           // beginAtZero: true
-          suggestedMin: 30
+          suggestedMin: 20
        },
         scaleLabel: {
           display: true,
-          labelString: 'Sloth Twitter count'
+          labelString: 'Sloth Twitter / Area (%)'
         }
       }],
       xAxes: [{
@@ -159,7 +159,7 @@ var overWeightConfig = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'Sloth Twitter count'
+          labelString: 'Sloth Twitter / Area (%)'
         }
       }],
       xAxes: [{
