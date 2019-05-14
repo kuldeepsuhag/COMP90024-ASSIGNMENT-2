@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
-#team 9
-#COMP90024 ASSIGNMENT 2
+# Team: team 9
+# City: Melbourne Australia
+# Class: COMP90024 ASSIGNMENT 2 - Semester 2, 2019
+# Member 1: Naiyun Wu - 1008438
+# Member 2: Kuldeep Suhag - 919397
+# Member 3: Hongtao Ni - 938737
+# Member 4: Duoyi Zhang - 956812
+# Member 5: Zexian Huang - 1012710
+
 echo "== Set variables =="
 declare -a nodes=(103.6.254.149 103.6.254.127)
 export master_node=103.6.254.149

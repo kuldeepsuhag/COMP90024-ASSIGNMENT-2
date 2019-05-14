@@ -1,3 +1,12 @@
+# Team: team 9
+# City: Melbourne Australia
+# Class: COMP90024 ASSIGNMENT 2 - Semester 2, 2019
+# Member 1: Naiyun Wu - 1008438
+# Member 2: Kuldeep Suhag - 919397
+# Member 3: Hongtao Ni - 938737
+# Member 4: Duoyi Zhang - 956812
+# Member 5: Zexian Huang - 1012710
+
 security_groups:
   - name: internal
     direction: ingress
@@ -10,8 +19,7 @@ security_groups:
       - tcp
       - udp
       - icmp
-#team 9
-#COMP90024 ASSIGNMENT 2
+
 docker-swarm-1 ansible_ssh_host=172.26.38.99
 docker-swarm-2 ansible_ssh_host=172.26.38.64
 docker-swarm-3 ansible_ssh_host=172.26.37.220
