@@ -58,12 +58,14 @@ git clone https://github.com/kuldeepsuhag/COMP90024-ASSIGNMENT-2.git
 * Then, run ```runIns.sh``` to set up the instance using:<br>
 ```
 sudo sh ./runIns.sh
-``` <br>If you want to set up multiple instances, just change the variables under *host_var* directory and run the same command again.
+``` 
+<br>If you want to set up multiple instances, just change the variables under *host_var* directory and run the same command again.
 * To set up the software environment, first you have to copy all ips of your instances and paste them into the ```./ansible/hosts```
 file. Also paste them into the ```configure_cluster.sh```Then, run the following command:<br>
 ```
 sudo sh ./installTest.sh
-```<br>
+```
+<br>
 The program will help you set up all environment and build a cluster for couchdb based on provided ip addresses. You can check the cluster by entering ```http://your_ip_address:5984/_membership``` in the browser.
 * After that, before starting the crawler, you have to log into the master node and install nltk dataset to make sure there will be no errors while crawlering:<br>
 ```
