@@ -66,18 +66,18 @@ file. Also paste them into the ```configure_cluster.sh```Then, run the following
 sudo sh ./installTest.sh
 ```
 <br>
-The program will help you set up all environment and build a cluster for couchdb based on provided ip addresses. You can check the cluster by entering```http://your_ip_address:5984/_membership```in the browser.<br>
+The program will help you set up all environment and build a cluster for couchdb based on provided ip addresses. You can check the cluster by entering```http://your_ip_address:5984/_membership```in the browser.
 
 * After that, before starting the crawler, you have to log into the master node and install nltk dataset to make sure there will be no errors while crawlering:<br>
 ```
 python3 >>> import nltk >>> nltk.download('words')
 ```
-<br>
+
 Then 
 ```
 python3 ./Crawler/harvestor/run_crawler.py your_twitter_token
 ``` 
-<br>
+
 to start the crawler. The crawler will start collect data throught your twitter token. Also the following tasks will be complete simultaneously:<br>
 - **Sentiment analysis**: it will first uniform the string and classify them into three types: Postitive, Negative and Netural.<br>
 - **Topic parsing**: it will allocate tweets into different topics (E.g. wrath, sloth, arson).<br>
