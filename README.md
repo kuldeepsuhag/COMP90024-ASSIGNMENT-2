@@ -72,9 +72,13 @@ The program will help you set up all environment and build a cluster for couchdb
 python3
 >>> import nltk
 >>> nltk.download('words')
-```<br>
+```
+<br>
 Then 
-```python3 ./Crawler/harvestor/run_crawler.py your_twitter_token``` <br>
+```
+python3 ./Crawler/harvestor/run_crawler.py your_twitter_token
+``` 
+<br>
 to start the crawler. The crawler will start collect data throught your twitter token. Also the following tasks will be complete simultaneously:<br>
 - **Sentiment analysis**: it will first uniform the string and classify them into three types: Postitive, Negative and Netural.<br>
 - **Topic parsing**: it will allocate tweets into different topics (E.g. wrath, sloth, arson).<br>
