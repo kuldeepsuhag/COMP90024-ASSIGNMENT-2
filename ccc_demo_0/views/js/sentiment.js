@@ -84,6 +84,16 @@ var config = {
             fill: false
           }
         ]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Total Twitter Count / Area'
+          }
+        }]
+      }
     }
   };
 

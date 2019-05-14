@@ -59,7 +59,7 @@ var config = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'OverWeight',
+          labelString: 'OverWeight(%)',
         }
       }]
     } ,
@@ -131,6 +131,16 @@ var allConfig = {
             fill: false,
           }
         ]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          scaleLabel: {
+            display: true,
+            labelString: 'Percentage / Population'
+          }
+        }]
+      }
     }
 };
 function showAll() {

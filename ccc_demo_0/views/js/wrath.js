@@ -59,6 +59,16 @@ var config = {
           fill: false
         }
       ]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Percentage / Population'
+        }
+      }]
+    }
   }
 };
 var myChart = new Chart(ctx, config);
@@ -136,7 +146,7 @@ var assaultConfig = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'Assult'
+          labelString: 'Assult(%)'
         }
       }]
     } ,
@@ -208,7 +218,7 @@ var overWeightConfig = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'OverWeight',
+          labelString: 'OverWeight(%)',
         }
       }]
     } ,

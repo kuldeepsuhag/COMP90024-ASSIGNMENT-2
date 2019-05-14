@@ -53,6 +53,16 @@ var config = {
           fill: false,
         }
       ]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        scaleLabel: {
+          display: true,
+          labelString: 'Percentage / Population'
+        }
+      }]
+    }
   }
 };
 var myChart = new Chart(ctx, config);
@@ -99,7 +109,7 @@ var sedentaryConfig = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'Sedentary'
+          labelString: 'Sedentary(%)'
         }
       }]
     } ,
@@ -169,7 +179,7 @@ var overWeightConfig = {
        },
         scaleLabel: {
           display: true,
-          labelString: 'OverWeight'
+          labelString: 'OverWeight(%)'
         }
       }]
     } ,
