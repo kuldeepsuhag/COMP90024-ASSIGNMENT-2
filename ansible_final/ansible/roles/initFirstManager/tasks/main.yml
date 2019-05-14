@@ -1,0 +1,17 @@
+- name: determine swarm status
+  become: true
+  shell: >
+        docker info | egrep '^Swarm' | cut -d ' ' -f2 
+  register: swarm_status
+
+- name: "create primary swarm manager"
+  shell: sudo docker swarm init --advertise-addr {{ ansible_eth0['ipv4']['address'] }}
+  when: "'active' not in swarm_status.stdout_lines"
+
+- name: "get docker swarm manager token"
+  shell: sudo docker swarm join-token -q manager
+  register: manager_token
+  
+- name: "get docker swarm worker token"
+  shell: sudo docker swarm join-token -q worker
+  register: worker_token

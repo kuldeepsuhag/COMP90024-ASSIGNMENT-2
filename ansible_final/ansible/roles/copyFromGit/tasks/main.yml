@@ -1,0 +1,32 @@
+- name: install git
+  become: yes
+  apt:
+    name: ['git']
+    state: latest
+    update_cache: yes
+
+- name: Check that the COMP90024-ASSIGNMENT-2 exists
+  stat:
+      path: /home/ubuntu/COMP90024-ASSIGNMENT-2
+  register: stat_result
+
+# - name: Create COMP90024-ASSIGNMENT-2, if it doesnt exist already
+#   sudo: yes
+#   file:
+#       path: /home/ubuntu/COMP90024-ASSIGNMENT-2
+#       state: directory
+#   when: stat_result.stat.exists == False 
+
+- name: check existence
+  shell: | 
+    sudo rm -r /home/ubuntu/COMP90024-ASSIGNMENT-2
+  when: stat_result.stat.exists == True  
+
+
+- name: clone from github
+  shell: |
+    git clone ssh://git@github.com/kuldeepsuhag/COMP90024-ASSIGNMENT-2.git
+  # when: stat_result.stat.exists == False
+
+
+
