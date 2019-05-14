@@ -1,0 +1,19 @@
+
+# - hosts: databases
+#   roles:
+#     - role: copyFromGit
+#     - role: setEnv
+- hosts: leader
+  roles:
+    - role: copyFromGit
+    - role: buildImage
+    - role: initFirstManager
+- hosts: workers
+  roles:
+    - role: joinSwarm
+- hosts: managers
+  roles:
+    - role: joinAsManager
+- hosts: leader
+  roles:
+    - role: createService

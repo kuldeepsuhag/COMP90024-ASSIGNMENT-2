@@ -1,0 +1,12 @@
+# join swarm as a worker.
+- name: determine swarm status
+  become: true
+  shell: >
+        docker info | egrep '^Swarm' | cut -d ' ' -f2 
+  register: swarm_status
+
+- name: "join as a worker"
+  shell: "sudo docker swarm join --token {{ hostvars['docker-swarm-1']['worker_token']['stdout'] }} {{ hostvars['docker-swarm-1']['ansible_eth0']['ipv4']['address'] }}:2377"
+  when: "'active' not in swarm_status.stdout_lines"
+  retries: 1
+  delay: 20

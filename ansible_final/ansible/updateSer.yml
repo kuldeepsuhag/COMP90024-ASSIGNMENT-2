@@ -1,0 +1,5 @@
+- hosts: leader
+  roles:
+    - role: copyFromGit
+    - role: buildImage
+    - role: upDateService

@@ -1,0 +1,3 @@
+- name:
+  shell: |
+    sudo docker service update --image=nnyy10/webserverimage webservice

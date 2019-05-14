@@ -1,0 +1,15 @@
+- name: push image directory
+  shell:  |
+        cd COMP90024-ASSIGNMENT-2 &&
+        sudo docker build . -t webserverimage -f ServerDockerFile &&
+        sudo docker tag webserverimage nnyy10/webserverimage
+
+- name: Log into DockerHub
+  become: yes
+  docker_login:
+    username: nnyy10
+    password: jw^sJU:~vk%c}3fv#FZn
+    
+- name: push image 
+  shell: |
+    sudo docker push nnyy10/webserverimage

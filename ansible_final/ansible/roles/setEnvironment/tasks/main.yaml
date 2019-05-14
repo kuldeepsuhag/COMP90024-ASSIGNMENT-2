@@ -1,0 +1,105 @@
+##### add proxy just needs to run once.
+# - name: set proxy
+#   become: yes
+#   shell: |
+#     sudo echo 'http_proxy="http://wwwproxy.unimelb.edu.au:8000"
+#     https_proxy="http://wwwproxy.unimelb.edu.au:8000"
+#     ftp_proxy="http://wwwproxy.unimelb.edu.au:8000"' >> /etc/environment
+
+- name: install docker
+  become: yes
+  apt:
+    name: ['docker']
+    state:  latest
+    update_cache: yes
+
+- name: add couchdb key
+  become: yes
+  shell: |
+    curl -L https://couchdb.apache.org/repo/bintray-pubkey.asc | sudo apt-key add -
+
+- name: add couchdb repository
+  become: yes
+  shell: |
+    echo "deb https://apache.bintray.com/couchdb-deb bionic main" | sudo tee -a /etc/apt/sources.list
+
+- name: install node.js
+  become: yes
+  apt:
+    name: ['nodejs']
+    state:  latest
+    update_cache: yes
+
+- name: install pip
+  become: yes
+  apt:
+    name: ['python3-pip']
+    state: latest
+    update_cache: yes
+  when: ansible_distribution == "Ubuntu"
+
+- name: Update pip
+  become: yes
+  pip:
+    name: ['pip']
+    state: latest
+    executable: pip3
+
+- name: Install Tweepy
+  become: yes
+  pip:
+    name: ['tweepy']
+    state: latest
+    executable: pip3
+
+- name: Install openstack
+  become: yes
+  pip:
+    name: ['openstacksdk']
+    state: latest
+    executable: pip3
+
+- name: Install numpy
+  become: yes
+  pip:
+    name: ['numpy']
+    state: latest
+    executable: pip3
+
+- name: Install textblob
+  become: yes
+  pip:
+    name: ['textblob']
+    state: latest
+    executable: pip3
+
+- name: Install couchdb
+  become: yes
+  pip:
+    name: ['couchdb']
+    state: latest
+    executable: pip3
+
+
+- name: Install nltk
+  pip:
+    name: ['nltk']
+    state: latest
+    executable: pip3
+
+- name: example copying file with owner and permissions
+  copy:
+    src: /Users/duoyizhang/2019-SM2/CCC/Assignment2/ansible/install_couchdb.sh
+    dest: /home/ubuntu/install_couchdb.sh
+    owner: ubuntu
+    group: ubuntu
+    mode: 0644
+
+- name: change script permissions
+  become: yes
+  shell: |
+    sudo chmod 777 /home/ubuntu/install_couchdb.sh
+
+- name: install couchdb
+  become: yes
+  command: sh /home/ubuntu/install_couchdb.sh
