@@ -3,19 +3,6 @@ var areas = ['Banyule', 'Bayside', 'Boroondara', 'Brimbank', 'Casey', 'Darebin',
 var sins = ["Wrath", "Sloth", "Gluttony"];
 var ctx = document.getElementById("profileChart");
 
-var options = {
-    scale: {
-        // Hides the scale
-        display: false
-    },
-    scales: {
-        yAxes: [{
-            ticks: {
-                beginAtZero:true
-            }
-        }]
-    }
-};
 var config = {
     type: "radar",
     data: {
@@ -23,7 +10,20 @@ var config = {
         datasets: [{
             data: []
         }],
-        option: options
+        options: {
+          scale: {
+              ticks: {
+                  beginAtZero: true,
+                  min: 0,
+                  userCallback: function(label, index, labels) {
+                      // when the floored value is the same as the value we have a whole number
+                      if (Math.floor(label) === label) {
+                          return label;
+                      }
+                  },
+              }
+          }
+      }
     }
 };
 var profileChart = new Chart(ctx, config);
