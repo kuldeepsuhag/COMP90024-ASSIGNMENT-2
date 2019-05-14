@@ -67,7 +67,9 @@ sudo sh ./installTest.sh
 ```
 <br>
 The program will help you set up all environment and build a cluster for couchdb based on provided ip addresses. You can check the cluster by entering 
-```http://your_ip_address:5984/_membership```
+```
+http://your_ip_address:5984/_membership
+```
 in the browser.
 * After that, before starting the crawler, you have to log into the master node and install nltk dataset to make sure there will be no errors while crawlering:<br>
 ```
